@@ -52,7 +52,7 @@ body {
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease;
-    max-width: 100%;
+    max-width: 95%;
     margin: auto;
     height: 600px;
 }
@@ -75,7 +75,7 @@ body {
     background-color: #0077b6; /* Azul marinho */
     color: #fff;
     font-family: "Dosis", sans-serif;
-    font-size: 18px;
+    font-size: 26px;
     text-align: justify;
     padding: 30px;
     border-radius: 8px;
