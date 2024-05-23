@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url('./imagens/top.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Barra de Menus */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a {
+font-size: 1.15rem;
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+margin-left: 2.5rem;
+}
+
+/*  Campo Busca */
+
+#campoBusca {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#listaSuspensa {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 298px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#listaSuspensa li {
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+#listaSuspensa li:hover {
+    background-color: #f0f0f0;
+}
+
+.buscador {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 90px;
+}
+
+.buscador h1 {
+    margin-right: 115px;
+}
+
+.btn-busca{
+    font-family: 'Dosis', sans-serif;
+    color: #0a314e;
+    text-shadow: 2px 2px 4px #2d2d2d;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Chamada - SOU DO LITORAL - */
+
+.headline{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+}
+
+.headline p {
+    color: #fff;;
+}
+
+.styled-hr {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid rgb(230, 67, 8); 
+    margin: 1px 0;
+}
+
+
+#Chamada{
+    text-align: center;
+    margin-top: 180px;
+    font-family: "Pacifico", sans-serif;
+    color: #c7e1f3;
+    font-size: 80px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px #2d2d2d;
+    
+}
+
+/* Conjunto de Cards */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    font-family: 'Dosis', sans-serif;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h1 {
+    color: #dae2e8;
+    text-shadow: 2px 2px 4px #2d2d2d;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(2, 2, 30);
+    margin-top: 10px;
+}
+
+/* Galeria Interativa */
+
+.wrapper{
+    margin-left: 300px;
+    margin-top: 300px;
+}
+
+:root{
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(0.1, 0.7, 0, 1);
+    }
+
+    .items{
+        display:flex;
+        gap: 0.4rem;
+        perspective: calc(var(--index) * 35);
+    }
+
+    .item{
+        width:calc(var(--index) * 3);
+        height: calc(var(--index) * 12);
+        background-color: rgba(34, 34, 34, 0.5);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        filter: grayscale(1) brightness(0.5);
+        transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+        will-change: transform, filter, rotateY, width;
+    }
+
+    .item::before,
+    .item::after {
+        content:"";
+        position:absolute;
+        height: 100%;
+        width: 20px;
+        right: calc(var(--index) * -1);
+    }
+
+    .item::after {
+        left: calc(var(--index) * -1)
+
+    }
+.items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+.items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+
+.items .item:hover + * + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+    z-index: -4;
+}
+
+.items .item:has(+ :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has(+ * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has(+ * + * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has(+ * + * + * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
+
+.items .item:active,
+.items .item:focus {
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 0.45vw;
+}
+
+/* Rodapé */
+
+footer{
+    height: 100px;
+    backdrop-filter: blur(7px);
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(100% / 3);
+}
+
+.column {
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #005b96;
+}
+
+p {
+    font-size: 14px;
+    color: #005b96;
+}
+
+

@@ -1,0 +1,86 @@
+  /* SoliDeoGloria */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./imagens/login7.jpg');
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Barra de Menus */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.9rem;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+.navbar a {
+font-size: 1.35rem;
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+margin-left: 1.2rem;
+margin-right: 40px;
+}
+
+/* Texto Descritivo */
+
+.descricao {
+    max-width: 1000px;
+    padding: 100px 200x;
+    font-family: "Dosis", sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+p{
+    text-align: justify;
+    line-height: 43px;
+}
+
+.logo{
+    text-align: center;
+    
+}
+
+.btn-home {
+    text-decoration: none;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(17, 69, 224);
+    border-radius: 20px;
+}
+
+.btn-home:hover {
+    background-color: rgb(3, 21, 76);
+    color: white;
+}
+/*
+.card{
+    
+    
+}
+*/
