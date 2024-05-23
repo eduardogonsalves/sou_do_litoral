@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css"> <!-- Referência ao CSS externo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cadastro.css"> <!-- Referência ao CSS externo -->
-    <title>Formulário</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <div class="corpo">  
@@ -47,90 +46,90 @@
             <button class="botao" type="submit">Enviar</button>
         </form>
         <?php
-        if ($_SERVER['REQUEST_METHOD'] == "POST") {
-            $nome = $_POST['userName'];
-            $sobrenome = $_POST['sobrenome'];
-            $email = $_POST['email'];
-            $cell = $_POST['cell'];
-            $senha = $_POST['password'];
-            $confirmar = $_POST['confirmar'];
+            if ($_SERVER['REQUEST_METHOD'] == "POST") {
+                $nome = $_POST['userName'];
+                $sobrenome = $_POST['sobrenome'];
+                $email = $_POST['email'];
+                $cell = $_POST['cell'];
+                $senha = $_POST['password'];
+                $confirmar = $_POST['confirmar'];
 
-            $erroNome = $erroSobrenome = $erroEmail = $erroCell = $erroSenha = $erroConfirma = "Nenhum";
+                $erroNome = $erroSobrenome = $erroEmail = $erroCell = $erroSenha = $erroConfirma = "Nenhum";
 
-            // Validação de nome
-            if (empty($nome)) {
-                    $erroNome = "Favor informar nome";
-                } else {
-                    if (!preg_match("/^[a-zA-Z-' ]*$/", $nome)) {
-                    $erroNome = "Apenas letras";
+                // Validação de nome
+                if (empty($nome)) {
+                        $erroNome = "Favor informar nome";
                     } else {
-                    $erroNome = "Nenhum";
-                    }
-            }
-
-            // Validação de email
-            if (empty($email)) {
-                    $erroEmail = "Favor informar um email";
-                } else {
-                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $erroEmail = "Favor informar um email válido";
-                    } else {
-                    $erroEmail = "Nenhum";
-                    }
+                        if (!preg_match("/^[a-zA-Z-' ]*$/", $nome)) {
+                        $erroNome = "Apenas letras";
+                        } else {
+                        $erroNome = "Nenhum";
+                        }
                 }
 
-            // Validação de sobrenome
-            if (empty($sobrenome)) {
-                    $erroSobrenome = "Favor informar sobrenome";
-                } else {
-                    if (!preg_match("/^[a-zA-Z-' ]*$/", $sobrenome)) {
-                    $erroSobrenome = "Apenas letras";
+                // Validação de email
+                if (empty($email)) {
+                        $erroEmail = "Favor informar um email";
                     } else {
-                    $erroSobrenome = "Nenhum";
+                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        $erroEmail = "Favor informar um email válido";
+                        } else {
+                        $erroEmail = "Nenhum";
+                        }
                     }
+
+                // Validação de sobrenome
+                if (empty($sobrenome)) {
+                        $erroSobrenome = "Favor informar sobrenome";
+                    } else {
+                        if (!preg_match("/^[a-zA-Z-' ]*$/", $sobrenome)) {
+                        $erroSobrenome = "Apenas letras";
+                        } else {
+                        $erroSobrenome = "Nenhum";
+                        }
+                    }
+
+                // Validação de telefone
+                if (empty($cell)) {
+                        $erroCell = "Favor informar um número de celular";
+                    } else {
+                    // Regex para validar apenas números e traços no formato 99-99999-9999
+                        if (!preg_match("/^\d{2}\d{5}\d{4}$/", $cell)) {
+                        $erroCell = "Insira um número de telefone válido no formato 99-99999-9999";
+                        } else {
+                        $erroCell = "Nenhum";
+                        }
+                    }
+
+                // Validação de senha
+                if (empty($senha)) {
+                        $erroSenha = "Por favor, insira uma senha.";
+                    } else {
+                        if (strlen($senha) < 6) {
+                        $erroSenha = "Por favor, insira uma senha com pelo menos 06 dígitos";
+                        } else {
+                        $erroSenha = "Nenhum";
+                        }
+                    }
+
+                // Validação de confirmação de senha
+                if (empty($confirmar)) {
+                        $erroConfirma = "Por favor, repita a senha anterior.";
+                    } else {
+                        if ($confirmar != $senha) {
+                        $erroConfirma = "As senhas precisam ser iguais.";
+                        } else {
+                        $erroConfirma = "Nenhum";
+                        }
+                    }
+
+                // Condições para envio (Nenhum erro em todas as variáveis)
+                if ($erroConfirma == "Nenhum" && $erroSenha == "Nenhum" && $erroCell == "Nenhum" && $erroSobrenome == "Nenhum" && $erroEmail == "Nenhum" && $erroNome == "Nenhum") {
+                    header('Location: obrigado.html');
+                    exit;
                 }
 
-            // Validação de telefone
-            if (empty($cell)) {
-                    $erroCell = "Favor informar um número de celular";
-                } else {
-                // Regex para validar apenas números e traços no formato 99-99999-9999
-                    if (!preg_match("/^\d{2}\d{5}\d{4}$/", $cell)) {
-                    $erroCell = "Insira um número de telefone válido no formato 99-99999-9999";
-                    } else {
-                    $erroCell = "Nenhum";
-                    }
-                }
-
-            // Validação de senha
-            if (empty($senha)) {
-                    $erroSenha = "Por favor, insira uma senha.";
-                } else {
-                    if (strlen($senha) < 6) {
-                    $erroSenha = "Por favor, insira uma senha com pelo menos 06 dígitos";
-                    } else {
-                    $erroSenha = "Nenhum";
-                    }
-                }
-
-            // Validação de confirmação de senha
-            if (empty($confirmar)) {
-                    $erroConfirma = "Por favor, repita a senha anterior.";
-                } else {
-                    if ($confirmar != $senha) {
-                    $erroConfirma = "As senhas precisam ser iguais.";
-                    } else {
-                    $erroConfirma = "Nenhum";
-                    }
-                }
-
-            // Condições para envio (Nenhum erro em todas as variáveis)
-            if ($erroConfirma == "Nenhum" && $erroSenha == "Nenhum" && $erroCell == "Nenhum" && $erroSobrenome == "Nenhum" && $erroEmail == "Nenhum" && $erroNome == "Nenhum") {
-                header('Location: obrigado.html');
-                exit;
-            }
-
-        }
+            }   
         ?>
     </div>
 

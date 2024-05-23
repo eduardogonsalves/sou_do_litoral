@@ -27,6 +27,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar a {
+    font-size: 1.35rem;
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1.2rem;
+    margin-right: 40px;
+    }
+
 /* Título da página */
 .title {
     text-align: center;
