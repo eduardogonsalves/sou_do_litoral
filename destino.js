@@ -1,3 +1,5 @@
+// SoliDeoGloria
+
 // Função para mostrar marcadores no mapa
 function showMarkers(category) {
     // Implemente a lógica para mostrar marcadores conforme a categoria selecionada

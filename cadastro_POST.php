@@ -1,3 +1,5 @@
+<!-- SoliDeoGloria -->
+
 <?php
         if (isset($_POST['userName'])){
             $Nome = $_POST['userName'];

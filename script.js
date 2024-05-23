@@ -1,3 +1,5 @@
+// SoliDeoGloria
+
 var destinos = [
     "Cabo Branco",
     "Tambau",
