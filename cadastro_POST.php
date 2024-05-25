@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($erroConfirma == "Nenhum" && $erroSenha == "Nenhum" && $erroCell == "Nenhum" && $erroSobrenome == "Nenhum" && $erroEmail == "Nenhum" && $erroNome == "Nenhum") {
         echo "<script>alert('Cadastro enviado com sucesso! $nome $sobrenome, você será redirecionado à página inicial.');
-        window.location.href = 'index.html';</script>";
+        window.location.href = './index.html';</script>";
     }
 }
 ?>

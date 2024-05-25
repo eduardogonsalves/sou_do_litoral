@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="corpo">
-        <form action="formulario_POST.php" method="POST" class="cadastro" id="form">
+        <form action="cadastro_POST.php" method="POST" class="cadastro" id="form">
             <label for="userName">Nome <span class="info-icon" title="Campo obrigatório">🛈</span></label>
             <input type="text" name="userName" id="userName" placeholder="Nome" required>
             <div class="error-message" id="erroNome"></div>
