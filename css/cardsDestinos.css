@@ -17,33 +17,8 @@ body{
     
 }
 
-/* Barra de Menus
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(7px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.navbar a {
-font-size: 1.15rem;
-color: #fff;
-text-decoration: none;
-font-weight: 700;
-margin-left: 2.5rem;
-}
-
- */
-
-/* Galeria de Slides/Cards        position: relative;*/
+/* Galeria de Slides/Cards */
 
 * {
     padding: 0;

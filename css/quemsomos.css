@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('./imagens/login7.jpg');
+    background: url('/imagens/login7.jpg');
     background-color: rgba(0, 0, 0, 0.9);
     background-size: cover;
     background-position: center;
