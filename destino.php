@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nome do Destino</title>
-  <link rel="stylesheet" href="/css/destino.css">
+  <link rel="stylesheet" href="css/destino.css"><!--Referência do CSS-->
 </head>
 <body>
 
@@ -16,13 +16,13 @@
    <!-- Carrossel de imagens -->
   <section class="carousel">
         <div class="carousel-container">
-            <div class="slide"><img src="/imagens/1.jpg" alt="Imagem 1"></div>
-            <div class="slide"><img src="/imagens/2.png" alt="Imagem 2"></div>
-            <div class="slide"><img src="/imagens/3.webp" alt="Imagem 3"></div>
-            <div class="slide"><img src="/imagens/4.jpeg" alt="Imagem 4"></div>
-            <div class="slide"><img src="/imagens/5.jpg" alt="Imagem 5"></div>
-            <div class="slide"><img src="/imagens/6.jpg" alt="Imagem 6"></div>
-            <div class="slide"><img src="/imagens/7.jpg" alt="Imagem 7"></div>
+            <div class="slide"><img src="./imagens/1.jpg" alt="Imagem 1"></div>
+            <div class="slide"><img src="./imagens/2.png" alt="Imagem 2"></div>
+            <div class="slide"><img src="./imagens/3.webp" alt="Imagem 3"></div>
+            <div class="slide"><img src="./imagens/4.jpeg" alt="Imagem 4"></div>
+            <div class="slide"><img src="./imagens/5.jpg" alt="Imagem 5"></div>
+            <div class="slide"><img src="./imagens/6.jpg" alt="Imagem 6"></div>
+            <div class="slide"><img src="./imagens/7.jpg" alt="Imagem 7"></div>
         </div>
   </section>
   
@@ -51,9 +51,9 @@
   </section>
 
   <footer>
-    <a href="./index.html">Home</a>
+    <a href="./index.php">Home</a>
   </footer>
 
-  <script src="/js/destino.js"></script>
+  <script src="./js/destino.js"></script>
 </body>
 </html>
