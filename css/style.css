@@ -127,17 +127,15 @@ margin-left: 2.5rem;
 /* Conjunto de Cards */
 
 .card-container {
-    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
-
 }
 
 .card {
     font-family: 'Dosis', sans-serif;
-    width: 275px;
+    width: 270px;
     border: 1px solid #ccc;
     border-radius: 5px;
     backdrop-filter: blur(2px);

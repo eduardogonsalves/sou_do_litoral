@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Descubra os melhores destinos turísticos no litoral paraibano! Explore praias paradisíacas, museus fascinantes, o zoológico local e muito mais. Encontre informações sobre hospedagem, restaurantes e atividades para tornar sua viagem inesquecível.">
-        <link rel="stylesheet" href="/css/cardsDestinos.css">
+        <link rel="stylesheet" href="css/cardsDestinos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -19,14 +19,14 @@
 
         <div class="container">
             <div class="slider">
-                    <div class="slides" style="--img: url('/imagens/gastronomia/g1.jpg')">                        
+                    <div class="slides" style="--img: url('../imagens/gastronomia/g1.jpg')">                        
                         <div class="content">
                             <h2>Restaurante Bar do Cuscuz (João Pessoa)</h2>
                                 <p>
                                     Este é um dos restaurantes mais tradicionais de João Pessoa, especializado em pratos da culinária nordestina, incluindo o famoso cuscuz. Localizado à beira-mar, oferece uma bela vista do oceano enquanto os clientes desfrutam de uma variedade de pratos típicos, como peixes, frutos do mar, carne de sol e muito mais.
                         </div>                                    
                     </div>
-                <div class="slides" style="--img: url('/imagens/gastronomia/g2.jpg')">
+                <div class="slides" style="--img: url('../imagens/gastronomia/g2.jpg')">
                     <div class="content">
                         <h2>Restaurante Maná (Cabedelo)</h2>
                         <p>
@@ -34,7 +34,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/gastronomia/g3.jpg')">
+                <div class="slides" style="--img: url('../imagens/gastronomia/g3.jpg')">
                     <div class="content">
                         <h2>Bar e Restaurante Barramares(Jacumã)</h2>
                         <p>
@@ -42,7 +42,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/gastronomia/g4.jpg')">
+                <div class="slides" style="--img: url('../imagens/gastronomia/g4.jpg')">
                     <div class="content">
                         <h2>Camarão Gourmet (Praia de Coqueirinho)</h2>
                         <p>
@@ -50,7 +50,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/gastronomia/g5.jpg')">
+                <div class="slides" style="--img: url('../imagens/gastronomia/g5.jpg')">
                     <div class="content">
                         <h2>Restaurante Beijupirá (Praia de Tabatinga)</h2>
                         <p>
@@ -63,14 +63,14 @@
                 <span class="prev"></span>
                 <span class="next"></span>
                 <button class="home">
-                    <a href="./index.html" class="home">
+                    <a href="./index.php" class="home">
                         <img src="./imagens/btn_home.png" alt="Home">
                     </a>
                 </button>
             </div>
         </div>
          
-        <script src="/js/cardsDestinos.js"></script>
+        <script src="./js/cardsDestinos.js"></script>
     </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Melhorar a descrição no decorrer do desenvolvimento-->
     <meta name="description" content="Descubra os melhores destinos turísticos no litoral paraibano! Explore praias paradisíacas, museus fascinantes, o zoológico local e muito mais. Encontre informações sobre hospedagem, restaurantes e atividades para tornar sua viagem inesquecível.">
-    <link rel="stylesheet" href="css/style.css"><!--Referência de CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -23,9 +23,9 @@
         <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
             <a href="#">Home</a>
-            <a href="./quemsomos.php">Quem somos</a>
-            <a href="./index.php#nossosContatos">Contatos</a>
-            <a href="./login.php">Login / Cadastro</a>
+            <a href="./quemsomos.html">Quem somos</a>
+            <a href="./index.html#nossosContatos">Contatos</a>
+            <a href="./login.html">Login / Cadastro</a>
         </nav>   
     </header>
 
@@ -51,7 +51,7 @@
     <!-- Cards com opções de passeios -->    
     <div class="card-container">
         <div class="card">
-            <a style="text-decoration: none;" href="./praias.php">
+            <a style="text-decoration: none;" href="./praias.html">
                 <img src="./imagens/10.webp" alt="Imagem de Praia">
                 <h1>Praias</h1>
                 <p>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="card">
-            <a style="text-decoration: none;" href="./monumentos.php">
+            <a style="text-decoration: none;" href="./monumentos.html">
                 <img src="./imagens/monumentos.jpg" alt="Centro Histórico João Pessoa-PB">
                 <h1>Monumentos Históricos</h1>
                 <p>
@@ -70,7 +70,7 @@
             </a>
         </div>
         <div class="card">
-            <a style="text-decoration: none;" href="./gastronomia.php">
+            <a style="text-decoration: none;" href="gastronomia.php">
                 <img src="./imagens/gastrono.jpg" alt="Imagem de Praia">
                 <h1>Gastronomia</h1>
                 <p>
@@ -79,7 +79,7 @@
             </a>
         </div>
         <div class="card">
-            <a style="text-decoration: none;" href="./igrejas.php">
+            <a style="text-decoration: none;" href="./igrejas.html">
                 <img src="./imagens/igrejas.jpg" alt="Imagem de Praia">
                 <h1>Igrejas</h1>
                 <p>
@@ -88,7 +88,7 @@
             </a>
         </div>
         <div class="card">
-            <a style="text-decoration: none;" href="./artesanato.php">
+            <a style="text-decoration: none;" href="./artesanato.html">
                 <img src="./imagens/artesanato.jpg" alt="Imagem de Praia">
                 <h1>Artesanatos</h1>
                 <p>
