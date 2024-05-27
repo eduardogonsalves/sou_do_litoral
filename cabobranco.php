@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabo Branco</title>
-  <link rel="stylesheet" href="/css/cabobranco.css">
+  <link rel="stylesheet" href="css/cabobranco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -23,10 +23,10 @@
     <header class="header">
         <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
-            <a href="./index.html">Home</a>
-            <a href="./quemsomos.html">Quem somos</a>
-            <a href="./index.html#nossosContatos">Contatos</a>
-            <a href="./login.html">Login / Cadastro</a>
+            <a href="./index.php">Home</a>
+            <a href="./quemsomos.php">Quem somos</a>
+            <a href="./index.php#nossosContatos">Contatos</a>
+            <a href="./login.php">Login / Cadastro</a>
         </nav>   
     </header>
 
@@ -150,7 +150,7 @@
 <footer>
     <div class="footer-content">
         <div class="btn-topo">
-            <a href="./cabobranco.html#top">Topo</a>
+            <a href="./cabobranco.php#top">Topo</a>
         </div>
         <div id="nossosContatos" class="footer-columns">
             <div class="column">
@@ -171,6 +171,6 @@
 
 
 
-  <script src="/js/cabobranco.js"></script>
+  <script src="./js/cabobranco.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Descubra os melhores destinos turísticos no litoral paraibano! Explore praias paradisíacas, museus fascinantes, o zoológico local e muito mais. Encontre informações sobre hospedagem, restaurantes e atividades para tornar sua viagem inesquecível.">
-        <link rel="stylesheet" href="/css/cardsDestinos.css">
+        <link rel="stylesheet" href="css/cardsDestinos.css"><!--Referência do CSS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         
         <div class="container">
             <div class="slider">
-                    <div class="slides" style="--img: url('/imagens/artesanato/a1.jpg')">                        
+                    <div class="slides" style="--img: url('../imagens/artesanato/a1.jpg')">                        
                         <div class="content">
                             <h2>Feira de Artesanato de Tambaú</h2>
                                 <p>
@@ -27,7 +27,7 @@
                                 </p>
                         </div>                                    
                     </div>
-                <div class="slides" style="--img: url('/imagens/artesanato/a2.jpg')">
+                <div class="slides" style="--img: url('../imagens/artesanato/a2.jpg')">
                     <div class="content">
                         <h2>Mercado de Artesanato Paraibano</h2>
                         <p>
@@ -35,7 +35,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/artesanato/a3.jpg')">
+                <div class="slides" style="--img: url('../imagens/artesanato/a3.jpg')">
                     <div class="content">
                         <h2>Centro de Cultura Popular Domingos Vieira Filho</h2>
                         <p>
@@ -43,7 +43,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/artesanato/a4.jpg')">
+                <div class="slides" style="--img: url('../imagens/artesanato/a4.jpg')">
                     <div class="content">
                         <h2>Rua do Artesanato de Jacumã</h2>
                         <p>
@@ -51,7 +51,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/artesanato/a5.jpg')">
+                <div class="slides" style="--img: url('../imagens/artesanato/a5.jpg')">
                     <div class="content">
                         <h2>Ateliês de artistas locais</h2>
                         <p>
@@ -64,14 +64,14 @@
                 <span class="prev"></span>
                 <span class="next"></span>
                 <button class="home">
-                    <a href="./index.html" class="home">
-                        <img src="/imagens/btn_home.png" alt="Home">
+                    <a href="./index.php" class="home">
+                        <img src="./imagens/btn_home.png" alt="Home">
                     </a>
                 </button>
             </div>
         </div>
          
-        <script src="/js/cardsDestinos.js"></script>
+        <script src="./js/cardsDestinos.js"></script>
     </body>
 
 </html>
