@@ -19,7 +19,7 @@
 
         <div class="container">
             <div class="slider">
-                    <div class="slides" style="--img: url('/imagens/igrejas/i1.jpg')">                        
+                    <div class="slides" style="--img: url('../imagens/igrejas/i1.jpg')">                        
                         <div class="content">
                             <h2>Igreja de São Francisco</h2>
                                 <p>
@@ -27,7 +27,7 @@
                                 </p>
                         </div>                                    
                     </div>
-                <div class="slides" style="--img: url('/imagens/igrejas/i2.jpg')">
+                <div class="slides" style="--img: url('../imagens/igrejas/i2.jpg')">
                     <div class="content">
                         <h2>Mosteiro de São Bento</h2>
                         <p>
@@ -35,7 +35,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/igrejas/i3.jpg')">
+                <div class="slides" style="--img: url('../imagens/igrejas/i3.jpg')">
                     <div class="content">
                         <h2>Igreja de Nossa Senhora do Carmo</h2>
                         <p>
@@ -43,7 +43,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/igrejas/i4.jpg')">
+                <div class="slides" style="--img: url('../imagens/igrejas/i4.jpg')">
                     <div class="content">
                         <h2>Igreja de São Frei Pedro Gonçalves</h2>
                         <p>
@@ -51,7 +51,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slides" style="--img: url('/imagens/igrejas/i5.jpg')">
+                <div class="slides" style="--img: url('../imagens/igrejas/i5.jpg')">
                     <div class="content">
                         <h2>Igreja de Nossa Senhora da Misericórdia</h2>
                         <p>
@@ -64,14 +64,14 @@
                 <span class="prev"></span>
                 <span class="next"></span>
                 <button class="home">
-                    <a href="./index.html" class="home">
+                    <a href="./index.php" class="home">
                         <img src="./imagens/btn_home.png" alt="Home">
                     </a>
                 </button>
             </div>
         </div>
          
-        <script src="/js/cardsDestinos.js"></script>
+        <script src="./js/cardsDestinos.js"></script>
     </body>
 
 </html>

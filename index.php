@@ -51,7 +51,7 @@
     <!-- Cards com opções de passeios -->    
     <div class="card-container">
         <div class="card">
-            <a style="text-decoration: none;" href="./praias.html">
+            <a style="text-decoration: none;" href="./praias.php">
                 <img src="./imagens/10.webp" alt="Imagem de Praia">
                 <h1>Praias</h1>
                 <p>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="card">
-            <a style="text-decoration: none;" href="./monumentos.html">
+            <a style="text-decoration: none;" href="./monumentos.php">
                 <img src="./imagens/monumentos.jpg" alt="Centro Histórico João Pessoa-PB">
                 <h1>Monumentos Históricos</h1>
                 <p>
@@ -79,7 +79,7 @@
             </a>
         </div>
         <div class="card">
-            <a style="text-decoration: none;" href="./igrejas.html">
+            <a style="text-decoration: none;" href="./igrejas.php">
                 <img src="./imagens/igrejas.jpg" alt="Imagem de Praia">
                 <h1>Igrejas</h1>
                 <p>
@@ -88,7 +88,7 @@
             </a>
         </div>
         <div class="card">
-            <a style="text-decoration: none;" href="./artesanato.html">
+            <a style="text-decoration: none;" href="./artesanato.php">
                 <img src="./imagens/artesanato.jpg" alt="Imagem de Praia">
                 <h1>Artesanatos</h1>
                 <p>
