@@ -23,9 +23,9 @@
         <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
             <a href="#">Home</a>
-            <a href="./quemsomos.html">Quem somos</a>
-            <a href="./index.html#nossosContatos">Contatos</a>
-            <a href="./login.html">Login / Cadastro</a>
+            <a href="./quemsomos.php">Quem somos</a>
+            <a href="./index.php#nossosContatos">Contatos</a>
+            <a href="./login.php">Login / Cadastro</a>
         </nav>   
     </header>
 
@@ -138,7 +138,7 @@
 
 
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
 

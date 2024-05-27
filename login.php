@@ -30,7 +30,7 @@
             <button type="submit" class="btn">Login</button>
 
             <div class="register-link">
-                <p>Ainda não é registrado?<a href="http://localhost/sou_do_litoral/cadastro.php"> Cadastre-se!</a></p>
+                <p>Ainda não é registrado?<a href="./cadastro.php"> Cadastre-se!</a></p>
             </div>
         </form>
 

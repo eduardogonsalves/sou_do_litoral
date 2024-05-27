@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="corpo">
-        <form action="cadastro_POST.php" method="POST" class="cadastro" id="form">
+        <form novalidate action="cadastro_POST.php" method="POST" class="cadastro" id="form">
             <label for="userName">Nome <span class="info-icon" title="Campo obrigatório">🛈</span></label>
             <input type="text" name="userName" id="userName" placeholder="Nome" required>
             <div class="error-message" id="erroNome"></div>

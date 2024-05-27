@@ -32,7 +32,7 @@ var li = document.createElement("li");
     li.textContent = destino;
     li.addEventListener("click", function() {
 var destinoFormatado = destino.toLowerCase().replace(" ", "-");
-    window.location.href = "./cabobranco.html?destino=" + destinoFormatado;
+    window.location.href = "./cabobranco.php?destino=" + destinoFormatado;
     });
     listaSuspensa.appendChild(li);
     });
