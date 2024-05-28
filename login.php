@@ -12,15 +12,17 @@
 <body>
    
     <div class="login">
-        <form action="">
+        <form novalidate action="login_POST.php" method="POST">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="nome" required>
                 <i class='bx bxs-user'></i>
+                <div class="error-message" id="erroNome"></div>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="senha" required>
+                <input type="password" id="senha" name="senha" placeholder="senha" required>
                 <i class='bx bxs-lock-alt'></i>
+                <div class="error-message" id="erroSenha"></div>
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox">Lembrar senha</label>
@@ -33,9 +35,39 @@
                 <p>Ainda não é registrado?<a href="./cadastro.php"> Cadastre-se!</a></p>
             </div>
         </form>
-
-
     </div>
+    <Script>
+        document.getElementById('nome').addEventListener('submit', function (e) {
+            let hasError = false;
+
+            document.querySelectorAll('.error-message').forEach(function (msg) {
+                msg.textContent = '';
+            });
+            
+            const nome = document.getElementById('nome').value;
+            if (!isset(nome)) {
+                document.getElementById('erroNome').textContent = "Digite o nome de usuário";
+                hasError = true;
+            }
+
+            const senha = document.getElementById('senha').value;
+            if (senha.length < 6) {
+                document.getElementById('erroSenha').textContent = "Por favor, insira uma senha com pelo menos 06 dígitos";
+                hasError = true;
+            }
+
+            if (hasError) {
+                e.preventDefault();
+            }
+
+
+        });
+
+
+
+
+
+    </Script>
 
 
 
