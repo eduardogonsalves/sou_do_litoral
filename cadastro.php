@@ -72,7 +72,7 @@
             }
 
             const cell = document.getElementById('cell').value;
-            if (!/^\d{2}-\d{5}-\d{4}$/.test(cell)) {
+            if (!/^\d{2}\d{5}\d{4}$/.test(cell)) {
                 document.getElementById('erroCell').textContent = "Insira um número de telefone válido no formato 99-99999-9999";
                 hasError = true;
             }

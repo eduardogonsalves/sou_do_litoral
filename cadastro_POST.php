@@ -1,4 +1,6 @@
 <!--SoliDeoGloria-->
+
+<!--Incluir caracteres especias aos nomes de usuários-->
 <?php
 
     require('./bandoDeDados/config.php');
@@ -37,7 +39,7 @@
         // Validação de telefone
         if (empty($cell)) {
             $erroCell = "Favor informar um número de celular";
-        } elseif (!preg_match("/^\d{2}-\d{5}-\d{4}$/", $cell)) {
+        } elseif (!preg_match("/^\d{2}\d{5}\d{4}$/", $cell)) {
             $erroCell = "Insira um número de telefone válido no formato 99-99999-9999";
         }
 
@@ -56,16 +58,12 @@
         }
 
         if ($erroConfirma == "Nenhum" && $erroSenha == "Nenhum" && $erroCell == "Nenhum" && $erroSobrenome == "Nenhum" && $erroEmail == "Nenhum" && $erroNome == "Nenhum") {
-            
-            $sql = $pdo->prepare("INSERT INTO usuario VALUES(null, ?, ?, ?, ?, ?)");
-            $sql = execute(array($nome, $sobrenome, ))
-            
-            
-            
-            
-            
-            echo "<script>alert('Cadastro enviado com sucesso! $nome $sobrenome, você será redirecionado à página inicial.');
-            window.location.href = './index.php';</script>";
-        }
+            echo"<script>alert('Cadastro enviado com sucesso! $nome $sobrenome, você será redirecionado à página inicial.'); window.location.href = 'index.php';</script>";//Não está redirecionando, mas alimenta o banco
+        };
+
+        $sql = $pdo->prepare("INSERT INTO usuario VALUES(null, ?, ?, ?, ?, ?)");
+        $sql -> execute(array($nome, $sobrenome, $email, $cell, $senha));
+
+       
     }
 ?>
