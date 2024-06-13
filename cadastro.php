@@ -18,7 +18,7 @@
     <div class="corpo">
         <form novalidate action="cadastro_POST.php" method="POST" class="cadastro" id="form">
             <label for="userName">Nome <span class="info-icon" title="Campo obrigatório">🛈</span></label>
-            <input type="text" name="userName" id="userName" placeholder="Nome" required>
+            <input type="text" name="userName" id="userName" placeholder="Nome" >
             <div class="error-message" id="erroNome"></div>
 
             <label for="sobrenome">Sobrenome</label>
@@ -26,11 +26,11 @@
             <div class="error-message" id="erroSobrenome"></div>
 
             <label for="email">Email <span class="info-icon" title="Campo obrigatório">🛈</span></label>
-            <input type="email" name="email" id="email" placeholder="seu_melhor_email@" required>
+            <input type="email" name="email" id="email" placeholder="seu_melhor_email@" >
             <div class="error-message" id="erroEmail"></div>
 
             <label for="cell">Telefone + DDD <span class="info-icon" title="Campo obrigatório">🛈</span></label>
-            <input type="text" name="cell" id="cell" placeholder="99-99999-9999" required>
+            <input type="text" name="cell" id="cell" placeholder="99-99999-9999" >
             <div class="error-message" id="erroCell"></div>
 
             <label for="password">Senha</label>
@@ -90,6 +90,7 @@
             }
 
             if (hasError) {
+                console.log("Validação no cliente falhou");
                 e.preventDefault();
             }
         });

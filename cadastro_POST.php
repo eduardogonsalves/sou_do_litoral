@@ -1,8 +1,8 @@
 <!--SoliDeoGloria-->
 
 <!--Incluir caracteres especias aos nomes de usuários-->
-<?php
 
+<?php
     require('./bandoDeDados/config.php');
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -10,10 +10,10 @@
         $sobrenome = $_POST['sobrenome'];
         $email = $_POST['email'];
         $cell = $_POST['cell'];
-        $senha = md5($_POST['password']);
+        $senha = $_POST['password'];
         $confirmar = $_POST['confirmar'];
 
-        $erroNome = $erroSobrenome = $erroEmail = $erroCell = $erroSenha = $erroConfirma = "Nenhum";
+        $erroNome = $erroSobrenome = $erroEmail = $erroCell = $erroSenha = $erroConfirma = false;
 
         // Validação de nome
         if (empty($nome)) {
@@ -57,13 +57,16 @@
             $erroConfirma = "As senhas precisam ser iguais.";
         }
 
-        if ($erroConfirma == "Nenhum" && $erroSenha == "Nenhum" && $erroCell == "Nenhum" && $erroSobrenome == "Nenhum" && $erroEmail == "Nenhum" && $erroNome == "Nenhum") {
-            echo"<script>alert('Cadastro enviado com sucesso! $nome $sobrenome, você será redirecionado à página inicial.'); window.location.href = 'index.php';</script>";//Não está redirecionando, mas alimenta o banco
-        };
+        if (!$erroConfirma && !$erroSenha && !$erroCell && !$erroSobrenome && !$erroEmail && !$erroNome) {
+            $senhaHash = password_hash($senha, PASSWORD_DEFAULT); // Hash seguro da senha
+            $sql = $pdo->prepare("INSERT INTO usuario VALUES (null, ?, ?, ?, ?, ?)");
+            $sql->execute(array($nome, $sobrenome, $email, $cell, $senhaHash));            
 
-        $sql = $pdo->prepare("INSERT INTO usuario VALUES(null, ?, ?, ?, ?, ?)");
-        $sql -> execute(array($nome, $sobrenome, $email, $cell, $senha));
-
-       
+            // Redirecionar após a inserção
+            header('Location: index.php');
+            exit();
+        } else{
+            echo"ERRO - Tente realizar o cadastro novamente.";
+        }
     }
 ?>
