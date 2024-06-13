@@ -1,6 +1,14 @@
+<!--SoliDeoGloria-->
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--SoliDeoGloria-->
+
+<!--
+    Trabalho a realizar nesta página:
+        - ajustar a disposição dos cards(inclusive colocar em percentual da página(CSS));
+        - Acrescenta ícones de redes sociais ao rodapé(footer);
+        - acrescentar notícias relevantes: Praias impróprias para banhos e outras.
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

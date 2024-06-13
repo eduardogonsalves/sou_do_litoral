@@ -1,6 +1,10 @@
+<!--SoliDeoGloria-->
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--SoliDeoGloria-->
+
+<!--Conexão com Banco de Dados-->
+<?php require('./bandoDeDados/config.php') ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
