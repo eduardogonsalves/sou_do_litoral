@@ -157,10 +157,7 @@
                         Endereço: Avenida Hilton Souto Maior, 1100 - Mangabeira <br>
 
                         <strong>Shopping Sul</strong> <br>
-                        Endereço: Avenida Ayrton Senna da Silva, 3233 - Bairro dos Bancários <br>
-
-                        <strong>Shopping Tambiá</strong> <br>
-                        Endereço: Rua Almeida Barreto, 181 - Tambiá <br>
+                        Endereço: Avenida Ayrton Senna da Silva, 3233 - Bairro dos Bancários <br>                        
 
                         <strong>Shopping Pátio Altiplano</strong> <br>
                         Endereço: Avenida João Cirilo Silva, 155 - Altiplano Cabo Branco <br>
@@ -170,6 +167,9 @@
 
                         <strong>Parahyba Mall</strong> <br>
                         R. Bacharel José de Oliveira Curchatuz, 542 - Jardim Oceania <br>
+
+                        <strong>Shopping Tambiá</strong> <br>
+                        Endereço: Rua Almeida Barreto, 181 - Tambiá <br>
                     </p>
             </div>
             <div class="cambio">

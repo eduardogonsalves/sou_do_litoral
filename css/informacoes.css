@@ -49,7 +49,6 @@ margin-left: 2.5rem;
 
 }
 
-
 /* Título */
 
 .title{
@@ -62,8 +61,7 @@ margin-left: 2.5rem;
 }
 
 .telefones{
-    margin-top: 40px;
-    margin: auto;
+    margin: 40px 5px 40px 20px;
     padding-top: 15px;
     padding-left: 20px;
     font-size: 25px;
@@ -73,6 +71,7 @@ margin-left: 2.5rem;
     height: 1600px;
     background-size: cover;
     background-position: center;
+
     max-width: 98%;
     border-radius: 15px;
 }
@@ -84,8 +83,7 @@ margin-left: 2.5rem;
 }
 
 .tensao{
-    margin-top: 40px;
-    margin: auto;
+    margin: 40px 5px 40px 20px;
     padding-top: 15px;
     padding-left: 20px;
     font-size: 25px;
@@ -98,4 +96,109 @@ margin-left: 2.5rem;
     max-width: 98%;
     border-radius: 15px;
     
+}
+
+.informacoes{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/informacoes.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.seguranca{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/seguranca.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.transportes{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/transporte.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.saude{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/saude.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.tempo{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/tempo.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.shoppings{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/shopping.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.cambio{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/cambio.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
 }
