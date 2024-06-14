@@ -1,0 +1,101 @@
+/* SoliDeoGloria */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url('../imagens/top.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+/* Barra de Menus */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a {
+font-size: 1.15rem;
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+margin-left: 2.5rem;
+}
+
+/* Conteúdo da página */
+
+.container{
+
+    margin-top: 100px;
+
+}
+
+
+/* Título */
+
+.title{
+
+    font-size: 40px;
+    color: rgb(29, 101, 107);
+    justify-content: center;
+    text-align: center;
+
+}
+
+.telefones{
+    margin-top: 40px;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/telefone.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.telefones-h2{
+    text-align:right;
+    justify-content: center;
+    text-align:center;
+}
+
+.tensao{
+    margin-top: 40px;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/tensao.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+    
+}
