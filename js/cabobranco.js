@@ -1,6 +1,59 @@
 // SoliDeoGloria
 
-// Configuração inicial do mapa
+// Slides (carrossel de imagens)
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.querySelectorAll('.slide');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = 'block';  
+    setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
+}
+
+// Configurações da Previsão do Tempo - Coluna da Direita
+
+const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather 
+
+const city = 'João Pessoa';  // Colocar a cidade de acordo com o destino (João Pessoa, Conde, Cabedelo...)
+
+function fetchWeatherData() {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`;
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Erro HTTP! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const location = document.getElementById('location');
+            const temperature = document.getElementById('temperature');
+            const description = document.getElementById('description');
+            const icon = document.getElementById('icon');
+
+            location.textContent = `${data.name}, ${data.sys.country}`;
+            temperature.textContent = `Temperatura: ${data.main.temp} °C`;
+            description.textContent = data.weather[0].description;
+            icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Icone do tempo">`;
+        })
+        .catch(error => {
+            console.error('Erro ao buscar dados da API:', error);
+            alert('Erro ao buscar dados da API: ' + error.message);
+        });
+}
+
+// Chama a função para buscar e exibir os dados meteorológicos
+fetchWeatherData();
+
+
+
+// Configuração do Mapa - Coluna Central
 var map = L.map('map').setView([-7.1266, -34.8254], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -9,6 +62,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Marcadores para Restaurantes
+
 var data = {
     restaurantes: [
         {lat: -7.145781, lng: -34.804317, name:'Gulliver Mar Restaurante'},
@@ -32,6 +86,7 @@ var data = {
     ],
 
     // Marcadores para Postos de Saúde
+
     saude: [
         {lat: -7.143929, lng: -34.817023, name: 'USF Cidade Recreio'},
         {lat: -7.136031, lng: -34.827701, name: 'USF - Altiplano I E II'},
@@ -42,6 +97,7 @@ var data = {
     ],
 
     // Marcadores para Postos Policiais
+
     policia: [
         {lat: -7.133229, lng: -34.830254, name: 'PM - CEATur'},
         {lat: -7.113698, lng: -34.829431, name: 'Delegacia Distrital de Tambaú'},
@@ -53,6 +109,7 @@ var data = {
 var markers = [];
 
 // Função para mostrar marcadores de uma categoria específica
+
 function showMarkers(category) {
     // Remover todos os marcadores existentes
     markers.forEach(function(marker) {
@@ -71,18 +128,3 @@ function showMarkers(category) {
 
 // Exibir marcadores da primeira categoria por padrão
 showMarkers('restaurantes');
-
-// Função para mostrar os slides (carrossel de imagens)
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let slides = document.querySelectorAll('.slide');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = 'block';  
-    setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
-}

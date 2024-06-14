@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabo Branco</title>
-  <link rel="stylesheet" href="css/cabobranco.css">
+  <link rel="stylesheet" href="./css/cabobranco.css"><!--Referência do CSS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
 
     <!-- Barra de Menu -->
     <header class="header">
-        <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+        <img src="./imagens/logo/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
-            <a href="./index.php">Home</a>
-            <a href="./quemsomos.php">Quem somos</a>
-            <a href="./index.php#nossosContatos">Contatos</a>
-            <a href="./login.php">Login / Cadastro</a>
+            <a href="./index.html">Home</a>
+            <a href="./quemsomos.html">Quem somos</a>
+            <a href="./index.html#nossosContatos">Contatos</a>
+            <a href="./login.html">Login / Cadastro</a>
         </nav>   
     </header>
 
@@ -37,16 +37,18 @@
     <!-- Carrossel de imagens -->
     <section class="carousel">
         <div class="carousel-container">
-            <div class="slide"><img src="./imagens/cb1.webp" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/cb2.jpg" alt="Cabo BrancoImagem 2"></div>
-            <div class="slide"><img src="./imagens/cb3.jpg" alt="Cabo Branco 3"></div>
-            <div class="slide"><img src="./imagens/cb4.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/cb5.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/cb6.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/cb7.jpg" alt="Cabo Branco"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb1.webp" alt="Cabo Branco"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb12.webp" alt="Cabo BrancoImagem 2"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb8.webp" alt="Cabo Branco 3"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb9.jpg" alt="Cabo Branco"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb5.jpg" alt="Cabo Branco"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb6.jpg" alt="Cabo Branco"></div>
+            <div class="slide"><img src="./imagens/caboBranco/cb11.jpg" alt="Cabo Branco"></div>
         </div>
     </section>
-    
+
+    <!-- Texto descritivo do Destino -->
+
     <section class="descricao">
         <div class="text">
             <h2>Praia de Cabo Branco: O Encontro do Mar e da Cidade</h2>
@@ -67,110 +69,115 @@
         </div>
     </section>
     
-
-  <section class="content">
-    <div class="left-column">
-        <!-- Informações das tábuas de maré aqui -->
-        <div class="tabuas">
-            <h2>Tábua de Maré</h2>
-            <h4>Quarta 8/5/24</h4>
-            <p>    
-                04:13 - 2.6m<br>
-                10:21 - 0.1m<br>
-                16:39 - 2.5m<br>
-                22:39 - 0.2m
-            </p>
-            <h4>Quarta 9/5/24</h4>
-            <p>
-                04:58 - 2.5m<br>
-                11:06 - 0.1m<br>
-                17:23 - 2.4m<br>
-                23:21 - 0.3m
-            </p>
-            <h4>Quinta 10/5/24</h4>
-            <p>
-                05:39 - 2.5m<br>
-                11:53 - 0.2m<br>
-                18:08 - 2.3m
-            </p>
-            <h4>Sexta 11/5/24</h4>
-            <p>
-                00:02 - 0.5m<br>
-                06:21 - 2.3m<br>
-                12:39 - 0.4m<br>
-                18:54 - 2.1m
-            </p>
+    <section class="content">
+        <div class="left-column">
+            <!-- Informações das tábuas de maré aqui -->
+            <div class="tabuas">
+                <h2>Tábua de Maré</h2>
+                <h4>Quarta 8/5/24</h4>
+                <p>    
+                    04:13 - 2.6m<br>
+                    10:21 - 0.1m<br>
+                    16:39 - 2.5m<br>
+                    22:39 - 0.2m
+                </p>
+                <h4>Quarta 9/5/24</h4>
+                <p>
+                    04:58 - 2.5m<br>
+                    11:06 - 0.1m<br>
+                    17:23 - 2.4m<br>
+                    23:21 - 0.3m
+                </p>
+                <h4>Quinta 10/5/24</h4>
+                <p>
+                    05:39 - 2.5m<br>
+                    11:53 - 0.2m<br>
+                    18:08 - 2.3m
+                </p>
+                <h4>Sexta 11/5/24</h4>
+                <p>
+                    00:02 - 0.5m<br>
+                    06:21 - 2.3m<br>
+                    12:39 - 0.4m<br>
+                    18:54 - 2.1m
+                </p>
+            </div>
         </div>
-    </div>
 
-    <!-- Mapa do Destino -->
-    <div class="center-column">
-        <div id="map"></div>
-        <div class="map-buttons">
-            <button class="btnsmaps" onclick="showMarkers('restaurantes')">Restaurantes</button>
-            <button class="btnsmaps" onclick="showMarkers('saude')">Unidades de Saúde Próximas</button>
-            <button class="btnsmaps" onclick="showMarkers('policia')">Polícia Mais Próxima</button>
+        <!-- Mapa do Destino -->
+        <div class="center-column">
+            <div id="map"></div>
+            <div class="map-buttons">
+                <button class="btnsmaps" onclick="showMarkers('restaurantes')">Restaurantes</button>
+                <button class="btnsmaps" onclick="showMarkers('saude')">Unidades de Saúde Próximas</button>
+                <button class="btnsmaps" onclick="showMarkers('policia')">Polícia Mais Próxima</button>
+            </div>
         </div>
-    </div>
 
-    <div class="right-column">
-        <!-- Previsão do tempo aqui -->
-        <img src="./imagens/tempo.png" alt="Previsão do tempo" width="220px" height="450px">
-    </div>
-</section>
-
-
-  <section class="calendar">
-    <!-- Calendário e descrição aqui -->
-  </section>
+        <div class="right-column">
+            <!-- Previsão do tempo aqui -->
+            <div id="weather">
+                <h2>Previsão do Tempo</h2>
+                <div id="location"></div>
+                <div id="temperature"></div>
+                <div id="description"></div>
+                <div id="icon"></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="calendar">
+        <!-- Calendário e descrição aqui -->
+    </section>
 
     <!-- Cards de vídeos do YouTube -->
-<section class="videos">
-    <h2>Galeria de Vídeos</h2>
-    <div class="video-cards">
-        <div class="video-card">
-            <iframe src="https://www.youtube-nocookie.com/embed/fE9XYai51VY?si=53WP19du0wwms0-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/v5rRm6DOHzg?si=zHDv_kkRe6RZSqZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/cvaWef0O-z0?si=UNzL98lNIba4QAYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/wQ3FxpNIW9U?si=3ysctNOFMfUr_c43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- Rodapé -->
-<footer>
-    <div class="footer-content">
-        <div class="btn-topo">
-            <a href="./cabobranco.php#top">Topo</a>
-        </div>
-        <div id="nossosContatos" class="footer-columns">
-            <div class="column">
-                <h3>Sou do Litoral</h3>
-                <p>Developed by Group 3 - Senac</p>
+    <section class="videos">
+        <h2>Galeria de Vídeos</h2>
+        <div class="video-cards">
+            <div class="video-card">
+                <iframe src="https://www.youtube-nocookie.com/embed/fE9XYai51VY?si=53WP19du0wwms0-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="column">
-                <h3>Endereço</h3>
-                <p>Av. Dom Pedro I, Centro. João Pessoa-PB</p>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/v5rRm6DOHzg?si=zHDv_kkRe6RZSqZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="column">
-                <h3>Contatos</h3>
-                <p>3548-9886</p>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/cvaWef0O-z0?si=UNzL98lNIba4QAYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/wQ3FxpNIW9U?si=3ysctNOFMfUr_c43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
 
 
-  <script src="./js/cabobranco.js"></script>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="btn-topo">
+                <a href="./cabobranco.html#top">Topo</a>
+            </div>
+            <div id="nossosContatos" class="footer-columns">
+                <div class="column">
+                    <h3>Sou do Litoral</h3>
+                    <p>Developed by Group 3 - Senac</p>
+                </div>
+                <div class="column">
+                    <h3>Endereço</h3>
+                    <p>Av. Dom Pedro I, Centro. João Pessoa-PB</p>
+                </div>
+                <div class="column">
+                    <h3>Contatos</h3>
+                    <p>3548-9886</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/cabobranco.js"></script>
 </body>
 </html>
