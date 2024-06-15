@@ -23,15 +23,16 @@
     <header class="header">
         <img src="./imagens/logo/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
-            <a href="./index.html">Home</a>
-            <a href="./quemsomos.html">Quem somos</a>
-            <a href="./index.html#nossosContatos">Contatos</a>
-            <a href="./login.html">Login / Cadastro</a>
+            <a href="./index.php">Home</a>
+            <a href="./quemsomos.php">Quem somos</a>
+            <a href="./index.php#nossosContatos">Contatos</a>
+            <a href="./login.php">Login / Cadastro</a>
+            <a href="./informacoes.php">Informações</a>
         </nav>   
     </header>
 
     <div class="title">
-        <h1 id="top">Cabo Branco</h1>
+        <h1 id="top">Praia de Cabo Branco</h1>
     </div>
     
     <!-- Carrossel de imagens -->
@@ -51,31 +52,49 @@
 
     <section class="descricao">
         <div class="text">
-            <h2>Praia de Cabo Branco: O Encontro do Mar e da Cidade</h2><br>
+            <h2>O Encontro da Cidade e o Mar</h2><br>
             <div class="apresentacao">
                 <div class="apre">            
-                <h3>Localização e Acesso</h3>
-                <p> Cabo Branco é uma extensão de areia dourada que se estende ao 
-                    longo da costa leste de João Pessoa, a capital do estado da Paraíba, 
-                    no nordeste do Brasil. Faz parte da região conhecida como 
-                    "Ponta do Seixas", considerada o ponto mais oriental das Américas. 
-                    Seu acesso é fácil, com várias vias de acesso a partir do centro da cidade.
-                </p><br>
+                    <h3>Localização e Acesso</h3>
+                    <p> Cabo Branco é uma extensão de areia dourada que se estende ao 
+                        longo da costa leste de João Pessoa, a capital do estado da Paraíba, 
+                        no nordeste do Brasil. Faz parte da região conhecida como 
+                        "Ponta do Seixas", considerada o ponto mais oriental das Américas. 
+                        Seu acesso é fácil, com várias vias de acesso a partir do centro da cidade.
+                    </p><br>
                 </div>
             </div>
-
-            <h3>Beleza Natural</h3>
-            <p>Cabo Branco é conhecida por sua beleza natural singular. Suas águas tranquilas e cristalinas em tons de azul e verde convidam os visitantes a mergulhar e relaxar. A extensa faixa de areia macia é perfeita para longas caminhadas à beira-mar ou para simplesmente estender uma toalha e aproveitar o sol.</p>
-            <h3>Farol do Cabo Branco</h3>
-            <p>Um dos pontos de destaque da praia é o Farol do Cabo Branco, um monumento arquitetônico projetado pelo renomado arquiteto brasileiro Oscar Niemeyer. Localizado no ponto mais oriental das Américas, o farol oferece uma vista deslumbrante do oceano Atlântico e é um local popular para apreciar o pôr do sol espetacular.</p>
-            <h3>Atividades e Entretenimento</h3>
-            <p>Além de ser um local perfeito para relaxar e desfrutar da natureza, Cabo Branco também oferece uma variedade de atividades e entretenimento. Visitantes podem praticar esportes aquáticos como surf, stand-up paddle e kitesurf, ou simplesmente saborear deliciosos petiscos e bebidas em quiosques à beira-mar.</p>
-            <h3>Cultura e Gastronomia</h3>
-            <p>A área ao redor da Praia de Cabo Branco é repleta de cultura e gastronomia paraibanos. Restaurantes locais oferecem uma variedade de pratos tradicionais, destacando-se a deliciosa culinária nordestina, com suas influências indígenas, africanas e europeias.</p>
-            <h3>Vida Noturna</h3>
-            <p>À noite, Cabo Branco ganha vida com uma animada cena noturna. Bares e restaurantes à beira-mar oferecem música ao vivo e uma atmosfera descontraída, perfeita para socializar com amigos ou simplesmente apreciar a brisa do mar sob as estrelas.</p>
-            <h3>Conclusão</h3>
-            <p>A Praia de Cabo Branco é muito mais do que uma simples extensão de areia e mar. É um destino que encanta os visitantes com sua beleza natural, cultura vibrante e hospitalidade calorosa. Seja para relaxar à beira-mar, explorar a região ou simplesmente contemplar a paisagem, Cabo Branco oferece uma experiência inesquecível para todos que a visitam.</p>
+            <div class="roteiro">
+                <div class="rota">
+                    <h3>O que você vai encontrar</h3>
+                    <P>
+                        Cabo Branco é famosa por sua beleza natural, com águas cristalinas em tons de azul e verde, 
+                        perfeitas para mergulho e relaxamento. A faixa de areia macia convida a caminhadas à 
+                        beira-mar e banhos de sol.                        
+                    </P>
+                    <P>
+                        O Farol do Cabo Branco, projetado por Oscar Niemeyer, é um destaque. Localizado no ponto 
+                        mais oriental das Américas, oferece vistas deslumbrantes do Atlântico e é ideal para 
+                        apreciar o pôr do sol.                        
+                    </P>
+                    <P>
+                        Cabo Branco oferece diversas atividades e entretenimento, como surf, stand-up paddle e kitesurf, 
+                        além de quiosques que servem petiscos e bebidas.
+                    </P>
+                    <P>
+                        A área é rica em cultura e gastronomia paraibana, com restaurantes que oferecem pratos tradicionais 
+                        nordestinos influenciados por culturas indígenas, africanas e europeias.
+                    </P>
+                    <P>
+                        À noite, Cabo Branco tem uma animada cena noturna, com bares e restaurantes à beira-mar que 
+                        oferecem música ao vivo e uma atmosfera descontraída.
+                    </P>
+                    <P>
+                        A Praia de Cabo Branco encanta com sua beleza natural, cultura vibrante e hospitalidade. 
+                        Seja para relaxar, explorar ou contemplar a paisagem, Cabo Branco proporciona uma experiência inesquecível.
+                    </P>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -167,7 +186,7 @@
     <footer>
         <div class="footer-content">
             <div class="btn-topo">
-                <a href="./cabobranco.html#top">Topo</a>
+                <a href="./cabobranco.php#top">Topo</a>
             </div>
             <div id="nossosContatos" class="footer-columns">
                 <div class="column">

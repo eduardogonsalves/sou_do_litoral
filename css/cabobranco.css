@@ -33,6 +33,7 @@
      font-weight: 700;
      margin-left: 1.2rem;
      margin-right: 40px;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
      }
  
  /* Título da página */
@@ -96,25 +97,15 @@
      margin: 20px 0;
  }
  
-/* 
- .descricao h2, .descricao h3 {
-     text-align: center;
-     color: #fff;
-     margin-bottom: 20px;
- }
- 
- .descricao p {
-     margin-bottom: 15px;
-     line-height: 1.6;
- }
- 
- */
+.text h2{
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+}
 .apresentacao{
     margin: 40px 5px 40px 20px;
     padding-top: 15px;
     padding-left: 20px;
-    font-size: 25px;
-    color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/caboBranco/localizacao.jpg') no-repeat;
     height: 600px;
@@ -125,12 +116,49 @@
 }
 
 .apre{
+    margin: 90px 400px;
     font-size: 30px;
-    margin: 100px 200;
+    font-weight: 600;
     width: 900px;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(52, 72, 108);
+    border-radius: 10px;
+    padding: 25px 15px;
+}
+
+.apre h3{
+    font-size: 30px;
+    color: rgb(52, 72, 108);
+}
+
+
+.roteiro{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    justify-content: right;
+    background: url('../imagens/caboBranco/roteiro.jpg') no-repeat;
+    height: 1600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.rota{
+    margin: 250px 400px;
+    font-size: 30px;
+    font-weight: 600;
+    width: 900px;
+    background-color: transparent;
+    border: 0.4px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
@@ -141,6 +169,11 @@
     padding: 25px 15px;
 }
 
+.rota h3{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
 
 
 /* Colunas - Mapa central */

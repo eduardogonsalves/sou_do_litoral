@@ -17,10 +17,11 @@
             <header class="header">
                 <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
                 <nav class="navbar">
-                    <a href="#">Home</a>
+                    <a href="./index.php">Home</a>
                     <a href="./quemsomos.php">Quem somos</a>
                     <a href="./index.php#nossosContatos">Contatos</a>
                     <a href="./login.php">Login / Cadastro</a>
+                    <a href="#">Informações</a>
                 </nav>   
             </header>
             <div class="container">
@@ -70,12 +71,15 @@
                 <div class="info">
                     <h2>Pontos de Informação Turística</h2><br> 
 
-                        <p> 
-                            <strong>Prefeitura Municipal de João Pessoa</strong> <br>
-                            <a style="text-decoration: none; color:white" href="https://www.joaopessoa.pb.gov.br/secretaria/setur/">Secretaria de Turismo</a> <br>
-                            Endereço: Rua Diogo Velho, 150, Centro, CEP: 58013-110 <br>
-                            Telefone: +55 83 98161-3545 <br><br>
-                        </p>
+                        <a style="text-decoration: none; color:white" href="https://www.joaopessoa.pb.gov.br/secretaria/setur/" target="_blank">
+                            <p> 
+                                <strong>Prefeitura Municipal de João Pessoa</strong> <br>
+                                Secretaria de Turismo<br>
+                                Endereço: Rua Diogo Velho, 150, Centro, CEP: 58013-110 <br>
+                                Telefone: +55 83 98161-3545 <br><br>
+                            </p>
+                        </a>
+
                         <p>
                             <strong>Centro de Atendimento ao Turista</strong> <br>
                             Localização: Av. Almirante Tamandaré, 100 - Tambaú, CEP: 58.023-500 <br>
@@ -110,12 +114,12 @@
                 <h2>Transportes</h2><br>
                     <p>
                         <strong>Aeroporto Castro Pinto</strong> <br>
-                        Endereço: Aeroporto, S/N, Bayeux-PB <br>
+                        Aeroporto, S/N, Bayeux-PB <br>
                         Telefone: (83) 3041 4200 <br><br>
                     </p>
                     <p>
                         <strong>Rodoviária</strong> <br>
-                        Endereço: Rua Francisco Londres - Varadouro <br>
+                        Rua Francisco Londres - Varadouro <br>
                         Telefone: (83) 3222 6567 <br><br>
                     </p>
                     <p>

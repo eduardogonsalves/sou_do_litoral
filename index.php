@@ -34,6 +34,7 @@
             <a href="./quemsomos.php">Quem somos</a>
             <a href="./index.php#nossosContatos">Contatos</a>
             <a href="./login.php">Login / Cadastro</a>
+            <a href="./informacoes.php">Informações</a>
         </nav>   
     </header>
 
@@ -126,11 +127,51 @@
         </div>
     </div>
 
+    <main>
+        <section id="noticias">
+            <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                <a href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
+                    <div class="cardNew">
+                        <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
+                        <p>
+                            Os espaços públicos da Capital, mantidos pela Prefeitura de João Pessoa, fazem parte 
+                            da agenda dos pessoenses e turistas que visitam a cidade. O leque de opções vai desde 
+                            as praias aos parques - Zoobotânico Arruda Câmara e Solon de Lucena - e ainda o 
+                            Centro Histórico, locais que permitem a prática de atividades físicas, a interação 
+                            com o meio ambiente e também com a arte popular.
+                        </p>
+                    </div>
+                </a>
+                </div>
+                <div class="carousel-item">
+                <a href="https://www.joaopessoa.pb.gov.br/noticia/exemplo2" target="_blank">
+                    <div class="cardNew">
+                    <h2>João Pessoa é um dos destinos mais procurados</h2>
+                    <p>As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
+                        continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
+                        viagens nacionais em seu site e app. De acordo com o estudo, dos oito primeiros destinos mais buscados, 
+                        sete estão no Nordeste - o Rio de Janeiro é a exceção - e João Pessoa é o oitavo mais procurado para o período.</p>
+                    </div>
+                </a>
+                </div>
+                <!-- Adicione mais carousel-item conforme necessário -->
+            </div>
+            <button class="carousel-control-prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-control-next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
     <!-- Rodapé -->
 <footer>
     <div id="nossosContatos" class="footer-columns">
         <div class="column">
-            <h3>Sou do Litoral</h3>
+            <h3>© Sou do Litoral</h3>
             <p>Developed by Group 3 - Senac</p>
         </div>
         <div class="column">
@@ -143,6 +184,18 @@
         </div>
     </div>
 </footer>
+
+
+
+    <script>
+            let slideIndex = 0;
+
+            function moveSlide(n) {
+                const items = document.querySelectorAll('.carousel-item');
+                slideIndex = (slideIndex + n + items.length) % items.length;
+                document.querySelector('.carousel-inner').style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+    </script>
 
 
 

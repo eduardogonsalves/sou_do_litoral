@@ -39,6 +39,7 @@ color: #fff;
 text-decoration: none;
 font-weight: 700;
 margin-left: 2.5rem;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 /*  Campo Busca */
@@ -172,9 +173,10 @@ margin-left: 2.5rem;
 /* Galeria Interativa */
 
 .wrapper{
-    margin-left: 300px;
+    margin-left: 360px;
     margin-top: 300px;
-    margin-left: 270px;
+    margin-bottom: 50px;
+
 
 }
 
@@ -317,4 +319,75 @@ p {
     }
 }
 
+/* Notícias */
 
+main {
+    padding: 20px;
+  }
+  
+  /* Estilizando a seção de notícias */
+  #noticias {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Estilizando o carrossel */
+  .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cardNew {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .cardNew h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  .cardNew p {
+    color: #555;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  

@@ -20,6 +20,7 @@
             <a href="#">Quem somos</a>
             <a href="./index.php#nossosContatos">Contatos</a>
             <a href="./login.php">Login / Cadastro</a>
+            <a href="./informacoes.php">Informações</a>
         </nav>   
     </header>
     
