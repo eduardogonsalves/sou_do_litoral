@@ -51,9 +51,19 @@
 
     <section class="descricao">
         <div class="text">
-            <h2>Praia de Cabo Branco: O Encontro do Mar e da Cidade</h2>
-            <h3>Localização e Acesso</h3>
-            <p>Cabo Branco é uma extensão de areia dourada que se estende ao longo da costa leste de João Pessoa, a capital do estado da Paraíba, no nordeste do Brasil. Faz parte da região conhecida como "Ponta do Seixas", considerada o ponto mais oriental das Américas. Seu acesso é fácil, com várias vias de acesso a partir do centro da cidade.</p>
+            <h2>Praia de Cabo Branco: O Encontro do Mar e da Cidade</h2><br>
+            <div class="apresentacao">
+                <div class="apre">            
+                <h3>Localização e Acesso</h3>
+                <p> Cabo Branco é uma extensão de areia dourada que se estende ao 
+                    longo da costa leste de João Pessoa, a capital do estado da Paraíba, 
+                    no nordeste do Brasil. Faz parte da região conhecida como 
+                    "Ponta do Seixas", considerada o ponto mais oriental das Américas. 
+                    Seu acesso é fácil, com várias vias de acesso a partir do centro da cidade.
+                </p><br>
+                </div>
+            </div>
+
             <h3>Beleza Natural</h3>
             <p>Cabo Branco é conhecida por sua beleza natural singular. Suas águas tranquilas e cristalinas em tons de azul e verde convidam os visitantes a mergulhar e relaxar. A extensa faixa de areia macia é perfeita para longas caminhadas à beira-mar ou para simplesmente estender uma toalha e aproveitar o sol.</p>
             <h3>Farol do Cabo Branco</h3>
