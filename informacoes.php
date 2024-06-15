@@ -29,18 +29,24 @@
             </div>
             
             <div class="telefones">
-                <h2>Telefonia/Comunicação</h2>
+                <div class="tel">
+                <h2>Telefonia - Comunicação</h2>
                     <p>
                         Para ligações internacionais feitas para João Pessoa, <br>
                         discar 00 + 55 + 83 + número de telefone desejado.
-                    </p>
+                    </p><br><br>
 
                 <h2>Telefones Úteis</h2>
                     <p>
                         Bombeiros: 193 <br>
                         Ceatox: (83) 3224 6688 <br>
-                        Defesa Civil: 199 <br>
-                        Disque Denúncia (Exploração Infanto-Juvenil): 0800 2827969 ou 100 <br>
+                        Defesa Civil: 199 <br><br>
+                        Disque Denúncia (Exploração Infanto-Juvenil): <br>0800 2827969 ou 100 <br><br>
+
+                        <div style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);">
+                        Sindicato dos Guias de Turismo da Paraíba: <br>(83) 98855 9796 / 99946 7675 <br><br>
+                        
+                        Vigilância Sanitária: (83) 3214-7956 <br>
                         Polícia Civil: 197 <br>
                         Polícia Federal: 194 <br>
                         Polícia Militar: 190 <br>
@@ -48,135 +54,151 @@
                         Procon-JP: 0800 83 2015 <br>
                         Samu: 192 <br>
                         Semob: 118 <br>
-                        Sindicato dos Guias de Turismo da Paraíba: (83) 98855 9796 / 99946 7675 <br>
-                        Vigilância Sanitária: (83) 3214-7956 <br>
+                        </div>
                     </p>
+                </div>
             </div>
             <div class="tensao">
-                <h2>Voltagem</h2>
+                <div class="tens">
+                <h2>Tensão Elétrica</h2>
                 <p>
-                    A tensão utilizada em João Pessoa é de 220V, com tomadas de três pinos.
+                    A tensão utilizada em João Pessoa é de <i style="color: red">220V</i>, com tomadas de três pinos.
                 </p>
+                </div>
             </div>
             <div class="informacoes">
-                <h2>Pontos de Informação Turística</h2>
+                <div class="info">
+                    <h2>Pontos de Informação Turística</h2><br> 
 
-                    <p> 
-                        <strong>Prefeitura Municipal de João Pessoa</strong> <br>
-                        <a href="https://www.joaopessoa.pb.gov.br/secretaria/setur/">Secretaria de Turismo</a> <br>
-                        Endereço: Rua Diogo Velho, 150, Centro, CEP: 58013-110 <br>
-                        Telefone: +55 83 98161-3545 <br>
-                    </p>
-                    <p>
-                        <strong>Centro de Atendimento ao Turista</strong> <br>
-                        Localização: Av. Almirante Tamandaré, 100 - Tambaú, CEP: 58.023-500 <br>
-                        Telefone: +55 83 98654-7890 <br>
-                        Horário de Funcionamento: <br>
-                        Segunda a sexta: 9h às 21h <br>
-                        Finais de semana e feriados: 9h às 19h <br>
-                        Centro de Apoio ao Turista Bosque dos Sonhos <br>
-                        Localização: Cabo Branco (Ao lado do Farol) <br>
-                        Horário de Funcionamento: Das 8h às 17h <br>
-                    </p>
-                    
-                    <p>
-                        <strong>SINGTUR/PB - Sindicato dos Guias de Turismo da Paraíba</strong> <br>
-                        Endereço: A. Rui Carneiro, 241 - MAP, loja 113 -  Tambaú <br>
-                        Telefone: (83) 99600-1177 <br>
-                    </p>
+                        <p> 
+                            <strong>Prefeitura Municipal de João Pessoa</strong> <br>
+                            <a style="text-decoration: none; color:white" href="https://www.joaopessoa.pb.gov.br/secretaria/setur/">Secretaria de Turismo</a> <br>
+                            Endereço: Rua Diogo Velho, 150, Centro, CEP: 58013-110 <br>
+                            Telefone: +55 83 98161-3545 <br><br>
+                        </p>
+                        <p>
+                            <strong>Centro de Atendimento ao Turista</strong> <br>
+                            Localização: Av. Almirante Tamandaré, 100 - Tambaú, CEP: 58.023-500 <br>
+                            Telefone: +55 83 98654-7890 <br>
+                            Horário de Funcionamento: <br>
+                            Segunda a sexta: 9h às 21h <br>
+                            Finais de semana e feriados: 9h às 19h <br><br>
+                            <strong>Centro de Apoio ao Turista Bosque dos Sonhos</strong><br>
+                            Localização: Cabo Branco (Ao lado do Farol) <br>
+                            Horário de Funcionamento: Das 8h às 17h <br><br>
+                        </p>
+                        
+                        <p>
+                            <strong>SINGTUR/PB - Sindicato dos Guias de Turismo da Paraíba</strong> <br>
+                            Endereço: A. Rui Carneiro, 241 - MAP, loja 113 -  Tambaú <br>
+                            Telefone: (83) 99600-1177 <br>
+                        </p>
+                </div>
             </div>
             <div class="seguranca">
-                <h2>Segurança e Assistência</h2>
-                    <p>
-                        <strong>Delegacia de Atendimento ao Turista</strong> <br>
-                        Endereço: Centro Turístico de Tambaú - Av. Alm. Tamandaré, 100 - Tambaú <br>
-                        Telefones: (83) 3214 8022 / 3247 8405 <br>
-                    </p>
+                <div class="seg">
+                    <h2>Segurança e Assistência</h2>
+                        <p>
+                            <strong>Delegacia de Atendimento ao Turista</strong> <br>
+                            Endereço: Centro Turístico de Tambaú - Av. Alm. Tamandaré, 100 - Tambaú <br>
+                            Telefones: (83) 3214 8022 / 3247 8405 <br>
+                        </p>
+                </div>
             </div>
             <div class="transportes">
-                <h2>Transportes</h2>
+                <div class="trnsp">
+                <h2>Transportes</h2><br>
                     <p>
                         <strong>Aeroporto Castro Pinto</strong> <br>
                         Endereço: Aeroporto, S/N, Bayeux-PB <br>
-                        Telefone: (83) 3041 4200 <br>
+                        Telefone: (83) 3041 4200 <br><br>
                     </p>
                     <p>
                         <strong>Rodoviária</strong> <br>
                         Endereço: Rua Francisco Londres - Varadouro <br>
-                        Telefone: (83) 3222 6567 <br>
+                        Telefone: (83) 3222 6567 <br><br>
                     </p>
                     <p>
                         João Pessoa conta com um sistema de transporte público que 
                         inclui ônibus e táxis. Aplicativos de transporte como Uber e 99 também estão disponíveis.
                     </p>
+                </div>
             </div>
             <div class="saude">
-                <h2>Saúde</h2>
+                <div class="sau">
+                <h2>Saúde</h2><br>
                     <p>
-                        Hospital de Emergência e Trauma <br>
+                        <strong>Hospital de Emergência e Trauma</strong><br>
                         Endereço: Av. Orestes Lisboa, S/N Conj. Pedro Gondim <br>
-                        Telefones: (83) 3216-5700 <br>
+                        Telefones: (83) 3216-5700 <br><br>
                     </p>
                     <p>
-                        Hospital Valentina de Figueiredo <br>
+                        <strong>Hospital Valentina de Figueiredo</strong><br>
                         Endereço: Rua Mariângela Lucena Peixoto, 274 - Valentina <br>
-                        Telefone: (83) 3218-9404 <br>
+                        Telefone: (83) 3218-9404 <br><br>
                     </p>
                     <p>
-                        Instituto Cândida Vargas <br>
+                        <strong>Instituto Cândida Vargas</strong><br>
                         Endereço: Av. Coremas, S/N - Jaguaribe <br>
-                        Telefone: (83) 3015-1565 <br>
+                        Telefone: (83) 3015-1565 <br><br>
                     </p>
                     <p>
-                        Complexo Hospitalar Governador Tarcísio Burity - Ortotrauma (Trauminha) <br>
+                        <strong>Complexo Hospitalar Governador Tarcísio Burity<br>Ortotrauma (Trauminha)</strong> <br>
                         Endereço: Rua Agente Fiscal José Costa Duarte, S/N - Mangabeira <br>
-                        Telefone: (83) 3218-9725 | 3239-3225 <br>
+                        Telefone: (83) 3218-9725 | 3239-3225 <br><br>
                     </p>
                     <p>
-                        UPA Oceania <br>
+                        <strong>UPA Oceania</strong><br>
                         Endereço: Av. Flávio Ribeiro Coutinho, 70 - Aeroclube <br>
-                        Telefone: (83) 3223-5209 <br>
+                        Telefone: (83) 3223-5209 <br><br>
                     </p>
+                </div>
             </div>
             <div class="tempo">
+                <div class="time">
                 <h2>Clima</h2>
                     <p>
                         João Pessoa possui um clima tropical, com temperaturas médias anuais em torno de 26°C.
                     </p>
+                </div>
             </div>
             <div class="shoppings">
-                <h2>shoppings</h2>
+                <div class="mall">
+                <h2>Shoppings</h2><br>
                     <p>
                         <strong>Manaíra Shopping</strong> <br>
-                        Endereço: Avenida Governador Flávio Ribeiro Coutinho, 805 - Manaíra <br>
+                        Av. Governador Flávio Ribeiro Coutinho, 805 - Manaíra <br><br>
 
                         <strong>Mag Shopping</strong> <br>
-                        Endereço: Avenida Governador Flávio Ribeiro Coutinho, 115 - Manaíra <br>
+                        Av. Governador Flávio Ribeiro Coutinho, 115 - Manaíra <br><br>
 
                         <strong>Mangabeira Shopping</strong> <br>
-                        Endereço: Avenida Hilton Souto Maior, 1100 - Mangabeira <br>
+                        Av. Hilton Souto Maior, 1100 - Mangabeira <br><br>
 
                         <strong>Shopping Sul</strong> <br>
-                        Endereço: Avenida Ayrton Senna da Silva, 3233 - Bairro dos Bancários <br>                        
+                        Av. Ayrton Senna da Silva, 3233 - Bairro dos Bancários <br><br>                 
 
                         <strong>Shopping Pátio Altiplano</strong> <br>
-                        Endereço: Avenida João Cirilo Silva, 155 - Altiplano Cabo Branco <br>
+                        Av. João Cirilo Silva, 155 - Altiplano Cabo Branco <br><br>
 
                         <strong>Liv Mall</strong> <br>
-                        Endereço: Avenida Governador Flávio Ribeiro Coutinho, 500 - Manaíra <br>
+                        Av. Governador Flávio Ribeiro Coutinho, 500 - Manaíra <br><br>
 
                         <strong>Parahyba Mall</strong> <br>
-                        R. Bacharel José de Oliveira Curchatuz, 542 - Jardim Oceania <br>
+                        R. Bacharel José de Oliveira Curchatuz, 542 - Jardim Oceania <br><br>
 
                         <strong>Shopping Tambiá</strong> <br>
-                        Endereço: Rua Almeida Barreto, 181 - Tambiá <br>
+                        Rua Almeida Barreto, 181 - Tambiá <br><br>
                     </p>
+                </div>
             </div>
             <div class="cambio">
+                <div class="moeda">
                 <h2>Moeda e Câmbio</h2>
                     <p>
                         A moeda utilizada é o Real (BRL). Há casas de câmbio em diversos pontos da cidade, incluindo o aeroporto e shoppings.
                     </p>
+                </div>
             </div>
                
     </div>

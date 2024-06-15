@@ -75,11 +75,29 @@ margin-left: 2.5rem;
     max-width: 98%;
     border-radius: 15px;
 }
-
+/*
 .telefones-h2{
     text-align:right;
     justify-content: center;
     text-align:center;
+}
+    */
+
+.tel{
+    margin-top: 260px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 0.4px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .tensao{
@@ -98,6 +116,24 @@ margin-left: 2.5rem;
     
 }
 
+.tens{
+    font-size: 30px;
+    margin-top: 600px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
 .informacoes{
     margin: 40px 5px 40px 20px;
     padding-top: 15px;
@@ -111,6 +147,24 @@ margin-left: 2.5rem;
     background-position: center;
     max-width: 98%;
     border-radius: 15px;
+}
+
+.info{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    margin-top: 260px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 0.8px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .seguranca{
@@ -128,6 +182,24 @@ margin-left: 2.5rem;
     border-radius: 15px;
 }
 
+.seg{
+    font-size: 30px;
+    margin-top: 600px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
 .transportes{
     margin: 40px 5px 40px 20px;
     padding-top: 15px;
@@ -141,6 +213,24 @@ margin-left: 2.5rem;
     background-position: center;
     max-width: 98%;
     border-radius: 15px;
+}
+
+.trnsp{
+    font-size: 30px;
+    margin-top: 400px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 20px;
 }
 
 .saude{
@@ -158,6 +248,24 @@ margin-left: 2.5rem;
     border-radius: 15px;
 }
 
+.sau{
+    margin-top: 260px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 0.4px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(192, 225, 245);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .tempo{
     margin: 40px 5px 40px 20px;
     padding-top: 15px;
@@ -171,6 +279,26 @@ margin-left: 2.5rem;
     background-position: center;
     max-width: 98%;
     border-radius: 15px;
+}
+
+.time{
+
+    font-size: 30px;
+    margin-top: 600px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 20px;
+
 }
 
 .shoppings{
@@ -188,6 +316,24 @@ margin-left: 2.5rem;
     border-radius: 15px;
 }
 
+.mall{
+    margin-top: 200px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 0.4px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .cambio{
     margin: 40px 5px 40px 20px;
     padding-top: 15px;
@@ -201,4 +347,22 @@ margin-left: 2.5rem;
     background-position: center;
     max-width: 98%;
     border-radius: 15px;
+}
+
+.moeda{
+    font-size: 30px;
+    margin-top: 600px;
+    margin-left: 520px;
+    width: 800px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-align:center;
+    justify-content: center;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 20px;
 }
