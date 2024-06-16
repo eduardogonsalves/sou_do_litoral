@@ -129,6 +129,9 @@
 
     <main>
         <section id="noticias">
+            <div class="title_news">
+                <h2>Notícias</h2>
+            </div>
             <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
@@ -206,4 +209,6 @@
 <!--
     Busca de imagens em:
     https://unsplash.com/pt-br/s/fotografias/praia
+
+    https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares
 -->

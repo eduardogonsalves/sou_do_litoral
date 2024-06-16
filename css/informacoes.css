@@ -366,3 +366,98 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 50px 20px;
 }
+
+.aguas_praias{
+    margin: 40px 5px 40px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgb(194, 227, 230);
+    justify-content: right;
+    background: url('../imagens/informacoes/noswimming.jpg') no-repeat;
+    height: 3000px;
+    background-size: cover;
+    background-position: center;
+    max-width: 98%;
+    border-radius: 15px;
+}
+
+.aguas{
+    font-size: 30px;
+    margin:auto;
+    margin-top: 100px;
+    width: 80%;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    color: #4caf4fc5;
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.praiasImp{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os botões, opcional */
+}
+
+.praiasImp button{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    width: calc(50% - 10px); /* Ocupa metade do espaço disponível menos o gap */
+    color: white;
+    background-color: #4caf4fdf;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

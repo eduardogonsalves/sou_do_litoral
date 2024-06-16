@@ -24,37 +24,37 @@
                     <a href="#">Informações</a>
                 </nav>   
             </header>
-            <div class="container">
+        <div class="container">
             <div class="title">
                 <h1>Informações Úteis</h1>
             </div>
             
             <div class="telefones">
                 <div class="tel">
-                <h2>Telefonia - Comunicação</h2>
-                    <p>
-                        Para ligações internacionais feitas para João Pessoa, <br>
-                        discar 00 + 55 + 83 + número de telefone desejado.
-                    </p><br><br>
+                    <h2>Telefonia - Comunicação</h2>
+                        <p>
+                            Para ligações internacionais feitas para João Pessoa, <br>
+                            discar 00 + 55 + 83 + número de telefone desejado.
+                        </p><br><br>
 
-                <h2>Telefones Úteis</h2>
+                    <h2>Telefones Úteis</h2>
                     <p>
-                        Bombeiros: 193 <br>
-                        Ceatox: (83) 3224 6688 <br>
-                        Defesa Civil: 199 <br><br>
-                        Disque Denúncia (Exploração Infanto-Juvenil): <br>0800 2827969 ou 100 <br><br>
+                            Bombeiros: 193 <br>
+                            Ceatox: (83) 3224 6688 <br>
+                            Defesa Civil: 199 <br><br>
+                            Disque Denúncia (Exploração Infanto-Juvenil): <br>0800 2827969 ou 100 <br><br>
 
                         <div style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);">
-                        Sindicato dos Guias de Turismo da Paraíba: <br>(83) 98855 9796 / 99946 7675 <br><br>
-                        
-                        Vigilância Sanitária: (83) 3214-7956 <br>
-                        Polícia Civil: 197 <br>
-                        Polícia Federal: 194 <br>
-                        Polícia Militar: 190 <br>
-                        Polícia Rodoviária Federal: 191 <br>
-                        Procon-JP: 0800 83 2015 <br>
-                        Samu: 192 <br>
-                        Semob: 118 <br>
+                            Sindicato dos Guias de Turismo da Paraíba: <br>(83) 98855 9796 / 99946 7675 <br><br>
+                            
+                            Vigilância Sanitária: (83) 3214-7956 <br>
+                            Polícia Civil: 197 <br>
+                            Polícia Federal: 194 <br>
+                            Polícia Militar: 190 <br>
+                            Polícia Rodoviária Federal: 191 <br>
+                            Procon-JP: 0800 83 2015 <br>
+                            Samu: 192 <br>
+                            Semob: 118 <br>
                         </div>
                     </p>
                 </div>
@@ -200,13 +200,59 @@
                 <div class="moeda">
                 <h2>Moeda e Câmbio</h2>
                     <p>
-                        A moeda utilizada é o Real (BRL). Há casas de câmbio em diversos pontos da cidade, incluindo o aeroporto e shoppings.
+                        A moeda utilizada é o Real (BRL). Há casas de câmbio em 
+                        diversos pontos da cidade, incluindo o aeroporto e shoppings.
                     </p>
                 </div>
             </div>
-               
-    </div>
+            <div class="aguas_praias">
+                <div class="aguas">
+                    <h2>Praias com trechos impróprios para banho</h2>
+                    <p>
+                        Semanalmente a SUDEMA(Superintendencia de Administração do Meio Ambiente) 
+                        emite relatório com trechos de praias que foram classificados como
+                        impróprios para banho.<br><br>
+                    </p>
+                    <p>
+                        Clique nos botões abaixo e veja o exato local da praia!
+                    </p>                
+                </div>
+                <div class="praiasImp">                   
 
+                    <button onclick="openPopup('')">Gameleira e Fagundes</button>
+                    <button onclick="openPopup('')">Costinha</button>   
+                    <button onclick="openPopup('')">Manaíra e Tambaú</button>
+                    <button onclick="openPopup('')">Seixas</button>
+                    <button onclick="openPopup('')">Penha</button>
+                    <button onclick="openPopup('')">Jacarapé, Arraial e Sol</button>
+                    <button onclick="openPopup('')">Pintimbú, Maceió e Guarita</button>
+                    <button onclick="openPopup('')">Azul/Santa Rita e Coqueiros</button>
+                    <button onclick="openPopup('')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
+                </div>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <img id="popup-image" src="" alt="Image">
+                </div>
+            </div>
+    </div>
+    <script>
+        function openPopup(imageSrc) {
+            document.getElementById('popup-image').src = imageSrc;
+            document.getElementById('popup').style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('popup')) {
+                closePopup();
+            }
+        }
+    </script>
 
 
 </body>

@@ -59,3 +59,5 @@ if (!listaSuspensa.contains(event.target) && event.target !== campoBusca) {
     listaSuspensa.style.display = "none";
     }
 });
+
+
