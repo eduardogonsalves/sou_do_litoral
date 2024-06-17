@@ -210,7 +210,7 @@
                 <div class="aguas">
                     <h2>Praias com trechos impróprios para banho</h2>
                     <p>
-                        Semanalmente a SUDEMA(Superintendencia de Administração do Meio Ambiente) 
+                        Semanalmente a SUDEMA(Superintendencia Estadual de Administração do Meio Ambiente) 
                         emite relatório com trechos de praias que foram classificados como
                         impróprios para banho.<br><br>
                     </p>
@@ -230,7 +230,9 @@
                     <button onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
                     <button onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
                 </div>
-            </div>
+                <div class="aguas">
+                    <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relório na íntegra</a></h2>               
+                </div>
             <div id="popup" class="popup">
                 <div class="popup-content">
                     <span class="close" onclick="closePopup()">&times;</span>

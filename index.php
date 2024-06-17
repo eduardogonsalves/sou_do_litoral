@@ -126,7 +126,7 @@
             <div class="item" tabindex="0" style="background-image: url(./imagens/13.jpg);"></div>
         </div>
     </div>
-
+    <!--
     <main>
         <section id="noticias">
             <div class="title_news">
@@ -159,20 +159,25 @@
                     </div>
                 </a>
                 </div>
-                <!-- Adicione mais carousel-item conforme necessário -->
             </div>
             <button class="carousel-control-prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="carousel-control-next" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </section>
-    </main>
+
+    </main> -->
     
-    <!-- Cards com notícias -->    
+    <!-- Cards com notícias -->
+    <div class="titulo_news"> 
+        <h2>Notícias</h2>
+    </div>
+
     <div class="new-container">
+
         <div class="news">
             <a style="text-decoration: none;" href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
                 
-                <h1>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h1>
+                <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
                 <p>
                     As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
                     continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
@@ -181,10 +186,33 @@
                 </p>
             </a>  
         </div>
-
-
-
-
+        <div class="news">
+            <a style="text-decoration: none;" href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
+                
+                <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
+                <p>
+                    As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
+                    continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
+                    viagens nacionais em seu site e app. De acordo com o estudo, dos oito primeiros destinos mais buscados, 
+                    sete estão no Nordeste - o Rio de Janeiro é a exceção - e João Pessoa é o oitavo mais procurado para o período.           
+                </p>
+            </a>  
+        </div>
+        <div class="news">
+            <a style="text-decoration: none;" href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
+                
+                <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
+                <p>
+                    As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
+                    continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
+                    viagens nacionais em seu site e app. De acordo com o estudo, dos oito primeiros destinos mais buscados, 
+                    sete estão no Nordeste - o Rio de Janeiro é a exceção - e João Pessoa é o oitavo mais procurado para o período.           
+                </p>
+            </a>  
+        </div>
+    </div>
+    <div style="text-align:right; margin-right: 250px; font-size: 20px; font-weight:600; color: rgb(44, 44, 121);">
+            <a style="text-decoration:none"  href="#">mais notícias...</a>
     </div>
 
 
@@ -207,7 +235,7 @@
     </div>
 </footer>
 
-
+<!--
 
     <script>
             let slideIndex = 0;
@@ -219,7 +247,7 @@
             }
     </script>
 
-
+-->
 
     <script src="./js/script.js"></script>
 </body>

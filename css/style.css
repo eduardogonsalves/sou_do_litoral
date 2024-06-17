@@ -275,7 +275,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 
-/* Notícias */
+/* Notícias estilo carrossel
 
 .title_news{
     text-align: center;
@@ -289,14 +289,14 @@ main {
     padding: 20px;
   }
   
-  /* Estilizando a seção de notícias */
+  Estilizando a seção de notícias 
   #noticias {
     position: relative;
     max-width: 100%;
     overflow: hidden;
   }
   
-  /* Estilizando o carrossel */
+   Estilizando o carrossel
   .carousel {
     display: flex;
     align-items: center;
@@ -352,11 +352,50 @@ main {
   
   .carousel-control-next {
     right: 10px;
-  }
-  
+  } */
+
+/* Notícias */
+
+.titulo_news{
+    margin-top: 100px;
+    color: rgb(44, 44, 121);
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.new-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.news {
+    font-family: 'Dosis', sans-serif;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news h2 {
+    color: rgb(44, 44, 121);
+}
+
+.news p {
+    color: rgb(44, 44, 121);
+}
+
 
 
 /* Rodapé */
+
 footer {
     background: linear-gradient(45deg, #3a6186, #89253e);
     color: white;
@@ -401,5 +440,3 @@ p {
     }
 }
 
-
-  
