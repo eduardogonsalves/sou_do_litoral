@@ -34,12 +34,12 @@ body{
 
 
 .navbar a {
-font-size: 1.15rem;
-color: #fff;
-text-decoration: none;
-font-weight: 700;
-margin-left: 2.5rem;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 /*  Campo Busca */
@@ -136,7 +136,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 
 .card {
     font-family: 'Dosis', sans-serif;
-    width: 270px;
+    width: 18%;
     border: 1px solid #ccc;
     border-radius: 5px;
     backdrop-filter: blur(2px);
