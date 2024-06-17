@@ -179,9 +179,6 @@
         </div>
     </section>
 
-
-
-
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">

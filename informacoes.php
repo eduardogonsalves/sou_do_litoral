@@ -1,3 +1,4 @@
+<!--SoliDeoGloria-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,17 +14,17 @@
     <title>Informações Úteis</title>
 </head>
 <body>
-            <!-- Barra de Menu -->
-            <header class="header">
-                <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
-                <nav class="navbar">
-                    <a href="./index.php">Home</a>
-                    <a href="./quemsomos.php">Quem somos</a>
-                    <a href="./index.php#nossosContatos">Contatos</a>
-                    <a href="./login.php">Login / Cadastro</a>
-                    <a href="#">Informações</a>
-                </nav>   
-            </header>
+        <!-- Barra de Menu -->
+        <header class="header">
+            <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+            <nav class="navbar">
+                <a href="./index.php">Home</a>
+                <a href="./quemsomos.php">Quem somos</a>
+                <a href="./index.php#nossosContatos">Contatos</a>
+                <a href="./login.php">Login / Cadastro</a>
+                <a href="#">Informações</a>
+            </nav>   
+        </header>
         <div class="container">
             <div class="title">
                 <h1>Informações Úteis</h1>
@@ -219,15 +220,15 @@
                 </div>
                 <div class="praiasImp">                   
 
-                    <button onclick="openPopup('')">Gameleira e Fagundes</button>
-                    <button onclick="openPopup('')">Costinha</button>   
-                    <button onclick="openPopup('')">Manaíra e Tambaú</button>
-                    <button onclick="openPopup('')">Seixas</button>
-                    <button onclick="openPopup('')">Penha</button>
-                    <button onclick="openPopup('')">Jacarapé, Arraial e Sol</button>
-                    <button onclick="openPopup('')">Pintimbú, Maceió e Guarita</button>
-                    <button onclick="openPopup('')">Azul/Santa Rita e Coqueiros</button>
-                    <button onclick="openPopup('')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
+                    <button onclick="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')">Gameleira e Fagundes</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Costinha.jpg')">Costinha</button>   
+                    <button onclick="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')">Manaíra e Tambaú</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Seixas.jpg')">Seixas</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Penha.jpg')">Penha</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')">Jacarapé, Arraial e Sol</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')">Pintimbú, Maceió e Guarita</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
+                    <button onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
                 </div>
             </div>
             <div id="popup" class="popup">
