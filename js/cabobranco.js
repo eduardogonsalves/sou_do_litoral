@@ -50,9 +50,9 @@ function fetchWeatherData() {
             const clouds = document.getElementById('clouds');
 
             location.textContent = `${data.name}, ${data.sys.country}`;
-            temperature.textContent = `Temperatura: ${data.main.temp} °C`;
+            temperature.textContent = `${data.main.temp} °C`;
             description.textContent = capitalizeFirstLetter(data.weather[0].description);
-            wind.textContent = `Velocidade do Vento: ${data.wind.speed} m/s`;
+            wind.textContent = `💨 Vento: ${data.wind.speed} m/s`;
             humidity.textContent = `Humidade: ${data.main.humidity}%`;
             clouds.textContent = `Cobertura de Nuvens: ${data.clouds.all}%`;
 

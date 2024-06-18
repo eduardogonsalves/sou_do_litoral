@@ -199,6 +199,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Colunas - Previsão do Tempo */
+
+.right-column {
+    background: url('../imagens/previsao/fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Colunas - Tábuas de maré */
+.left-column{
+    background: url('../imagens/previsao/fundoTabuas.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
 .left-column, .right-column {
     width: 15%;
     height: 700px;
@@ -264,6 +281,7 @@
 
 /* Previsão do Tempo */
 #weather {
+
     text-align: center;
 }
 
@@ -272,8 +290,9 @@
 }
 
 #weather #icon img {
-    width: 200px;
-    height: 200px;
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
 }
 
  
