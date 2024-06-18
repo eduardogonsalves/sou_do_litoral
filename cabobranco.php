@@ -26,8 +26,8 @@
             <a href="./index.php">Home</a>
             <a href="./quemsomos.php">Quem somos</a>
             <a href="./index.php#nossosContatos">Contatos</a>
-            <a href="./login.php">Login / Cadastro</a>
             <a href="./informacoes.php">Informações</a>
+            <a href="./login.php">Login / Cadastro</a>
         </nav>   
     </header>
 
@@ -98,62 +98,64 @@
         </div>
     </section>
     
-    <section class="content">
-        <div class="left-column">
-            <!-- Informações das tábuas de maré aqui -->
-            <div class="tabuas">
-                <h2>Tábua de Maré</h2>
-                <h4>Quarta 8/5/24</h4>
-                <p>    
-                    04:13 - 2.6m<br>
-                    10:21 - 0.1m<br>
-                    16:39 - 2.5m<br>
-                    22:39 - 0.2m
-                </p>
-                <h4>Quarta 9/5/24</h4>
-                <p>
-                    04:58 - 2.5m<br>
-                    11:06 - 0.1m<br>
-                    17:23 - 2.4m<br>
-                    23:21 - 0.3m
-                </p>
-                <h4>Quinta 10/5/24</h4>
-                <p>
-                    05:39 - 2.5m<br>
-                    11:53 - 0.2m<br>
-                    18:08 - 2.3m
-                </p>
-                <h4>Sexta 11/5/24</h4>
-                <p>
-                    00:02 - 0.5m<br>
-                    06:21 - 2.3m<br>
-                    12:39 - 0.4m<br>
-                    18:54 - 2.1m
-                </p>
+    <div class="grupoMapa">
+        <section class="content">
+            <div class="left-column">
+                <!-- Informações das tábuas de maré aqui -->
+                <div class="tabuas">
+                    <h2 style="text-align: center;">Tábua de Maré</h2><hr>
+                    <h4>Quarta 8/5/24</h4>
+                    <p>    
+                        04:13 - 2.6m<br>
+                        10:21 - 0.1m<br>
+                        16:39 - 2.5m<br>
+                        22:39 - 0.2m
+                    </p>
+                    <h4>Quarta 9/5/24</h4>
+                    <p>
+                        04:58 - 2.5m<br>
+                        11:06 - 0.1m<br>
+                        17:23 - 2.4m<br>
+                        23:21 - 0.3m
+                    </p>
+                    <h4>Quinta 10/5/24</h4>
+                    <p>
+                        05:39 - 2.5m<br>
+                        11:53 - 0.2m<br>
+                        18:08 - 2.3m
+                    </p>
+                    <h4>Sexta 11/5/24</h4>
+                    <p>
+                        00:02 - 0.5m<br>
+                        06:21 - 2.3m<br>
+                        12:39 - 0.4m<br>
+                        18:54 - 2.1m
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- Mapa do Destino -->
-        <div class="center-column">
-            <div id="map"></div>
-            <div class="map-buttons">
-                <button class="btnsmaps" onclick="showMarkers('restaurantes')">Restaurantes</button>
-                <button class="btnsmaps" onclick="showMarkers('saude')">Unidades de Saúde Próximas</button>
-                <button class="btnsmaps" onclick="showMarkers('policia')">Polícia Mais Próxima</button>
+            <!-- Mapa do Destino -->
+            <div class="center-column">
+                <div id="map"></div>
+                <div class="map-buttons">
+                    <button class="btnsmaps" onclick="showMarkers('restaurantes')">Restaurantes</button>
+                    <button class="btnsmaps" onclick="showMarkers('saude')">Unidades de Saúde Próximas</button>
+                    <button class="btnsmaps" onclick="showMarkers('policia')">Polícia Mais Próxima</button>
+                </div>
             </div>
-        </div>
 
-        <div class="right-column">
-            <!-- Previsão do tempo aqui -->
-            <div id="weather">
-                <h2>Previsão do Tempo</h2>
-                <div id="location"></div>
-                <div id="temperature"></div>
-                <div id="description"></div>
-                <div id="icon"></div>
+            <div class="right-column">
+                <!-- Previsão do tempo aqui -->
+                <div id="weather">
+                    <h2>Previsão do Tempo</h2>
+                    <div id="location"></div>
+                    <div id="temperature"></div>
+                    <div id="description"></div>
+                    <div id="icon"></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
     
     <section class="calendar">

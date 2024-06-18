@@ -41,9 +41,9 @@
  .title {
      text-align: center;
      margin-top: 60px;
-     padding: 10px;
+     padding: 5px;
      font-family: "Dosis", sans-serif;
-     font-size: 40px;
+     font-size: 30px;
      color: #fff;
      background-color: #0077b6; /* Azul marinho */
      border-radius: 8px;
@@ -55,7 +55,7 @@
  .carousel {
      overflow: hidden;
      width: 100%;
-     margin: 20px 0;
+     margin: 15px 0;
      border-radius: 8px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      
@@ -64,9 +64,9 @@
  .carousel-container {
      display: flex;
      transition: transform 0.5s ease;
-     max-width: 95%;
+     max-width: 98%;
      margin: auto;
-     height: 600px;
+     height: 800px;
 
  }
  
@@ -80,7 +80,8 @@
  
  .slide img {
      width: 100%;
-     height: auto;
+     height: 100%;
+     object-fit: cover;
      border-radius: 8px;
  }
  
@@ -94,7 +95,6 @@
      padding: 30px;
      border-radius: 8px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     margin: 20px 0;
  }
  
 .text h2{
@@ -116,7 +116,8 @@
 }
 
 .apre{
-    margin: 90px 400px;
+    margin-left: 25%;
+    margin-top: 5%;
     font-size: 30px;
     font-weight: 600;
     width: 900px;
@@ -175,6 +176,16 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+/* Grupo Mapas/Tábuas/Previsão */
+
+
+.grupoMapa{
+    margin-top: 15px;
+    background-color: #0077b6; /* Azul marinho */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Colunas - Mapa central */
 .content {
@@ -190,28 +201,28 @@
 
 .left-column, .right-column {
     width: 15%;
+    height: 700px;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .left-column h2, .right-column h2 {
     font-size: 1.5em;
-    color: #333;
+
     margin-bottom: 20px;
 }
 
 .left-column h4, .right-column h4 {
     font-size: 1.2em;
-    color: #555;
     margin-bottom: 10px;
 }
 
 .left-column p, .right-column p {
     font-size: 1em;
-    color: #667;
     line-height: 1.5;
 }
 
