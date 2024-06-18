@@ -212,7 +212,21 @@
     background: url('../imagens/previsao/fundoTabuas.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+}
 
+.tabuas{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.previsao {
+    font-size: 18px;
+    line-height: 0;
+}
+.previsao h4{
+    line-height: 0;
 }
 
 
@@ -220,7 +234,6 @@
     width: 15%;
     height: 700px;
     padding: 20px;
-    background-color: #4CAF50;
     color: white;
     border: 2px solid #ddd;
     border-radius: 8px;

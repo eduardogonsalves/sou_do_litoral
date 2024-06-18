@@ -15,6 +15,13 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
 }
 
+// Configurações de Tábuas de Marés
+
+
+
+
+
+
 // Configurações da Previsão do Tempo - Coluna da Direita
 
 const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather
@@ -53,7 +60,7 @@ function fetchWeatherData() {
             temperature.textContent = `${data.main.temp} °C`;
             description.textContent = capitalizeFirstLetter(data.weather[0].description);
             wind.textContent = `💨 Vento: ${data.wind.speed} m/s`;
-            humidity.textContent = `Humidade: ${data.main.humidity}%`;
+            humidity.textContent = `Umidade: ${data.main.humidity}%`;
             clouds.textContent = `Cobertura de Nuvens: ${data.clouds.all}%`;
 
             const weatherMain = data.weather[0].main.toLowerCase();
