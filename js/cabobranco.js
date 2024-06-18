@@ -17,12 +17,21 @@ function showSlides() {
 
 // Configurações da Previsão do Tempo - Coluna da Direita
 
-const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather 
+const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather
 
 const city = 'João Pessoa';  // Colocar a cidade de acordo com o destino (João Pessoa, Conde, Cabedelo...)
 
+const weatherImages = {
+    clear: './imagens/previsao/clear.png',
+    clouds: './imagens/previsao/cloud.png',
+    mist: './imagens/previsao/mist.png',
+    rain: './imagens/previsao/rain.png',
+    snow: './imagens/previsao/snow.png',
+    error: './imagens/previsao/404.png'
+};
+
 function fetchWeatherData() {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}&lang=pt_br`;
 
     fetch(apiUrl)
         .then(response => {
@@ -36,20 +45,35 @@ function fetchWeatherData() {
             const temperature = document.getElementById('temperature');
             const description = document.getElementById('description');
             const icon = document.getElementById('icon');
+            const wind = document.getElementById('wind');
+            const humidity = document.getElementById('humidity');
+            const clouds = document.getElementById('clouds');
 
             location.textContent = `${data.name}, ${data.sys.country}`;
             temperature.textContent = `Temperatura: ${data.main.temp} °C`;
-            description.textContent = data.weather[0].description;
-            icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Icone do tempo">`;
+            description.textContent = capitalizeFirstLetter(data.weather[0].description);
+            wind.textContent = `Velocidade do Vento: ${data.wind.speed} m/s`;
+            humidity.textContent = `Humidade: ${data.main.humidity}%`;
+            clouds.textContent = `Cobertura de Nuvens: ${data.clouds.all}%`;
+
+            const weatherMain = data.weather[0].main.toLowerCase();
+            const weatherImage = weatherImages[weatherMain] || weatherImages.error;
+            icon.innerHTML = `<img src="${weatherImage}" alt="Icone do tempo">`;
         })
         .catch(error => {
             console.error('Erro ao buscar dados da API:', error);
             alert('Erro ao buscar dados da API: ' + error.message);
+            document.getElementById('icon').innerHTML = `<img src="${weatherImages.error}" alt="Erro ao carregar ícone">`;
         });
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 // Chama a função para buscar e exibir os dados meteorológicos
 fetchWeatherData();
+
 
 
 

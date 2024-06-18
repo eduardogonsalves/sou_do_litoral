@@ -152,8 +152,12 @@
                     <div id="temperature"></div>
                     <div id="description"></div>
                     <div id="icon"></div>
+                    <div id="wind"></div>
+                    <div id="humidity"></div>
+                    <div id="clouds"></div>
                 </div>
             </div>
+
         </section>
     </div>
     
@@ -209,3 +213,7 @@
     <script src="./js/cabobranco.js"></script>
 </body>
 </html>
+
+<!--
+https://turismo.joaopessoa.pb.gov.br/
+-->
