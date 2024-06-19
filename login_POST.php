@@ -30,14 +30,38 @@
         // o código abaixo é apenas para teste de página.
         
         if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
-            echo "<script>alert('Seja bem vindo $nome! Você será redirecionado à página inicial.');
-            window.location.href = './index.php';</script>";
+            $sql = $pdo->prepare("SELECT nome, senha FROM usuario WHERE nome = ?");
+            $sql -> execute(array($nome));
+            $usuario = $sql->fetch(PDO::FETCH_ASSOC);
+            if($usuario && password_verify($senha, $usuario['senha'])){
+                header('Location:./index.php');
+                exit();
+                    
+            }else{
+                echo "Usuário ou senha incorretos";            }
+        }
+    }
+?>
+
+<!--
+        if ($usuario && password_verify($senha, $usuario['senha'])) {
+                    echo "<script>alert('Seja bem-vindo $nome! Você será redirecionado à página inicial.');</script>";
+                    header('Location: ./index.php');
+                    exit();
+                } else {
+                    echo "Usuário ou senha incorretos";
+                }
+            }
         }
 
 
 
 
-    }
 
 
-?>
+
+ if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
+            echo "<script>alert('Seja bem vindo $nome! Você será redirecionado à página inicial.');
+            window.location.href = './index.php';</script>";
+        }
+-->

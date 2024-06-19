@@ -216,8 +216,8 @@
 
 .tabuas{
     text-align: center;
-    backdrop-filter: blur(10px);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(15px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
     border-radius: 10px;
 }
 

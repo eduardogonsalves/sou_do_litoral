@@ -40,6 +40,8 @@
             </div>
         </form>
     </div>
+    
+    
     <Script>
         document.getElementById('nome').addEventListener('submit', function (e) {
             let hasError = false;
@@ -66,11 +68,6 @@
 
 
         });
-
-
-
-
-
     </Script>
 
 
