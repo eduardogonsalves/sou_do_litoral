@@ -40,8 +40,46 @@
             </div>
         </form>
     </div>
-    
-    
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Impede o envio do formulário para fazer a validação via AJAX
+            var username = document.getElementById('nome').value;
+            var password = document.getElementById('senha').value;
+            var error = "";
+
+            if (username === "") {
+                error = "O nome de usuário é obrigatório.";
+            } else if (password === "") {
+                error = "A senha é obrigatória.";
+            } else if (password.length < 6) {
+                error = "A senha deve ter pelo menos 6 caracteres.";
+            }
+
+            if (error !== "") {
+                document.getElementById('error-message').innerText = error;
+                return false;
+            }
+
+            // Enviar os dados para validação no servidor via AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "login_POST.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+                    if (response === "Login bem-sucedido!") {
+                        window.location.href = "dashboard.html"; // Redireciona para a página de dashboard
+                    } else {
+                        document.getElementById('error-message').innerText = response;
+                    }
+                }
+            };
+            xhr.send("nome=" + encodeURIComponent(username) + "&senha=" + encodeURIComponent(password));
+
+            return false;
+        }
+    </script>
+<!--
     <Script>
         document.getElementById('nome').addEventListener('submit', function (e) {
             let hasError = false;
@@ -69,6 +107,7 @@
 
         });
     </Script>
+-->
 
 
 

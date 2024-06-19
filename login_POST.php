@@ -1,4 +1,6 @@
 <!--SoliDeoGloria-->
+
+
 <?php
 
     require('./bandoDeDados/config.php');
@@ -28,8 +30,18 @@
         }
         //Haverá verificação de associação do nome de usuário à senha fornecida
         // o código abaixo é apenas para teste de página.
-        
+
         if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
+            echo "<script>alert('Seja bem vindo $nome! Você será redirecionado à página inicial.');
+            window.location.href = './index.php';</script>";
+        }       
+       
+    }
+
+?>
+<!--
+
+     if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
             $sql = $pdo->prepare("SELECT nome, senha FROM usuario WHERE nome = ?");
             $sql -> execute(array($nome));
             $usuario = $sql->fetch(PDO::FETCH_ASSOC);
@@ -40,10 +52,19 @@
             }else{
                 echo "Usuário ou senha incorretos";            }
         }
-    }
-?>
 
-<!--
+
+
+
+
+
+
+
+
+
+
+
+
         if ($usuario && password_verify($senha, $usuario['senha'])) {
                     echo "<script>alert('Seja bem-vindo $nome! Você será redirecionado à página inicial.');</script>";
                     header('Location: ./index.php');
@@ -60,8 +81,12 @@
 
 
 
- if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
-            echo "<script>alert('Seja bem vindo $nome! Você será redirecionado à página inicial.');
-            window.location.href = './index.php';</script>";
-        }
+
+
+        
+
+
+
+
+
 -->

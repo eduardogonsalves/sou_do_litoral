@@ -122,3 +122,10 @@ body{
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+/* Mensagem de erro */
+
+.error-message{
+    font-size: 3px;
+    color: red;
+}
