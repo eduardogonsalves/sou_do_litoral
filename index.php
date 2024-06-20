@@ -61,7 +61,7 @@
     <div class="card-container">
         <div class="card">
             <a style="text-decoration: none;" href="./praias.php">
-                <img src="./imagens/10.webp" alt="Imagem de Praia">
+                <img src="./imagens/cardsHome/praias.jpg" alt="Imagem de Praia">
                 <h1>Praias</h1>
                 <p>
                     Descubra as mais belas praias ao redor do mundo.Aqui você encontrará as melhores opções de praias que o litoral paraibano pode lhe oferecer.            
@@ -71,7 +71,7 @@
 
         <div class="card">
             <a style="text-decoration: none;" href="./monumentos.php">
-                <img src="./imagens/monumentos.jpg" alt="Centro Histórico João Pessoa-PB">
+                <img src="./imagens/cardsHome/monumentos.jpg" alt="Centro Histórico João Pessoa-PB">
                 <h1>Monumentos Históricos</h1>
                 <p>
                     Explore a História de João Pessoa. Descubra o Encanto Colonial das Ruas e Praças, onde o Passado Português Ganha Vida. Delicie-se com a Arquitetura Preservada, os Museus e a Vibrante Cultura Local.      
@@ -80,7 +80,7 @@
         </div>
         <div class="card">
             <a style="text-decoration: none;" href="gastronomia.php">
-                <img src="./imagens/gastrono.jpg" alt="Imagem de Praia">
+                <img src="./imagens/cardsHome/gastrono.jpg" alt="Imagem de Praia">
                 <h1>Gastronomia</h1>
                 <p>
                     Desvende os Sabores do Nordeste Brasileiro. Explore uma Viagem Culinária Pelos Aromas e Temperos Únicos da Região.            
@@ -89,7 +89,7 @@
         </div>
         <div class="card">
             <a style="text-decoration: none;" href="./igrejas.php">
-                <img src="./imagens/igrejas.jpg" alt="Imagem de Praia">
+                <img src="./imagens/cardsHome/igrejas.jpg" alt="Imagem de Praia">
                 <h1>Igrejas</h1>
                 <p>
                     Descubra a Fé e a Arquitetura das Igrejas. Admire a Majestade das Construções Religiosas, Obras-primas de Arte e Devoção. Cada Igreja Conta uma História de Espiritualidade e Tradição.            
@@ -98,7 +98,7 @@
         </div>
         <div class="card">
             <a style="text-decoration: none;" href="./artesanato.php">
-                <img src="./imagens/artesanato.jpg" alt="Imagem de Praia">
+                <img src="./imagens/cardsHome/artesanato.jpg" alt="Imagem de Praia">
                 <h1>Artesanatos</h1>
                 <p>
                     Explore a Arte e a Tradição do Artesanato Nordestino. Encante-se com as Cores e Texturas dos Tecidos, Cerâmicas e Esculturas Feitas à Mão.            
@@ -111,19 +111,19 @@
     <!-- Galeria Interativa -->
     <div class="wrapper">
         <div class="items">
-            <div class="item" tabindex="0" style="background-image: url(./imagens/1.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/2.png);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/3.webp);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/4.jpeg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/5.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/6.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/7.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/8.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/9.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/10.webp);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/11.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/12.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/13.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/1.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/2.png);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/3.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/4.jpeg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/5.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/6.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/7.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/8.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/9.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/10.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/11.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/12.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/13.jpg);"></div>
         </div>
     </div>
 

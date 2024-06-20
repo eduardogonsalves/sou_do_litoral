@@ -53,8 +53,8 @@
                 </div>
                 <div class="slides" style="--img: url('../imagens/praias/img5.jpg')">
                     <div class="content">
-                        <h2>Caribessa</h2>
-                        <p>
+                        <h2 style="color: #4caf4fdf;">Caribessa</h2>
+                        <p style="color: #4caf4fdf; font-weight:600">
                             A Praia de Caribessa em Cabedelo é um paraíso à beira-mar, onde o azul do oceano se funde com o céu. Suas areias douradas convidam ao relaxamento sob o sol tropical.
                         </p>
                     </div>
