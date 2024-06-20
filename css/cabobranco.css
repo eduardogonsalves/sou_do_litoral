@@ -116,8 +116,8 @@
 }
 
 .apre{
-    margin-left: 25%;
-    margin-top: 5%;
+    margin: auto;
+    margin-top: 6%;
     font-size: 30px;
     font-weight: 600;
     width: 900px;
@@ -134,6 +134,7 @@
 }
 
 .apre h3{
+    display: inline-block;
     font-size: 30px;
     color: rgb(52, 72, 108);
 }
@@ -153,7 +154,8 @@
 }
 
 .rota{
-    margin: 250px 400px;
+    margin: auto;
+    margin-top: 20%;
     font-size: 30px;
     font-weight: 600;
     width: 900px;

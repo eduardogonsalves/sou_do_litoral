@@ -173,11 +173,9 @@ body{
 /* Galeria Interativa */
 
 .wrapper{
-    margin-left: 360px;
-    margin-top: 300px;
-    margin-bottom: 50px;
-
-
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 :root{

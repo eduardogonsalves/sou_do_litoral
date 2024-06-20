@@ -59,7 +59,7 @@
 
         if (!$erroConfirma && !$erroSenha && !$erroCell && !$erroSobrenome && !$erroEmail && !$erroNome) {
             $senhaHash = password_hash($senha, PASSWORD_DEFAULT); // Hash seguro da senha
-            $sql = $pdo->prepare("INSERT INTO usuario VALUES (null, ?, ?, ?, ?, ?)");
+            $sql = $pdo->prepare("INSERT INTO usuarios VALUES (null, ?, ?, ?, ?, ?)");
             $sql->execute(array($nome, $sobrenome, $email, $cell, $senhaHash));            
 
             // Redirecionar após a inserção

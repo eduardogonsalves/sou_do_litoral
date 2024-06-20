@@ -489,7 +489,7 @@
                     <p style="color: white;">Fonte: Marinha do Brasil</p>
                 </div>
                 <div class="tabuaCompleta">
-                    <a style="text-decoration: none; color: white;" href="https://www.marinha.mil.br/chm/sites/www.marinha.mil.br.chm/files/dados_de_mare/23_-_porto_de_cabedelo_2024_ok.pdf" target="_blank">Previsão completa clique aqui!</a>
+                    <a style="text-decoration: none; color: white; font-size: 0.8em" href="https://www.marinha.mil.br/chm/sites/www.marinha.mil.br.chm/files/dados_de_mare/23_-_porto_de_cabedelo_2024_ok.pdf" target="_blank">Previsão completa clique aqui!</a>
                 </div>                
             </div>
         </div>

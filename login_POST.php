@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     try {
         // Verificação no banco de dados
-        $stmt = $pdo->prepare('SELECT * FROM usuario WHERE nome = :nome');
+        $stmt = $pdo->prepare('SELECT * FROM usuarios WHERE nome = :nome');
         $stmt->execute(['nome' => $nome]);
         $user = $stmt->fetch();
 
