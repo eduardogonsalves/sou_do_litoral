@@ -1,92 +1,43 @@
-<!--SoliDeoGloria-->
-
-
 <?php
+require('./bandoDeDados/config.php');
 
-    require('./bandoDeDados/config.php');
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
 
-    if($_SERVER['REQUEST_METHOD'] == "POST") {
-        $nome = $_POST['nome'];
-        $senha = $_POST['senha'];
-
-        $erroNome = $erroSenha = "Nenhum";
-
-        // Validação de Nome
-        if(empty($nome)){
-            $erroNome = "Digite o nome de usuário";
-        } else if(!isset($nome)) {
-            $erroNome = "Nome de incorreto ou $nome ainda não cadastrado";
-        } else {
-            $erroNome = "Nenhum";
-        }
-
-        // Validação de Senha
-        if(empty($senha)){
-            $erroSenha = "Digite sua senha";
-        } else if(!isset($senha)) {
-            $erroSenha = "Senha incorreta";
-        } else {
-            $erroSenha = "Nenhum";
-        }
-        //Haverá verificação de associação do nome de usuário à senha fornecida
-        // o código abaixo é apenas para teste de página.
-
-        if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
-            echo "<script>alert('Seja bem vindo $nome! Você será redirecionado à página inicial.');
-            window.location.href = './index.php';</script>";
-        }       
-       
+    // Validação de Nome
+    if (empty($nome)) {
+        echo "O nome de usuário é obrigatório.";
+        exit();
     }
 
-?>
-<!--
+    // Validação de Senha
+    if (empty($senha)) {
+        echo "A senha é obrigatória.";
+        exit();
+    } else if (strlen($senha) < 6) {
+        echo "A senha deve ter pelo menos 6 caracteres.";
+        exit();
+    }
 
-     if ($erroNome == "Nenhum" && $erroSenha == "Nenhum") {
-            $sql = $pdo->prepare("SELECT nome, senha FROM usuario WHERE nome = ?");
-            $sql -> execute(array($nome));
-            $usuario = $sql->fetch(PDO::FETCH_ASSOC);
-            if($usuario && password_verify($senha, $usuario['senha'])){
-                header('Location:./index.php');
-                exit();
-                    
-            }else{
-                echo "Usuário ou senha incorretos";            }
-        }
+    try {
+        // Verificação no banco de dados
+        $stmt = $pdo->prepare('SELECT * FROM usuario WHERE nome = :nome');
+        $stmt->execute(['nome' => $nome]);
+        $user = $stmt->fetch();
 
-
-
-
-
-
-
-
-
-
-
-
-
-        if ($usuario && password_verify($senha, $usuario['senha'])) {
-                    echo "<script>alert('Seja bem-vindo $nome! Você será redirecionado à página inicial.');</script>";
-                    header('Location: ./index.php');
-                    exit();
-                } else {
-                    echo "Usuário ou senha incorretos";
-                }
+        if ($user) {
+            if (password_verify($senha, $user['senha'])) {
+                echo "Login bem-sucedido!";
+            } else {
+                echo "Senha incorreta.";
             }
+        } else {
+            echo "Nome de usuário não encontrado.";
         }
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
--->
+    } catch (PDOException $e) {
+        // Trata o erro de conexão ao banco de dados
+        echo "Erro ao conectar ao banco de dados: " . $e->getMessage();
+    }
+}
+?>

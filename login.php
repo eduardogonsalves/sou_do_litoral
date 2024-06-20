@@ -1,7 +1,6 @@
 <!--SoliDeoGloria-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <!--Conexão com Banco de Dados-->
 <?php require('./bandoDeDados/config.php') ?>
 
@@ -14,9 +13,8 @@
 </head>
 
 <body>
-   
     <div class="login">
-        <form novalidate action="login_POST.php" method="POST">
+        <form id="loginForm" action="login_POST.php" method="POST" novalidate>
             <h1>Login</h1>
             <div class="input-box">
                 <input type="text" id="nome" name="nome" placeholder="nome" required>
@@ -38,25 +36,30 @@
             <div class="register-link">
                 <p>Ainda não é registrado?<a href="./cadastro.php"> Cadastre-se!</a></p>
             </div>
+            <div class="error-message" id="error-message"></div>
         </form>
     </div>
     <script>
-        function validateForm(event) {
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Impede o envio do formulário para fazer a validação via AJAX
             var username = document.getElementById('nome').value;
             var password = document.getElementById('senha').value;
-            var error = "";
+            var erroNome = document.getElementById('erroNome');
+            var erroSenha = document.getElementById('erroSenha');
+            var errorMessage = document.getElementById('error-message');
+
+            erroNome.innerText = '';
+            erroSenha.innerText = '';
+            errorMessage.innerText = '';
 
             if (username === "") {
-                error = "O nome de usuário é obrigatório.";
+                erroNome.innerText = "O nome de usuário é obrigatório.";
+                return false;
             } else if (password === "") {
-                error = "A senha é obrigatória.";
+                erroSenha.innerText = "A senha é obrigatória.";
+                return false;
             } else if (password.length < 6) {
-                error = "A senha deve ter pelo menos 6 caracteres.";
-            }
-
-            if (error !== "") {
-                document.getElementById('error-message').innerText = error;
+                erroSenha.innerText = "A senha deve ter pelo menos 6 caracteres.";
                 return false;
             }
 
@@ -68,52 +71,16 @@
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     var response = xhr.responseText;
                     if (response === "Login bem-sucedido!") {
-                        window.location.href = "dashboard.html"; // Redireciona para a página de dashboard
+                        window.location.href = "index.php"; // Redireciona para a página de dashboard
                     } else {
-                        document.getElementById('error-message').innerText = response;
+                        errorMessage.innerText = response;
                     }
                 }
             };
             xhr.send("nome=" + encodeURIComponent(username) + "&senha=" + encodeURIComponent(password));
 
             return false;
-        }
-    </script>
-<!--
-    <Script>
-        document.getElementById('nome').addEventListener('submit', function (e) {
-            let hasError = false;
-
-            document.querySelectorAll('.error-message').forEach(function (msg) {
-                msg.textContent = '';
-            });
-            
-            const nome = document.getElementById('nome').value;
-            if (!isset(nome)) {
-                document.getElementById('erroNome').textContent = "Digite o nome de usuário";
-                hasError = true;
-            }
-
-            const senha = document.getElementById('senha').value;
-            if (senha.length < 6) {
-                document.getElementById('erroSenha').textContent = "Por favor, insira uma senha com pelo menos 06 dígitos";
-                hasError = true;
-            }
-
-            if (hasError) {
-                e.preventDefault();
-            }
-
-
         });
-    </Script>
--->
-
-
-
-
-
+    </script>
 </body>
-
-
 </html>
