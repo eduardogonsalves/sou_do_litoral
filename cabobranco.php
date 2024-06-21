@@ -509,14 +509,14 @@
             <div class="right-column">
                 <!-- Previsão do tempo aqui -->
                 <div id="weather">
-                    <h2 style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);">Previsão do Tempo</h2>
-                    <div style="font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="location"></div>
+                    <h2 style="text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5);">Previsão do Tempo</h2>
+                    <div style="font-weight:600; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5);" id="location"></div>
                     <div id="icon"></div>
-                    <div style="font-size: 55px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="temperature"></div>
-                    <div style="font-size: 18px; font-weight:600; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="description"></div>
-                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="wind"></div>
-                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);"  id="humidity"></div>
-                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="clouds"></div>
+                    <div style="font-size: 3em; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5);" id="temperature"></div>
+                    <div style="font-size: 1em; font-weight:600; margin-bottom: 20px; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5);" id="description"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5); margin-bottom: 10px" id="wind"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5); margin-bottom: 10px"  id="humidity"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 0.1em 0.1em 3px rgba(0, 0, 0, 0.5); margin-bottom: 10px" id="clouds"></div>
                 </div>
             </div>
 
