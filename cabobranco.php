@@ -514,9 +514,9 @@
                     <div id="icon"></div>
                     <div style="font-size: 55px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="temperature"></div>
                     <div style="font-size: 18px; font-weight:600; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="description"></div>
-                    <div style="font-size: 25px; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="wind"></div>
-                    <div style="font-size: 25px; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);"  id="humidity"></div>
-                    <div style="font-size: 25px; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="clouds"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="wind"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);"  id="humidity"></div>
+                    <div style="font-size: 1.4em; font-weight:600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);" id="clouds"></div>
                 </div>
             </div>
 

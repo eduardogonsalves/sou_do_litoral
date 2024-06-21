@@ -87,6 +87,7 @@
  
  /* Texto descrição */
  .descricao {
+    position: relative;
      background-color: #0077b6; /* Azul marinho */
      color: #fff;
      font-family: "Dosis", sans-serif;
@@ -96,6 +97,10 @@
      border-radius: 8px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  }
+ .text{
+    margin: auto;
+    justify-content: center;
+ }
  
 .text h2{
     margin: auto;
@@ -103,30 +108,34 @@
     padding-top: 20px;
 }
 .apresentacao{
-    margin: 40px 5px 40px 20px;
+    position: relative;
+    left: 2%;
+    right: 2%;
+    margin-bottom: 30px;
     padding-top: 15px;
     padding-left: 20px;
-    justify-content: right;
-    background: url('../imagens/caboBranco/localizacao.jpg') no-repeat;
     height: 600px;
+    width: 96%;
+    border-radius: 15px;
+    background: url('../imagens/caboBranco/localizacao.jpg') no-repeat;    
     background-size: cover;
     background-position: center;
-    max-width: 98%;
-    border-radius: 15px;
+    
 }
 
 .apre{
-    margin: auto;
-    margin-top: 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;    
+    width: 50%;
     font-size: 30px;
     font-weight: 600;
-    width: 900px;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    text-align:center;
-    justify-content: center;
     text-align:center;
     color: rgb(52, 72, 108);
     border-radius: 10px;
@@ -141,35 +150,40 @@
 
 
 .roteiro{
-    margin: 40px 5px 40px 20px;
+    position: relative;
+    left: 2%;
+    right: 2%;
+    margin-bottom: 30px;
     padding-top: 15px;
     padding-left: 20px;
-    justify-content: right;
-    background: url('../imagens/caboBranco/roteiro.jpg') no-repeat;
     height: 1600px;
+    width: 96%;
+    border-radius: 15px;
+    background: url('../imagens/caboBranco/roteiro.jpg') no-repeat;    
     background-size: cover;
     background-position: center;
-    max-width: 98%;
-    border-radius: 15px;
 }
 
 .rota{
-    margin: auto;
-    margin-top: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
     font-size: 30px;
     font-weight: 600;
-    width: 900px;
+    width: 50%;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
-    justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 25px 15px;
+
+    
 }
 
 .rota h3{
@@ -217,6 +231,9 @@
 }
 
 .tabuas{
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     backdrop-filter: blur(15px);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
@@ -224,13 +241,12 @@
 }
 
 .previsao {
-    font-size: 18px;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     line-height: 0;
 }
-.previsao h4{
-    line-height: 0;
-}
-
 
 .left-column, .right-column {
     width: 15%;
