@@ -41,7 +41,7 @@
  }
  
  .navbar a {
-     font-size: 1.35em;
+    font-size: clamp(1em, 2vw + 0.8em, 1.35em);
      color: #0077b6;
      text-decoration: none;
      font-weight: 700;
@@ -57,7 +57,7 @@
      margin-top: 3.5em;
      padding: 0.29em;
      font-family: "Dosis", sans-serif;
-     font-size: 1.74em;
+     font-size: clamp(1.5em, 3vw + 1em, 2.5em);
      color: #fff;
      background-color: #0077b6; /* Azul marinho */
      border-radius: 0.46em;
@@ -121,11 +121,12 @@
     text-align:center;
     padding-top: 20px;
 }
+
 .apresentacao{
     position: relative;
-    margin-bottom: 30px;
-    padding-top: 15px;
-    height: 600px;
+    margin-bottom: 1.875em;
+    padding-top: 0.9375em;
+    height: 37.5em;
     max-width: 98%;
     border-radius: 1.5em;
     background: url('../imagens/caboBranco/localizacao.jpg') no-repeat;    
@@ -141,33 +142,33 @@
     transform: translate(-50%, -50%);
     height: auto;    
     width: 50%;
-    font-size: 30px;
+    font-size: 1.4em;
     font-weight: 600;
     background-color: transparent;
-    border: 0.4px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 0.025em solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(0.625em);
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, .2);
     text-align:center;
     color: rgb(52, 72, 108);
-    border-radius: 10px;
-    padding: 25px 15px;
+    border-radius: 0.625em;
+    padding: 1.5625em 0.9375em;
 }
 
 .apre h3{
     display: inline-block;
-    font-size: 30px;
+    font-size: 1.875em;
     color: rgb(52, 72, 108);
 }
 
 
 .roteiro{
     position: relative;
-    margin-bottom: 30px;
-    padding-top: 15px;
-    padding-left: 20px;
-    height: 1600px;
+    margin-bottom: 1.875em;
+    padding-top: 0.9375em;
+    padding-left: 1.25em;
+    height: 110em;
     max-width: 98%;
-    border-radius: 15px;
+    border-radius: 0.9375em;
     background: url('../imagens/caboBranco/roteiro.jpg') no-repeat;    
     background-size: cover;
     background-position: center;
@@ -179,37 +180,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 600;
     width: 50%;
     background-color: transparent;
-    border: 0.4px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    border: 0.025em solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(1.25em);
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, .2);
+    text-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.9);
     text-align:center;
     color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 25px 15px;
+    border-radius: 0.625em;
+    padding: 1.5625em 0.9375em;
 
     
 }
 
 .rota h3{
-    font-size: 40px;
+    font-size: 2.5em;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    text-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.9);
 }
 
 /* Grupo Mapas/Tábuas/Previsão */
 
 
 .grupoMapa{
-    margin-top: 15px;
+    margin-top: 0.9375em;
     background-color: #0077b6; /* Azul marinho */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 /* Colunas - Mapa central */
@@ -217,11 +218,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
+    padding: 1.25em;
+    gap: 1.25em;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 /* Colunas - Previsão do Tempo */
@@ -287,24 +288,23 @@
 }
 
 .left-column, .right-column {
-    width: 15%;
-    height: 700px;
-    padding: 20px;
+    width: 15em;
+    height: 43.75em;
+    padding: 1.25em;
     color: white;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.125em solid #ddd;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 .left-column h2, .right-column h2 {
     font-size: 1.5em;
-
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .left-column h4, .right-column h4 {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .left-column p, .right-column p {
@@ -315,16 +315,16 @@
 .center-column {
     flex: 1;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 #map {
     width: 100%;
-    height: 600px; /* Ajustar conforme necessário */
-    border-radius: 8px;
-    margin-bottom: 20px;
+    height: 49em; /* Ajustar conforme necessário */
+    border-radius: 0.5em;
+    margin-bottom: 1.25em;
 }
 
 .map-buttons {
@@ -353,13 +353,13 @@
  
  .videos {
      text-align: center;
-     padding: 50px 20px;
+     padding: 3.125em 1.25em;
      background-color: #f9f9f9;
  }
  
  .videos h2 {
      font-size: 2em;
-     margin-bottom: 20px;
+     margin-bottom: 1.25em;
      color: #333;
  }
  
@@ -372,11 +372,11 @@
  
  .video-card {
      width: 100%;
-     max-width: 300px;
-     border: 1px solid #ddd;
-     border-radius: 8px;
+     max-width: 18.75em;
+     border: 0.0625em solid #ddd;
+     border-radius: 0.5em;
      overflow: hidden;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
      transition: transform 0.3s, box-shadow 0.3s;
  }
  
@@ -454,15 +454,77 @@
      transform: scale(1.05); /* Leve aumento no tamanho */
  }
  
- @media (max-width: 768px) {
-     .footer-columns {
-         flex-direction: column;
-         align-items: center;
-     }
- 
-     .column {
-         width: 80%;
-         max-width: none;
-         text-align: center;
-     }
+ @media (max-width: 480px) {
+    .descricao {
+        font-size: 1.2em;
+        padding: 1em;
     }
+    
+    .apre {
+        font-size: 1.1em;
+        padding: 1em 1em;
+    }
+    
+    .apre h3 {
+        font-size: 1.5em;
+    }
+    
+    .rota {
+        font-size: 1.1em;
+        padding: 1.3em 1em;
+    }
+    
+    .rota h3 {
+        font-size: 1.8em;
+    }
+    
+    .left-column h2, .right-column h2 {
+        font-size: 1.2em;
+    }
+    
+    .left-column h4, .right-column h4 {
+        font-size: 1em;
+    }
+    
+    .left-column p, .right-column p {
+        font-size: 0.9em;
+    }
+    
+    .btnsmaps {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+        padding: 8px 16px;
+    }
+    
+    .videos h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    .btn-topo a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        max-width: none;
+        text-align: center;
+    }
+}

@@ -100,399 +100,399 @@
     
     <div class="grupoMapa">
         <section class="content">
-        <div class="left-column">
-            <!-- Informações das tábuas de maré aqui -->
-            <div class="tabuas" id="tabuasMare">
-                <h2>Tábua de Maré</h2><hr>
-                <div class="previsao">
-                    <h4>Terça 18/06/24</h4>
-                    <p> 
-                        01:30h - 2.0m<br>
-                        07:45h - 0.7m<br>
-                        13:56h - 2.0m<br>
-                        20:00h - 0.6m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Quarta 19/06/24</h4>
-                    <p> 
-                        02:15h - 2.1m<br>
-                        08:28h - 0.6m<br>
-                        14:39h - 2.1m<br>
-                        20:43h - 0.6m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Quinta 20/06/24</h4>
-                    <p> 
-                        02:58h - 2.2m<br>
-                        09:11h - 0.5m<br>
-                        15:23h - 2.1m<br>
-                        21:21h - 0.5m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 21/06/24</h4>
-                    <p> 
-                        03:41h - 2.3m<br>
-                        09:56h - 0.4m<br>
-                        16:08h - 2.2m<br>
-                        22:06h - 0.5m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 22/06/24</h4>
-                    <p> 
-                        04:21h - 2.4m<br>
-                        10:38h - 0.3m<br>
-                        16:54h - 2.2m<br>
-                        22:53h - 0.4m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 23/06/24</h4>
-                    <p> 
-                        05:06h - 2.4m<br>
-                        11:19h - 0.3m<br>
-                        17:39h - 2.2m<br>
-                        23:36h - 0.4m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Segunda 24/06/24</h4>
-                    <p> 
-                        05:51h - 2.4m<br>
-                        12:06h - 0.2m<br>
-                        18:26h - 2.2m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Terça 25/06/24</h4>
-                    <p> 
-                        00:19h - 0.4m<br>
-                        06:34h - 2.4m<br>
-                        12:54h - 0.3m<br>
-                        19:15h - 2.2m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Quarta 26/06/24</h4>
-                    <p> 
-                        01:06h - 0.5m<br>
-                        07:24h - 2.4m<br>
-                        13:43h - 0.4m<br>
-                        20:04h - 2.1m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Quinta 27/06/24</h4>
-                    <p> 
-                        01:58h - 0.6m<br>
-                        08:19h - 2.3m<br>
-                        14:38h - 0.5m<br>
-                        21:00h - 2.1m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 28/06/24</h4>
-                    <p> 
-                        02:56h - 0.6m<br>
-                        09:15h - 2.2m<br>
-                        15:39h - 0.5m<br>
-                        22:00h - 2.0m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 29/06/24</h4>
-                    <p> 
-                        04:02h - 0.7m<br>
-                        10:21h - 2.1m<br>
-                        16:43h - 0.6m<br>
-                        23:04h - 2.0m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 30/06/24</h4>
-                    <p> 
-                        05:09h - 0.7m<br>
-                        11:28h - 2.1m<br>
-                        17:51h - 0.6m<hr>
-                    </p>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 28/06/24</h4>
-                    <p> 
-                        02:56h - 0.6m<br>
-                        09:15h - 2.2m<br>
-                        15:39h - 0.5m<br>
-                        22:00h - 2.0m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 29/06/24</h4>
-                    <p>
-                        04:02h - 0.7m<br>
-                        10:21h - 2.1m<br>
-                        16:43h - 0.6m<br>
-                        23:04h - 2.0m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 30/06/24</h4>
-                    <p>
-                        05:09h - 0.7m<br>
-                        11:28h - 2.1m<br>
-                        17:51h - 0.6m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Segunda 01/07/24</h4>
-                    <p>
-                        00:09h - 2.0m<br>
-                        06:23h - 0.6m<br>
-                        12:39h - 2.1m<br>
-                        18:53h - 0.6m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Terça 02/07/24</h4>
-                    <p>
-                        01:11h - 2.1m<br>
-                        07:32h - 0.5m<br>
-                        13:45h - 2.1m<br>
-                        19:54h - 0.6m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quarta 03/07/24</h4>
-                    <p>
-                        02:13h - 2.2m<br>
-                        08:28h - 0.4m<br>
-                        14:43h - 2.1m<br>
-                        20:47h - 0.6m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quinta 04/07/24</h4>
-                    <p>
-                        03:06h - 2.3m<br>
-                        09:17h - 0.4m<br>
-                        15:38h - 2.2m<br>
-                        21:32h - 0.5m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 05/07/24</h4>
-                    <p>
-                        03:54h - 2.3m<br>
-                        10:04h - 0.3m<br>
-                        16:23h - 2.2m<br>
-                        22:15h - 0.5m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 06/07/24</h4>
-                    <p>
-                        04:36h - 2.3m<br>
-                        10:47h - 0.3m<br>
-                        17:02h - 2.2m<br>
-                        22:54h - 0.5m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 07/07/24</h4>
-                    <p>
-                        05:11h - 2.3m<br>
-                        11:26h - 0.3m<br>
-                        17:41h - 2.1m<br>
-                        23:30h - 0.5m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Segunda 08/07/24</h4>
-                    <p>
-                        05:47h - 2.3m<br>
-                        12:02h - 0.4m<br>
-                        18:15h - 2.1m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Terça 09/07/24</h4>
-                    <p>
-                        00:02h - 0.5m<br>
-                        06:21h - 2.3m<br>
-                        12:38h - 0.4m<br>
-                        18:51h - 2.1m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quarta 10/07/24</h4>
-                    <p>
-                        00:38h - 0.6m<br>
-                        06:56h - 2.2m<br>
-                        13:09h - 0.5m<br>
-                        19:26h - 2.0m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quinta 11/07/24</h4>
-                    <p>
-                        01:13h - 0.7m<br>
-                        07:36h - 2.1m<br>
-                        13:49h - 0.6m<br>
-                        20:06h - 1.9m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 12/07/24</h4>
-                    <p>
-                        01:56h - 0.7m<br>
-                        08:19h - 2.0m<br>
-                        14:32h - 0.7m<br>
-                        20:53h - 1.9m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 13/07/24</h4>
-                    <p>
-                        02:43h - 0.8m<br>
-                        09:06h - 1.9m<br>
-                        15:21h - 0.8m<br>
-                        21:45h - 1.8m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 14/07/24</h4>
-                    <p>
-                        03:45h - 0.9m<br>
-                        10:04h - 1.8m<br>
-                        16:21h - 0.9m<br>
-                        22:43h - 1.8m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Segunda 15/07/24</h4>
-                    <p>
-                        04:51h - 0.9m<br>
-                        11:08h - 1.8m<br>
-                        17:23h - 0.9m<br>
-                        23:49h - 1.8m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Terça 16/07/24</h4>
-                    <p>
-                        05:58h - 0.9m<br>
-                        12:15h - 1.8m<br>
-                        18:23h - 0.8m<hr>
-                    </p><hr>
+            <div class="left-column">
+                <!-- Informações das tábuas de maré aqui -->
+                <div class="tabuas" id="tabuasMare">
+                    <h2>Tábua de Maré</h2><hr>
+                    <div class="previsao">
+                        <h4>Terça 18/06/24</h4>
+                        <p> 
+                            01:30h - 2.0m<br>
+                            07:45h - 0.7m<br>
+                            13:56h - 2.0m<br>
+                            20:00h - 0.6m<hr>
+                        </p>
                     </div>
-                <div class="previsao">
-                    <h4>Quarta 17/07/24</h4>
-                    <p>
-                        00:49h - 1.9m<br>
-                        07:06h - 0.8m<br>
-                        13:17h - 1.9m<br>
-                        19:24h - 0.8m<hr>
-                    </p><hr>
+                    <div class="previsao">
+                        <h4>Quarta 19/06/24</h4>
+                        <p> 
+                            02:15h - 2.1m<br>
+                            08:28h - 0.6m<br>
+                            14:39h - 2.1m<br>
+                            20:43h - 0.6m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 20/06/24</h4>
+                        <p> 
+                            02:58h - 2.2m<br>
+                            09:11h - 0.5m<br>
+                            15:23h - 2.1m<br>
+                            21:21h - 0.5m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 21/06/24</h4>
+                        <p> 
+                            03:41h - 2.3m<br>
+                            09:56h - 0.4m<br>
+                            16:08h - 2.2m<br>
+                            22:06h - 0.5m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 22/06/24</h4>
+                        <p> 
+                            04:21h - 2.4m<br>
+                            10:38h - 0.3m<br>
+                            16:54h - 2.2m<br>
+                            22:53h - 0.4m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 23/06/24</h4>
+                        <p> 
+                            05:06h - 2.4m<br>
+                            11:19h - 0.3m<br>
+                            17:39h - 2.2m<br>
+                            23:36h - 0.4m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Segunda 24/06/24</h4>
+                        <p> 
+                            05:51h - 2.4m<br>
+                            12:06h - 0.2m<br>
+                            18:26h - 2.2m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Terça 25/06/24</h4>
+                        <p> 
+                            00:19h - 0.4m<br>
+                            06:34h - 2.4m<br>
+                            12:54h - 0.3m<br>
+                            19:15h - 2.2m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quarta 26/06/24</h4>
+                        <p> 
+                            01:06h - 0.5m<br>
+                            07:24h - 2.4m<br>
+                            13:43h - 0.4m<br>
+                            20:04h - 2.1m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 27/06/24</h4>
+                        <p> 
+                            01:58h - 0.6m<br>
+                            08:19h - 2.3m<br>
+                            14:38h - 0.5m<br>
+                            21:00h - 2.1m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 28/06/24</h4>
+                        <p> 
+                            02:56h - 0.6m<br>
+                            09:15h - 2.2m<br>
+                            15:39h - 0.5m<br>
+                            22:00h - 2.0m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 29/06/24</h4>
+                        <p> 
+                            04:02h - 0.7m<br>
+                            10:21h - 2.1m<br>
+                            16:43h - 0.6m<br>
+                            23:04h - 2.0m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 30/06/24</h4>
+                        <p> 
+                            05:09h - 0.7m<br>
+                            11:28h - 2.1m<br>
+                            17:51h - 0.6m<hr>
+                        </p>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 28/06/24</h4>
+                        <p> 
+                            02:56h - 0.6m<br>
+                            09:15h - 2.2m<br>
+                            15:39h - 0.5m<br>
+                            22:00h - 2.0m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 29/06/24</h4>
+                        <p>
+                            04:02h - 0.7m<br>
+                            10:21h - 2.1m<br>
+                            16:43h - 0.6m<br>
+                            23:04h - 2.0m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 30/06/24</h4>
+                        <p>
+                            05:09h - 0.7m<br>
+                            11:28h - 2.1m<br>
+                            17:51h - 0.6m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Segunda 01/07/24</h4>
+                        <p>
+                            00:09h - 2.0m<br>
+                            06:23h - 0.6m<br>
+                            12:39h - 2.1m<br>
+                            18:53h - 0.6m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Terça 02/07/24</h4>
+                        <p>
+                            01:11h - 2.1m<br>
+                            07:32h - 0.5m<br>
+                            13:45h - 2.1m<br>
+                            19:54h - 0.6m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quarta 03/07/24</h4>
+                        <p>
+                            02:13h - 2.2m<br>
+                            08:28h - 0.4m<br>
+                            14:43h - 2.1m<br>
+                            20:47h - 0.6m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 04/07/24</h4>
+                        <p>
+                            03:06h - 2.3m<br>
+                            09:17h - 0.4m<br>
+                            15:38h - 2.2m<br>
+                            21:32h - 0.5m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 05/07/24</h4>
+                        <p>
+                            03:54h - 2.3m<br>
+                            10:04h - 0.3m<br>
+                            16:23h - 2.2m<br>
+                            22:15h - 0.5m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 06/07/24</h4>
+                        <p>
+                            04:36h - 2.3m<br>
+                            10:47h - 0.3m<br>
+                            17:02h - 2.2m<br>
+                            22:54h - 0.5m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 07/07/24</h4>
+                        <p>
+                            05:11h - 2.3m<br>
+                            11:26h - 0.3m<br>
+                            17:41h - 2.1m<br>
+                            23:30h - 0.5m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Segunda 08/07/24</h4>
+                        <p>
+                            05:47h - 2.3m<br>
+                            12:02h - 0.4m<br>
+                            18:15h - 2.1m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Terça 09/07/24</h4>
+                        <p>
+                            00:02h - 0.5m<br>
+                            06:21h - 2.3m<br>
+                            12:38h - 0.4m<br>
+                            18:51h - 2.1m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quarta 10/07/24</h4>
+                        <p>
+                            00:38h - 0.6m<br>
+                            06:56h - 2.2m<br>
+                            13:09h - 0.5m<br>
+                            19:26h - 2.0m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 11/07/24</h4>
+                        <p>
+                            01:13h - 0.7m<br>
+                            07:36h - 2.1m<br>
+                            13:49h - 0.6m<br>
+                            20:06h - 1.9m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 12/07/24</h4>
+                        <p>
+                            01:56h - 0.7m<br>
+                            08:19h - 2.0m<br>
+                            14:32h - 0.7m<br>
+                            20:53h - 1.9m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 13/07/24</h4>
+                        <p>
+                            02:43h - 0.8m<br>
+                            09:06h - 1.9m<br>
+                            15:21h - 0.8m<br>
+                            21:45h - 1.8m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 14/07/24</h4>
+                        <p>
+                            03:45h - 0.9m<br>
+                            10:04h - 1.8m<br>
+                            16:21h - 0.9m<br>
+                            22:43h - 1.8m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Segunda 15/07/24</h4>
+                        <p>
+                            04:51h - 0.9m<br>
+                            11:08h - 1.8m<br>
+                            17:23h - 0.9m<br>
+                            23:49h - 1.8m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Terça 16/07/24</h4>
+                        <p>
+                            05:58h - 0.9m<br>
+                            12:15h - 1.8m<br>
+                            18:23h - 0.8m<hr>
+                        </p><hr>
+                        </div>
+                    <div class="previsao">
+                        <h4>Quarta 17/07/24</h4>
+                        <p>
+                            00:49h - 1.9m<br>
+                            07:06h - 0.8m<br>
+                            13:17h - 1.9m<br>
+                            19:24h - 0.8m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 18/07/24</h4>
+                        <p>
+                            01:41h - 2.0m<br>
+                            08:02h - 0.6m<br>
+                            14:11h - 2.0m<br>
+                            20:17h - 0.6m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 19/07/24</h4>
+                        <p>
+                            02:34h - 2.2m<br>
+                            08:53h - 0.5m<br>
+                            15:06h - 2.1m<br>
+                            21:06h - 0.5m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 20/07/24</h4>
+                        <p>
+                            03:21h - 2.3m<br>
+                            09:39h - 0.3m<br>
+                            15:56h - 2.2m<br>
+                            21:53h - 0.4m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Domingo 21/07/24</h4>
+                        <p>
+                            04:06h - 2.4m<br>
+                            10:21h - 0.2m<br>
+                            16:41h - 2.3m<br>
+                            22:36h - 0.4m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Segunda 22/07/24</h4>
+                        <p>
+                            04:49h - 2.5m<br>
+                            11:01h - 0.2m<br>
+                            17:21h - 2.4m<br>
+                            23:17h - 0.3m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Terça 23/07/24</h4>
+                        <p>
+                            05:30h - 2.5m<br>
+                            11:40h - 0.2m<br>
+                            18:01h - 2.4m<br>
+                            23:58h - 0.3m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quarta 24/07/24</h4>
+                        <p>
+                            06:11h - 2.5m<br>
+                            12:17h - 0.3m<br>
+                            18:40h - 2.4m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Quinta 25/07/24</h4>
+                        <p>
+                            00:39h - 0.4m<br>
+                            06:52h - 2.4m<br>
+                            12:54h - 0.3m<br>
+                            19:21h - 2.3m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sexta 26/07/24</h4>
+                        <p>
+                            01:19h - 0.5m<br>
+                            07:34h - 2.3m<br>
+                            13:32h - 0.4m<br>
+                            20:03h - 2.2m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="previsao">
+                        <h4>Sábado 27/07/24</h4>
+                        <p>
+                            02:02h - 0.7m<br>
+                            08:18h - 2.1m<br>
+                            14:13h - 0.6m<br>
+                            20:49h - 2.0m<hr>
+                        </p><hr>
+                    </div>
+                    <div class="fonte">
+                        <p style="color: white;">Fonte: Marinha do Brasil</p>
+                    </div>
+                    <div class="tabuaCompleta">
+                        <a style="text-decoration: none; color: white; font-size: 0.8em" href="https://www.marinha.mil.br/chm/sites/www.marinha.mil.br.chm/files/dados_de_mare/23_-_porto_de_cabedelo_2024_ok.pdf" target="_blank">Previsão completa clique aqui!</a>
+                    </div>                
                 </div>
-                <div class="previsao">
-                    <h4>Quinta 18/07/24</h4>
-                    <p>
-                        01:41h - 2.0m<br>
-                        08:02h - 0.6m<br>
-                        14:11h - 2.0m<br>
-                        20:17h - 0.6m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 19/07/24</h4>
-                    <p>
-                        02:34h - 2.2m<br>
-                        08:53h - 0.5m<br>
-                        15:06h - 2.1m<br>
-                        21:06h - 0.5m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 20/07/24</h4>
-                    <p>
-                        03:21h - 2.3m<br>
-                        09:39h - 0.3m<br>
-                        15:56h - 2.2m<br>
-                        21:53h - 0.4m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Domingo 21/07/24</h4>
-                    <p>
-                        04:06h - 2.4m<br>
-                        10:21h - 0.2m<br>
-                        16:41h - 2.3m<br>
-                        22:36h - 0.4m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Segunda 22/07/24</h4>
-                    <p>
-                        04:49h - 2.5m<br>
-                        11:01h - 0.2m<br>
-                        17:21h - 2.4m<br>
-                        23:17h - 0.3m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Terça 23/07/24</h4>
-                    <p>
-                        05:30h - 2.5m<br>
-                        11:40h - 0.2m<br>
-                        18:01h - 2.4m<br>
-                        23:58h - 0.3m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quarta 24/07/24</h4>
-                    <p>
-                        06:11h - 2.5m<br>
-                        12:17h - 0.3m<br>
-                        18:40h - 2.4m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Quinta 25/07/24</h4>
-                    <p>
-                        00:39h - 0.4m<br>
-                        06:52h - 2.4m<br>
-                        12:54h - 0.3m<br>
-                        19:21h - 2.3m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sexta 26/07/24</h4>
-                    <p>
-                        01:19h - 0.5m<br>
-                        07:34h - 2.3m<br>
-                        13:32h - 0.4m<br>
-                        20:03h - 2.2m<hr>
-                    </p><hr>
-                </div>
-                <div class="previsao">
-                    <h4>Sábado 27/07/24</h4>
-                    <p>
-                        02:02h - 0.7m<br>
-                        08:18h - 2.1m<br>
-                        14:13h - 0.6m<br>
-                        20:49h - 2.0m<hr>
-                    </p><hr>
-                </div>
-                <div class="fonte">
-                    <p style="color: white;">Fonte: Marinha do Brasil</p>
-                </div>
-                <div class="tabuaCompleta">
-                    <a style="text-decoration: none; color: white; font-size: 0.8em" href="https://www.marinha.mil.br/chm/sites/www.marinha.mil.br.chm/files/dados_de_mare/23_-_porto_de_cabedelo_2024_ok.pdf" target="_blank">Previsão completa clique aqui!</a>
-                </div>                
             </div>
-        </div>
 
 
 
