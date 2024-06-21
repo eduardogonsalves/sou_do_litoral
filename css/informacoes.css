@@ -11,7 +11,7 @@
 
 body{
     min-height: 100vh;
-    background: url('../imagens/top.jpg') no-repeat;
+    background: url('../imagens/informacoes/fundoInfo.jpg') no-repeat;
     background-size: cover;
     background-position: center;    
 }
@@ -68,7 +68,7 @@ body{
     font-size: 25px;
     color: rgb(194, 227, 230);
     justify-content: right;
-    background: url('../imagens/informacoes/telefone.jpg') no-repeat;
+    background: url('../imagens/informacoes/telefones.jpg') no-repeat;
     height: 1600px;
     background-size: cover;
     background-position: center;
@@ -89,8 +89,9 @@ body{
     width: 800px;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
     text-align:center;
     justify-content: center;
     text-align:center;

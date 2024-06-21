@@ -65,7 +65,7 @@
                 <span class="next"></span>
                 <button class="home">
                     <a href="./index.php" class="home">
-                        <img src="./imagens/btn_home.png" alt="Home">
+                        <img src="./imagens/btn_home/btn_home.png" alt="Home">
                     </a>
                 </button>
             </div>

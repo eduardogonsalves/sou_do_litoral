@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../imagens/cadastro.jpg');
+    background-image: url('../imagens/login_cadastro/cadastro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

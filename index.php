@@ -28,7 +28,7 @@
 
     <!-- Barra de Menu -->
     <header class="header">
-        <img src="./imagens/logofinal.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+        <img src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="./quemsomos.php">Quem somos</a>
