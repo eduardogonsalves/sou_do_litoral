@@ -21,22 +21,25 @@
 
     <!-- Barra de Menu -->
     <header class="header">
-    <img src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+    <img class="logo" src="./imagens/home/logo.png" alt="Logo Marca" style="height: 5em; width: 5em;"></a>
         <nav class="navbar">
             <a href="./index.php">Home</a>
             <a href="./quemsomos.php">Quem somos</a>
             <a href="./index.php#nossosContatos">Contatos</a>
             <a href="./informacoes.php">Informações</a>
             <a href="./login.php">Login / Cadastro</a>
-        </nav>   
+        </nav>      
+        
     </header>
 
-    <div class="title">
-        <h1 id="top">Praia de Cabo Branco</h1>
-    </div>
+    
     
     <!-- Carrossel de imagens -->
     <section class="carousel">
+        <div class="title">
+            <h1 id="top">Praia de Cabo Branco</h1>
+        </div>
+
         <div class="carousel-container">
             <div class="slide"><img src="./imagens/caboBranco/cb1.webp" alt="Cabo Branco"></div>
             <div class="slide"><img src="./imagens/caboBranco/cb12.webp" alt="Cabo BrancoImagem 2"></div>
@@ -51,6 +54,7 @@
     <!-- Texto descritivo do Destino -->
 
     <section class="descricao">
+        
         <div class="text">
             <h2>O Encontro da Cidade e o Mar</h2><br>
             <div class="apresentacao">
