@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu título vindo do banco</title>
+  <title>titulo_guia_pagina</title>
   <link rel="stylesheet" href="./css/destino.css"><!--Referência do CSS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,17 +39,17 @@
     <!-- Carrossel de imagens -->
     <section class="carousel">
         <div class="title">
-            <h1 id="top">Praia de Cabo Branco</h1>
+            <h1 id="top">nome_destino</h1>
         </div>
 
         <div class="carousel-container">
-            <div class="slide"><img src="./imagens/caboBranco/cb1.webp" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb12.webp" alt="Cabo BrancoImagem 2"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb8.webp" alt="Cabo Branco 3"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb9.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb5.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb6.jpg" alt="Cabo Branco"></div>
-            <div class="slide"><img src="./imagens/caboBranco/cb11.jpg" alt="Cabo Branco"></div>
+            <div class="slide"><img src="carrossel1"></div>
+            <div class="slide"><img src="carrossel2"></div>
+            <div class="slide"><img src="carrossel3"></div>
+            <div class="slide"><img src="carrossel4"></div>
+            <div class="slide"><img src="carrossel5"></div>
+            <div class="slide"><img src="carrossel6"></div>
+            <div class="slide"><img src="carrossel7"></div>
         </div>
     </section>
 
@@ -58,47 +58,19 @@
     <section class="descricao">
         
         <div class="text">
-            <h2>O Encontro da Cidade e o Mar</h2><br>
+            <h2>titulo_descricao</h2><br>
             <div class="apresentacao">
                 <div class="apre">            
                     <h3>Localização e Acesso</h3>
-                    <p> Cabo Branco é uma extensão de areia dourada que se estende ao 
-                        longo da costa leste de João Pessoa, a capital do estado da Paraíba, 
-                        no nordeste do Brasil. Faz parte da região conhecida como 
-                        "Ponta do Seixas", considerada o ponto mais oriental das Américas. 
-                        Seu acesso é fácil, com várias vias de acesso a partir do centro da cidade.
+                    <p>
+                        localizacao_acesso
                     </p><br>
                 </div>
             </div>
             <div class="roteiro">
                 <div class="rota">
                     <h3>O que você vai encontrar</h3>
-                    <P>
-                        Cabo Branco é famosa por sua beleza natural, com águas cristalinas em tons de azul e verde, 
-                        perfeitas para mergulho e relaxamento. A faixa de areia macia convida a caminhadas à 
-                        beira-mar e banhos de sol.                        
-                    </P>
-                    <P>
-                        O Farol do Cabo Branco, projetado por Oscar Niemeyer, é um destaque. Localizado no ponto 
-                        mais oriental das Américas, oferece vistas deslumbrantes do Atlântico e é ideal para 
-                        apreciar o pôr do sol.                        
-                    </P>
-                    <P>
-                        Cabo Branco oferece diversas atividades e entretenimento, como surf, stand-up paddle e kitesurf, 
-                        além de quiosques que servem petiscos e bebidas.
-                    </P>
-                    <P>
-                        A área é rica em cultura e gastronomia paraibana, com restaurantes que oferecem pratos tradicionais 
-                        nordestinos influenciados por culturas indígenas, africanas e europeias.
-                    </P>
-                    <P>
-                        À noite, Cabo Branco tem uma animada cena noturna, com bares e restaurantes à beira-mar que 
-                        oferecem música ao vivo e uma atmosfera descontraída.
-                    </P>
-                    <P>
-                        A Praia de Cabo Branco encanta com sua beleza natural, cultura vibrante e hospitalidade. 
-                        Seja para relaxar, explorar ou contemplar a paisagem, Cabo Branco proporciona uma experiência inesquecível.
-                    </P>
+                    descricao_roteiro
                 </div>
             </div>
         </div>
@@ -528,27 +500,22 @@
 
         </section>
     </div>
-    
-    
-    <section class="calendar">
-        <!-- Calendário e descrição aqui -->
-    </section>
 
     <!-- Cards de vídeos do YouTube -->
     <section class="videos">
         <h2>Galeria de Vídeos</h2>
         <div class="video-cards">
             <div class="video-card">
-                <iframe src="https://www.youtube-nocookie.com/embed/fE9XYai51VY?si=53WP19du0wwms0-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="video1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/v5rRm6DOHzg?si=zHDv_kkRe6RZSqZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="video2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/cvaWef0O-z0?si=UNzL98lNIba4QAYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="video3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/wQ3FxpNIW9U?si=3ysctNOFMfUr_c43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="video4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>

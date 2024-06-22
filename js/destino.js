@@ -20,7 +20,7 @@ function showSlides() {
 
 const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather
 
-const city = 'João Pessoa';  // Colocar a cidade de acordo com o destino (João Pessoa, Conde, Cabedelo...)
+const city = 'cidade';  // Colocar a cidade de acordo com o destino (João Pessoa, Conde, Cabedelo...)
 
 const weatherImages = {
     clear: './imagens/previsao/clear.png',
@@ -79,7 +79,7 @@ fetchWeatherData();
 
 
 // Configuração do Mapa - Coluna Central
-var map = L.map('map').setView([-7.1266, -34.8254], 13);
+var map = L.map('map').setView([lat_cidade, long_cidade], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -91,44 +91,40 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var data = {
     restaurantes: [
-        {lat: -7.145781, lng: -34.804317, name:'Gulliver Mar Restaurante'},
-        {lat: -7.145632, lng: -34.806807, name:'Corais Bar e Restaurante'},
-        {lat: -7.145774, lng: -34.809616, name:'Restaurante e espaço Marcozero'},
-        {lat: -7.145682, lng: -34.809704, name:'RESTAURANTE ATLÂNTICO ORIENTAL'},
-        {lat: -7.144138, lng: -34.812432, name:'Restaurante Green Sunset'},
-        {lat: -7.141139, lng: -34.815582, name:'Tocaia Gastrobar'},
-        {lat: -7.141254, lng: -34.815485, name:'Restaurante Bama'},
-        {lat: -7.140071, lng: -34.816599, name:'Pescadore restô'},
-        {lat: -7.136496, lng: -34.819376, name:'Bar do Cuscuz'},
-        {lat: -7.134890, lng: -34.820326, name:'Restaurante Esfinge'},
-        {lat: -7.131720, lng: -34.821974, name:'FoodPark Cabo Branco'},
-        {lat: -7.130132, lng: -34.822472, name:'Restaurante Olho de Lula'},
-        {lat: -7.128422, lng: -34.823123, name: '7KM - Conexão Saudável'},
-        {lat: -7.125830, lng: -34.823727, name: 'Sal e Brasa João Pessoa'},
-        {lat: -7.122878, lng: -34.823994, name: "Sapore D'Itália"},
-        {lat: -7.120095, lng: -34.824876, name: 'Formaggio 43 - Restaurante e Forneria'},
-        {lat: -7.119789, lng: -34.825774, name: 'Palace Grill Restaurante'},
+        {lat: lat_rest1, lng: long_rest1, name:'nome_rest1'},
+        {lat: lat_rest2, lng: long_rest2, name:'nome_rest2'},
+        {lat: lat_rest3, lng: long_rest3, name:'nome_rest3'},
+        {lat: lat_rest4, lng: long_rest4, name:'nome_rest4'},
+        {lat: lat_rest5, lng: long_rest5, name:'nome_rest5'},
+        {lat: lat_rest6, lng: long_rest6, name:'nome_rest6'},
+        {lat: lat_rest7, lng: long_rest7, name:'nome_rest7'},
+        {lat: lat_rest8, lng: long_rest8, name:'nome_rest8'},
+        {lat: lat_rest9, lng: long_rest9, name:'nome_rest9'},
+        {lat: lat_rest10, lng: long_rest10, name:'nome_rest10'},
+        {lat: lat_rest11, lng: long_rest11, name:'nome_rest11'},
+        {lat: lat_rest12, lng: long_rest12, name:'nome_rest12'},
+        {lat: lat_rest13, lng: long_rest13, name:'nome_rest13'},
+        {lat: lat_rest14, lng: long_rest14, name:'nome_rest14'},
+        {lat: lat_rest15, lng: long_rest15, name:"nome_rest15"},
         
     ],
 
     // Marcadores para Postos de Saúde
 
     saude: [
-        {lat: -7.143929, lng: -34.817023, name: 'USF Cidade Recreio'},
-        {lat: -7.136031, lng: -34.827701, name: 'USF - Altiplano I E II'},
-        {lat: -7.109241, lng: -34.837266, name: 'Posto De Saúde - Manaíra'},
-        {lat: -7.112383, lng: -34.824532, name: 'Unidade Básica de Saúde das Praias'},
-        {lat: -7.097512, lng: -34.839729, name: 'UPA Oceania'},
-         
+        {lat: lat_saude1, lng: long_saude1, name: 'nome_saude1'},
+        {lat: lat_saude2, lng: long_saude2, name: 'nome_saude2'},
+        {lat: lat_saude3, lng: long_saude3, name: 'nome_saude3'},
+        {lat: lat_saude4, lng: long_saude4, name: 'nome_saude4'},
+        {lat: lat_saude5, lng: long_saude5, name: 'nome_saude5'},         
     ],
 
     // Marcadores para Postos Policiais
 
     policia: [
-        {lat: -7.133229, lng: -34.830254, name: 'PM - CEATur'},
-        {lat: -7.113698, lng: -34.829431, name: 'Delegacia Distrital de Tambaú'},
-        {lat: -7.104421, lng: -34.837147, name: 'DISP - Distrito Integrado de Segurança Pública'},
-    
+        {lat: lat_policia1, lng: long_policia1, name: 'nome_policia1'},
+        {lat: lat_policia2, lng: long_policia2, name: 'nome_policia2'},
+        {lat: lat_policia3, lng: long_policia3, name: 'nome_policia3'},    
      ]
 };
 
