@@ -59,13 +59,13 @@ if (!$destino) {
         </div>
 
         <div class="carousel-container">
-            <div class="slide"><img src="<?php echo $destino['carrossel1']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel2']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel3']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel4']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel5']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel6']; ?>"></div>
-            <div class="slide"><img src="<?php echo $destino['carrossel7']; ?>"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel1']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel2']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel3']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel4']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel5']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel6']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel7']); ?>" alt="Cabo Branco"></div>
         </div>
     </section>
 
@@ -79,14 +79,19 @@ if (!$destino) {
                 <div class="apre">            
                     <h3>Localização e Acesso</h3>
                     <p>
-                        localizacao_acesso
+                    <?php echo htmlspecialchars(json_decode($destino['localizacao_acesso'], true)[0]['paragrafo']); ?>
                     </p><br>
                 </div>
             </div>
             <div class="roteiro">
                 <div class="rota">
                     <h3>O que você vai encontrar</h3>
-                    descricao_roteiro
+                    <?php 
+                        $descricao_roteiro = json_decode($destino['descricao_roteiro'], true);
+                        foreach ($descricao_roteiro as $paragrafo) {
+                            echo "<p>" . htmlspecialchars($paragrafo['paragrafo']) . "</p>";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -522,16 +527,16 @@ if (!$destino) {
         <h2>Galeria de Vídeos</h2>
         <div class="video-cards">
             <div class="video-card">
-                <iframe src="video1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="<?php echo htmlspecialchars($destino['video1']); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="video2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="<?php echo htmlspecialchars($destino['video2']); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="video3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="<?php echo htmlspecialchars($destino['video3']); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <iframe src="video4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="<?php echo htmlspecialchars($destino['video4']); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
