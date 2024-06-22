@@ -1,71 +1,553 @@
-/* SoliDeoGloria */
+ /* SoliDeoGloria */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-    /* Estilos para o carrossel */
+    font-family: "Poppins", sans-serif;
+}
+ 
+ /* Barra de Menus */
+ 
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin-top: 0;
+   padding: 0.9rem;
+   background: rgba(0, 0, 0, .1);
+   backdrop-filter: blur(0.4em);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   z-index: 100;
+   font-family: "Poppins", sans-serif;
+}
+ 
+.navbar a {
+    font-size: clamp(1em, 2vw + 0.8em, 1.35em);
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1.2rem;
+    margin-right: 2.5em;
+    text-shadow: 0.115em 0.115em 0.288em rgba(0, 0, 0, 0.9);
+    }
+ 
+ /* Título da página */
 
-  .carousel {
-    overflow: hidden;
-  }
-  
-  .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    min-width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .slide img {
-    width: 100%;
+.title {
+     text-align: center;
+     margin-top: 3.2em;
+     margin-bottom: 0.8em;
+     padding: 0.29em;
+     font-family: "Dosis", sans-serif;
+     font-size: clamp(1.5em, 3vw + 1em, 2.5em);
+     color: #fff;
+     background-color: #0077b6; /* Azul marinho */
+     border-radius: 0.46em;
+     box-shadow: 0 0.23em 0.46em rgba(0, 0, 0, 0.1);
+}
+ 
+ /* Estilos para o carrossel */
+
+.carousel {
+     overflow: hidden;
+     width: 100%;
+     margin: 0.87em 0;
+     border-radius: 0.46em;
+     box-shadow: 0 0.23em 0.46em rgba(0, 0, 0, 0.1);
+     
+}
+ 
+ .carousel-container {
+     display: flex;
+     transition: transform 0.5s ease;
+     max-width: 98%;
+     margin: auto;
+     height: 46.21em;
+
+ }
+ 
+ .slide {
+     flex: 0 0 100%; /* Cada slide ocupa 100% da largura do container */
+     display: flex;
+     justify-content: center; /* Centraliza horizontalmente */
+     align-items: center; /* Centraliza verticalmente */
+
+ }
+ 
+ .slide img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 0.46em;
+ }
+ 
+ /* Texto descrição */
+ .descricao {
+    position: relative;
+     background-color: #0077b6; /* Azul marinho */
+     color: #fff;
+     font-family: "Dosis", sans-serif;
+     font-size: 1.51em;
+     text-align: justify;
+     padding: 1.3em;
+     border-radius: 0.46em;
+     box-shadow: 0 0.23em 0.46em rgba(0, 0, 0, 0.1);
+ }
+ .text{
+    margin: auto;
+    justify-content: center;
+ }
+ 
+.text h2{
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.apresentacao{
+    position: relative;
+    margin-bottom: 1.875em;
+    padding-top: 0.9375em;
+    height: 37.5em;
+    max-width: 98%;
+    border-radius: 1.5em;
+    background: url('../imagens/caboBranco/localizacao.jpg') no-repeat;    
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.apre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;    
+    width: 50%;
+    font-size: 1.4em;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0.025em solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(0.625em);
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, .2);
+    text-align:center;
+    color: rgb(52, 72, 108);
+    border-radius: 0.625em;
+    padding: 1.2em 0.9375em;
+}
+
+.apre h3{
+    display: inline-block;
+    font-size: 1.875em;
+    color: rgb(52, 72, 108);
+}
+
+
+.roteiro{
+    position: relative;
+    margin-bottom: 1.875em;
+    padding-top: 0.9375em;
+    padding-left: 1.25em;
+    height: 110em;
+    max-width: 98%;
+    border-radius: 0.9375em;
+    background: url('../imagens/caboBranco/roteiro.jpg') no-repeat;    
+    background-size: cover;
+    background-position: center;
+}
+
+.rota{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: auto;
-  }
-  
-  .content {
+    font-size: 1.875em;
+    font-weight: 600;
+    width: 70%;
+    background-color: transparent;
+    border: 0.025em solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(1.10em);
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, .2);
+    text-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.9);
+    text-align:center;
+    color: rgb(255, 255, 255);
+    border-radius: 0.625em;
+    padding: 0.5em 0.9375em;
+
+    
+}
+
+.rota h3{
+    font-size: 2.1em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.9);
+}
+
+/* Grupo Mapas/Tábuas/Previsão */
+
+
+.grupoMapa{
+    margin-top: 0.9375em;
+    background-color: #0077b6; /* Azul marinho */
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* Colunas - Mapa central */
+.content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
-  }
-  
-  .left-column, .right-column {
-    width: 15%;
-  }
-  
-  .center-column {
-    width: 70%;
-  }
-  
-  #map {
+    padding: 1.25em;
+    gap: 1.25em;
+    background-color: #f9f9f9;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* Colunas - Previsão do Tempo */
+
+.right-column {
+    position: relative;
+    background: url('../imagens/previsao/fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Previsão do Tempo(Coluna da direita) */
+#weather {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#weather h2 {
+    margin-bottom: 20px;
+}
+
+#weather #icon img {
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+}
+
+
+
+/* Colunas - Tábuas de maré */
+.left-column{
+    position: relative;
+    background: url('../imagens/previsao/fundoTabuas.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tabuas{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backdrop-filter: blur(15px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.9);
+    border-radius: 10px;
+}
+
+/* Previsão referente às tábuas de maré (Não confundir com previsão de tempo-clima) */
+.previsao {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 0;
+}
+
+.left-column, .right-column {
+    width: 15em;
+    height: 43.75em;
+    padding: 1.25em;
+    color: white;
+    border: 0.125em solid #ddd;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.left-column h2, .right-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.25em;
+}
+
+.left-column h4, .right-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.625em;
+}
+
+.left-column p, .right-column p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.center-column {
+    flex: 1;
+    background-color: white;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+#map {
     width: 100%;
-    height: 400px; /* Ajuste conforme necessário */
-  }
-  
-  .map-buttons {
-    margin-top: 10px;
+    height: 49em; /* Ajustar conforme necessário */
+    border-radius: 0.5em;
+    margin-bottom: 1.25em;
+}
+
+.map-buttons {
     text-align: center;
-  }
-  
-  .calendar {
-    /* Estilos para o calendário */
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-  }
+}
 
+.btnsmaps {
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.btnsmaps:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
 
+ 
+  /* Galeria de vídeos do YouTube */
+ 
+ .videos {
+     text-align: center;
+     padding: 3.125em 1.25em;
+     background-color: #f9f9f9;
+ }
+ 
+ .videos h2 {
+     font-size: 2em;
+     margin-bottom: 1.25em;
+     color: #333;
+ }
+ 
+ .video-cards {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+ 
+ .video-card {
+     width: 100%;
+     max-width: 18.75em;
+     border: 0.0625em solid #ddd;
+     border-radius: 0.5em;
+     overflow: hidden;
+     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+ 
+ .video-card iframe {
+     width: 100%;
+     height: 200px;
+ }
+ 
+ .video-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ /* Rodapé */
+ footer {
+     background: linear-gradient(45deg, #3a6186, #89253e);
+     color: white;
+     padding: 20px 0;
+     margin-top: 100px;
+     text-align: center;
+ }
+ 
+ .footer-content {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+ 
+ .footer-columns {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+ 
+ .column {
+     width: 100%;
+     max-width: 300px;
+     margin: 10px 0;
+ }
+ 
+ h3 {
+     font-size: 20px;
+     margin-bottom: 10px;
+     color: #f1f1f1;
+ }
+ 
+ footer p {
+     font-size: 16px;
+     color: #f1f1f1;
+ }
+ 
+ /* Botão "Topo" */
+ .btn-topo {
+     display: inline-block;
+     margin: 5px auto; /* Centraliza o botão horizontalmente */
+ }
+ 
+ .btn-topo a {
+     display: inline-block;
+     text-decoration: none;
+     padding: 10px 20px;
+     font-size: 18px;
+     color: white;
+     font-weight: bold;
+     background-color: #5a4b8e;
+     border: 2px solid #3a6186;
+     border-radius: 8px;
+     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+ }
+ 
+ .btn-topo a:hover {
+     background-color: #00b4d8; /* Azul claro */
+     color: #023e8a; /* Azul escuro */
+     transform: scale(1.05); /* Leve aumento no tamanho */
+ }
+ 
+ @media (max-width: 480px) {
 
-  
+    .logo{
+        display: block;
+        margin: auto;
+        margin-bottom: 0.8em;
+    }
+
+    .header{
+        position: absolute;
+        display: block;
+        float: none;
+        margin-bottom: 0.5em;
+        margin-bottom: 4.3em;
+    }
+
+    .navbar a {
+        display: block;
+        float: none;
+        justify-content: center;
+        margin-bottom: 0.6em;
+        backdrop-filter: blur(20px);
+        border-radius: 0.8em;
+        padding: 0.5em;
+    }
+
+    .carousel{
+        margin-top: 25em;
+    }
+
+    .title{
+        margin-top: 2.5em;
+    }
+
+    .descricao {
+        font-size: 1.2em;
+        padding: 1em;
+    }
+    
+    .apre {
+        font-size: 1.1em;
+        width: 75%;
+        padding: 0.2em 0.3em;
+    }
+    
+    .apre h3 {
+        font-size: 1.5em;
+    }
+    
+    .rota {
+        font-size: 1.3em;
+        width: 75%;
+        padding: 1.9em 1.1em;
+    }
+    
+    .rota h3 {
+        font-size: 1.8em;
+    }
+    
+    .left-column h2, .right-column h2 {
+        font-size: 1.2em;
+    }
+    
+    .left-column h4, .right-column h4 {
+        font-size: 1em;
+    }
+    
+    .left-column p, .right-column p {
+        font-size: 0.9em;
+    }
+    
+    .btnsmaps {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+        padding: 8px 16px;
+    }
+    
+    .videos h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    .btn-topo a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        max-width: none;
+        text-align: center;
+    }
+}

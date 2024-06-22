@@ -15,12 +15,6 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
 }
 
-// Configurações de Tábuas de Marés
-
-
-
-
-
 
 // Configurações da Previsão do Tempo - Coluna da Direita
 
