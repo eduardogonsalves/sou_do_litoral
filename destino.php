@@ -2,11 +2,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <!--Conexão com Banco de Dados-->
-<?php require('./bandoDeDados/conexao_destino.php') ?>
+<?php 
+require('./bandoDeDados/conexao_destino.php');
+
+// Verificar se o parâmetro 'nome_destino' foi passado na URL
+if (isset($_GET['nome_destino'])) {
+    $nome_destino = $_GET['nome_destino'];
+} else {
+    die("Nenhum destino selecionado.");
+}
+
+// Passo 2: Executar a consulta SQL usando o parâmetro
+$query = $pdo->prepare("SELECT * FROM destino WHERE nome_destino = :nome_destino");
+$query->execute(['nome_destino' => $nome_destino]);
+$destino = $query->fetch(PDO::FETCH_ASSOC);
+
+// Verificar se algum destino foi encontrado
+if (!$destino) {
+    die("Destino não encontrado.");
+}
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>titulo_guia_pagina</title>
+  <title><?php echo htmlspecialchars($destino['titulo_guia_pagina']); ?></title>
   <link rel="stylesheet" href="./css/destino.css"><!--Referência do CSS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,26 +49,23 @@
             <a href="./index.php#nossosContatos">Contatos</a>
             <a href="./informacoes.php">Informações</a>
             <a href="./login.php">Login / Cadastro</a>
-        </nav>      
-        
-    </header>
-
-    
+        </nav>
+    </header>   
     
     <!-- Carrossel de imagens -->
     <section class="carousel">
         <div class="title">
-            <h1 id="top">nome_destino</h1>
+            <h1 id="top"><?php echo htmlspecialchars($destino['nome_destino']); ?></h1>
         </div>
 
         <div class="carousel-container">
-            <div class="slide"><img src="carrossel1"></div>
-            <div class="slide"><img src="carrossel2"></div>
-            <div class="slide"><img src="carrossel3"></div>
-            <div class="slide"><img src="carrossel4"></div>
-            <div class="slide"><img src="carrossel5"></div>
-            <div class="slide"><img src="carrossel6"></div>
-            <div class="slide"><img src="carrossel7"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel1']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel2']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel3']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel4']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel5']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel6']; ?>"></div>
+            <div class="slide"><img src="<?php echo $destino['carrossel7']; ?>"></div>
         </div>
     </section>
 

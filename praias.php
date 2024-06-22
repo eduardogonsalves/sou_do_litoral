@@ -21,7 +21,7 @@
             <div class="slider">
                     <div class="slides" style="--img: url('../imagens/praias/img1.jpg')">                        
                         <div class="content">
-                            <h2>Cabo Branco</h2>
+                            <a href="destino.php?nome_destino=Cabo Branco"><h2>Cabo Branco</h2></a>
                                 <p>
                                     A Praia de Cabo Branco em João Pessoa é um paraíso à beira-mar, onde o azul do oceano se funde com o céu. Suas areias douradas convidam ao relaxamento sob o sol tropical.
                                 </p>
