@@ -29,8 +29,6 @@ session_start();
 $_SESSION['destino'] = $destino;
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -108,6 +106,8 @@ $_SESSION['destino'] = $destino;
 
             var lat = <?php echo $lat; ?>;
             var lng = <?php echo $lng; ?>;
+
+
             
     </script>
 

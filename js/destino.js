@@ -3,68 +3,91 @@
 // Slides (carrossel de imagens)
 
 
-let slideIndex = 0;
-showSlides();
+    let slideIndex = 0;
+    showSlides();
 
-function showSlides() {
-    let slides = document.querySelectorAll('.slide');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';  
+    function showSlides() {
+        let slides = document.querySelectorAll('.slide');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = 'block';  
+        setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = 'block';  
-    setTimeout(showSlides, 2000); // Troca de imagem a cada 2 segundos (2000 milissegundos)
-}
 
 
 
-// Configuração do Mapa
 
+    // Configuração do Mapa        
         
+    // Inicializar o mapa Leaflet
+    var map = L.map('map').setView([lat, lng], 13);
+
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        // Marcadores para Restaurantes
+
+        var data = {
+        restaurantes: [
+
+            //{lat: <?php echo $destino['lat_rest1']; ?>, lng: <?php echo $destino['long_rest1']; ?>, name:'<?php echo $destino['nome_rest1']; ?>'},
         
-        // Inicializar o mapa Leaflet
-        var map = L.map('map').setView([lat, lng], 13);
+        ],
 
+        // Marcadores para Postos de Saúde
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+        saude: [
+            {lat: -7.143929, lng: -34.817023, name: 'USF Cidade Recreio'},
+            {lat: -7.136031, lng: -34.827701, name: 'USF - Altiplano I E II'},
+            {lat: -7.109241, lng: -34.837266, name: 'Posto De Saúde - Manaíra'},
+            {lat: -7.112383, lng: -34.824532, name: 'Unidade Básica de Saúde das Praias'},
+            {lat: -7.097512, lng: -34.839729, name: 'UPA Oceania'},
+            
+        ],
 
-// Marcadores para Restaurantes
+        // Marcadores para Postos Policiais
 
-var data = {
-    restaurantes: [
-        {lat: -7.145781, lng: -34.804317, name:'Gulliver Mar Restaurante'},
+        policia: [
+            {lat: -7.133229, lng: -34.830254, name: 'PM - CEATur'},
+            {lat: -7.113698, lng: -34.829431, name: 'Delegacia Distrital de Tambaú'},
+            {lat: -7.104421, lng: -34.837147, name: 'DISP - Distrito Integrado de Segurança Pública'},
         
-    ],
-
-};
-
-var markers = [];
-
-// Função para mostrar marcadores de uma categoria específica
-
-function showMarkers(category) {
-// Remover todos os marcadores existentes
-markers.forEach(function(marker) {
-    map.removeLayer(marker);
-});
-markers = [];
-
-// Adicionar novos marcadores da categoria selecionada
-data[category].forEach(function(item) {
-    var marker = L.marker([item.lat, item.lng])
-        .bindPopup(item.name)
-        .addTo(map);
-    markers.push(marker);
-});
-}
-
-// Exibir marcadores da primeira categoria por padrão
-showMarkers('restaurantes');
+        ],
  
+        
+
+
+        };
+
+        var markers = [];
+
+        // Função para mostrar marcadores de uma categoria específica
+
+        function showMarkers(category) {
+        // Remover todos os marcadores existentes
+        markers.forEach(function(marker) {
+            map.removeLayer(marker);
+        });
+        markers = [];
+
+        // Adicionar novos marcadores da categoria selecionada
+        data[category].forEach(function(item) {
+            var marker = L.marker([item.lat, item.lng])
+                .bindPopup(item.name)
+                .addTo(map);
+            markers.push(marker);
+        });
+        }
+
+        // Exibir marcadores da primeira categoria por padrão
+        showMarkers('restaurantes');
+  
 
 
 
