@@ -1,8 +1,5 @@
 <!--SoliDeoGloria-->
-<!DOCTYPE html>
-<html lang="pt-BR">
-<!--Conexão com Banco de Dados-->
-<?php 
+<?php
 require('./bandoDeDados/conexao_destino.php');
 
 // Verificar se o parâmetro 'nome_destino' foi passado na URL
@@ -12,16 +9,30 @@ if (isset($_GET['nome_destino'])) {
     die("Nenhum destino selecionado.");
 }
 
-// Passo 2: Executar a consulta SQL usando o parâmetro
+// Preparar e executar a consulta SQL
 $query = $pdo->prepare("SELECT * FROM destino WHERE nome_destino = :nome_destino");
 $query->execute(['nome_destino' => $nome_destino]);
+
+// Obter o resultado da consulta como um array associativo
 $destino = $query->fetch(PDO::FETCH_ASSOC);
 
 // Verificar se algum destino foi encontrado
 if (!$destino) {
     die("Destino não encontrado.");
 }
+
+// Separar a latitude e longitude
+list($lat, $lng) = explode(', ', $destino['mapa_cidade']);
+
+// Armazenar o resultado da consulta em uma variável de sessão, se necessário
+session_start();
+$_SESSION['destino'] = $destino;
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +46,70 @@ if (!$destino) {
   crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+     crossorigin="">
+  </script>
+
+    <script>
+        // Configurações da Previsão do Tempo
+        const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather
+        const city = '<?php echo htmlspecialchars($destino['cidade']); ?>'; 
+        const weatherImages = {
+            clear: './imagens/previsao/clear.png',
+            clouds: './imagens/previsao/cloud.png',
+            mist: './imagens/previsao/mist.png',
+            rain: './imagens/previsao/rain.png',
+            snow: './imagens/previsao/snow.png',
+            error: './imagens/previsao/404.png'
+        };
+
+        function fetchWeatherData() {
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}&lang=pt_br`;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const location = document.getElementById('location');
+                    const temperature = document.getElementById('temperature');
+                    const description = document.getElementById('description');
+                    const icon = document.getElementById('icon');
+                    const wind = document.getElementById('wind');
+                    const humidity = document.getElementById('humidity');
+                    const clouds = document.getElementById('clouds');
+
+                    location.textContent = `${data.name}, ${data.sys.country}`;
+                    temperature.textContent = `${data.main.temp} °C`;
+                    description.textContent = capitalizeFirstLetter(data.weather[0].description);
+                    wind.textContent = `💨 Vento: ${data.wind.speed} m/s`;
+                    humidity.textContent = `Umidade: ${data.main.humidity}%`;
+                    clouds.textContent = `Cobertura de Nuvens: ${data.clouds.all}%`;
+
+                    const weatherMain = data.weather[0].main.toLowerCase();
+                    const weatherImage = weatherImages[weatherMain] || weatherImages.error;
+                    icon.innerHTML = `<img src="${weatherImage}" alt="Icone do tempo">`;
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar dados da API:', error);
+                    alert('Erro ao buscar dados da API: ' + error.message);
+                    document.getElementById('icon').innerHTML = `<img src="${weatherImages.error}" alt="Erro ao carregar ícone">`;
+                });
+        }
+
+        function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+            // Chama a função para buscar e exibir os dados meteorológicos
+            fetchWeatherData();               
+
+            var lat = <?php echo $lat; ?>;
+            var lng = <?php echo $lng; ?>;
+            
+    </script>
 
 </head>
 <body>
@@ -74,7 +148,7 @@ if (!$destino) {
     <section class="descricao">
         
         <div class="text">
-            <h2>titulo_descricao</h2><br>
+            <h2><?php echo htmlspecialchars($destino['titulo_descricao']); ?></h2><br>
             <div class="apresentacao">
                 <div class="apre">            
                     <h3>Localização e Acesso</h3>
@@ -564,12 +638,9 @@ if (!$destino) {
         </div>
     </footer>
 
-
-
-
-
-
     <script>
+                // Configurações da tábuas de maré
+
                 document.addEventListener("DOMContentLoaded", function() {
                 const diasParaMostrar = 3; // Hoje + próximos dois dias
                 const dataInicial = new Date(); // Data atual

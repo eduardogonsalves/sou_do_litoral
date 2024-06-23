@@ -1,6 +1,8 @@
 // SoliDeoGloria
 
 // Slides (carrossel de imagens)
+
+
 let slideIndex = 0;
 showSlides();
 
@@ -16,6 +18,59 @@ function showSlides() {
 }
 
 
+
+// Configuração do Mapa
+
+        
+        
+        // Inicializar o mapa Leaflet
+        var map = L.map('map').setView([lat, lng], 13);
+
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+// Marcadores para Restaurantes
+
+var data = {
+    restaurantes: [
+        {lat: -7.145781, lng: -34.804317, name:'Gulliver Mar Restaurante'},
+        
+    ],
+
+};
+
+var markers = [];
+
+// Função para mostrar marcadores de uma categoria específica
+
+function showMarkers(category) {
+// Remover todos os marcadores existentes
+markers.forEach(function(marker) {
+    map.removeLayer(marker);
+});
+markers = [];
+
+// Adicionar novos marcadores da categoria selecionada
+data[category].forEach(function(item) {
+    var marker = L.marker([item.lat, item.lng])
+        .bindPopup(item.name)
+        .addTo(map);
+    markers.push(marker);
+});
+}
+
+// Exibir marcadores da primeira categoria por padrão
+showMarkers('restaurantes');
+ 
+
+
+
+
+
+/*
 // Configurações da Previsão do Tempo - Coluna da Direita
 
 const apiKey = 'f6abdaa1efa90cf24dc3e65d72b8e87e';  // Chave de API do OpenWeather
@@ -151,3 +206,4 @@ function showMarkers(category) {
 // Exibir marcadores da primeira categoria por padrão
 showMarkers('restaurantes');
 
+*/
