@@ -28,7 +28,7 @@
 
     <!-- Barra de Menu -->
     <header class="header">
-        <img src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+        <img class="logo" src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="./quemsomos.php">Quem somos</a>
@@ -108,6 +108,20 @@
         
     </div>
 
+    <!-- Campo de busca (Digite Cabo Branco, para testar)-->
+    <div class="smart">
+        <div class="buscador">
+            <!-- Cabeçalho do campo de busca -->
+            <h1 class="btn-busca">Destinos</h1>        
+            <!-- Campo de busca -->
+            <input type="text" id="campoBusca" placeholder="Digite um destino...">
+            <ul id="listaSuspensa"></ul>
+
+        </div>
+    </div>
+
+
+
     <!-- Galeria Interativa -->
     <div class="wrapper">
         <div class="items">
@@ -126,6 +140,25 @@
             <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/13.jpg);"></div>
         </div>
     </div>
+
+    <!-- Carrossel de imagens -->
+    <section class="carousel">
+        <div class="title">
+            <h1 id="top">Praia de Cabo Branco</h1>
+        </div>
+
+        <div class="carousel-container">
+            <div class="slide"><img src="./imagens/carrossel_jp/jp1.webp" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp2.webp" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp3.png" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp4.jpg" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp5.jpeg" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp6.jpg" alt="João Pessoa"></div>
+            <div class="slide"><img src="./imagens/carrossel_jp/jp7.jpg" alt="João Pessoa"></div>
+        </div>
+    </section>
+
+
 
     <!-- Cards com notícias -->
     <div class="titulo_news"> 
