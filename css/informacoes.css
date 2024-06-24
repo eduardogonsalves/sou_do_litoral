@@ -49,12 +49,13 @@ body{
 
 /* Conteúdo da página */
 
-.container{
+.container {
     justify-content: center;
+    margin: auto;
     max-width: 96%;
-    margin-top: 100px;
-
+    margin-top: 6.25em;
 }
+
 
 /* Título */
 
@@ -64,11 +65,13 @@ body{
     color: rgb(29, 101, 107);
     justify-content: center;
     text-align: center;
+    margin-bottom: 2em;
+    margin-top: 5em;
 
 }
 
 .telefones{
-    margin: 40px 5px 40px 20px;
+    position: relative;
     padding-top: 15px;
     padding-left: 20px;
     font-size: 25px;
@@ -80,13 +83,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 
 .tel{
-    margin-top: 260px;
-    margin: auto;
-    width: 70%;
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -102,33 +109,31 @@ body{
 }
 
 .tensao{
-    margin: 40px 5px 40px 20px;
+    position: relative;
     padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
     color: rgb(194, 227, 230);
-    justify-content: right;
     background: url('../imagens/informacoes/tensao.jpg') no-repeat;
     height: 1600px;
     background-size: cover;
     background-position: center;
     width: 100%;
     border-radius: 15px;
-    
+    margin-bottom: 2em;    
 }
 
 .tens{
-    font-size: 30px;
-    margin-top: 600px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-    text-align:center;
-    justify-content: center;
     text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -136,10 +141,9 @@ body{
 }
 
 .informacoes{
-    margin: 40px 5px 40px 20px;
+    position: relative;
     padding-top: 15px;
     padding-left: 20px;
-    font-size: 25px;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/informacoes.jpg') no-repeat;
@@ -148,20 +152,24 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .info{
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-    margin-top: 260px;
-    margin-left: 25%;
-    width: 800px;
     background-color: transparent;
     border: 0.8px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(30px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-top: 50px;
@@ -169,10 +177,7 @@ body{
 }
 
 .seguranca{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/seguranca.jpg') no-repeat;
@@ -181,13 +186,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .seg{
-    font-size: 30px;
-    margin-top: 600px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
@@ -195,17 +204,13 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 50px 20px;
 }
 
 .transportes{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/transporte.jpg') no-repeat;
@@ -214,13 +219,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .trnsp{
-    font-size: 30px;
-    margin-top: 400px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
@@ -228,17 +237,13 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 50px 20px;
 }
 
 .saude{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/saude.jpg') no-repeat;
@@ -247,12 +252,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .sau{
-    margin-top: 260px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
@@ -260,7 +270,6 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(192, 225, 245);
     border-radius: 10px;
     padding-top: 50px;
@@ -268,10 +277,7 @@ body{
 }
 
 .tempo{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/tempo.jpg') no-repeat;
@@ -280,14 +286,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .time{
-
-    font-size: 30px;
-    margin-top: 600px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
@@ -295,7 +304,6 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 50px 20px;
@@ -303,24 +311,26 @@ body{
 }
 
 .shoppings{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/shopping.jpg') no-repeat;
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    max-width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .mall{
-    margin-top: 200px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(7px);
@@ -328,7 +338,6 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-top: 50px;
@@ -336,10 +345,7 @@ body{
 }
 
 .cambio{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 25px;
+    position: relative;
     color: rgb(194, 227, 230);
     justify-content: right;
     background: url('../imagens/informacoes/cambio.jpg') no-repeat;
@@ -348,13 +354,17 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    margin-bottom: 2em;
 }
 
 .moeda{
-    font-size: 30px;
-    margin-top: 600px;
-    margin-left: 25%;
-    width: 800px;
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
@@ -362,19 +372,16 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     text-align:center;
     justify-content: center;
-    text-align:center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 50px 20px;
 }
 
 .aguas_praias{
-    margin: 40px 5px 40px 20px;
-    padding-top: 15px;
-    padding-left: 20px;
+    position: relative;
     font-size: 25px;
     color: rgb(194, 227, 230);
-    justify-content: right;
+    justify-content: center;
     background: url('../imagens/informacoes/noswimming.jpg') no-repeat;
     height: 3000px;
     background-size: cover;
@@ -384,10 +391,13 @@ body{
 }
 
 .aguas{
-    font-size: 30px;
-    margin:auto;
-    margin-top: 100px;
+    position: absolute;
     width: 80%;
+    height: 15%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
     background-color: transparent;
     border: 3px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
@@ -399,6 +409,11 @@ body{
 }
 
 .praiasImp{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -418,6 +433,24 @@ body{
     padding: 10px;
     box-sizing: border-box; /* Inclui padding e border na largura total */
     text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.aguas1 {
+    position: absolute;
+    width: 80%;
+    height: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    color: #4caf4fc5;
+    border-radius: 10px;
+    padding: 50px 20px;
 }
 
 .popup {
@@ -492,4 +525,14 @@ body{
         border-radius: 0.8em;
         padding: 0.5em;        
     }
+
+    .title{
+        margin-top: 15em;
+        font-size: 1.8em;
+    }
+
+
+
+
+
 }

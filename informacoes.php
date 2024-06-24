@@ -230,16 +230,17 @@
                     <button onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
                     <button onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
                 </div>
-                <div class="aguas">
+                <div class="aguas1">
                     <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relório na íntegra</a></h2>               
                 </div>
-            <div id="popup" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup()">&times;</span>
-                    <img id="popup-image" src="" alt="Image">
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <img id="popup-image" src="" alt="Image">
+                    </div>
                 </div>
             </div>
-    </div>
+        </div>
     <script>
         function openPopup(imageSrc) {
             document.getElementById('popup-image').src = imageSrc;
