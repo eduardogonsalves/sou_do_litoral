@@ -181,7 +181,7 @@
                         Av. Hilton Souto Maior, 1100 - Mangabeira <br><br>
 
                         <strong>Shopping Sul</strong> <br>
-                        Av. Ayrton Senna da Silva, 3233 - Bairro dos Bancários <br><br>                 
+                        Av. Ayrton Senna da Silva, 3233 - Bancários <br><br>                 
 
                         <strong>Shopping Pátio Altiplano</strong> <br>
                         Av. João Cirilo Silva, 155 - Altiplano Cabo Branco <br><br>
@@ -219,16 +219,15 @@
                     </p>                
                 </div>
                 <div class="praiasImp">                   
-
-                    <button onclick="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')">Gameleira e Fagundes</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Costinha.jpg')">Costinha</button>   
-                    <button onclick="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')">Manaíra e Tambaú</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Seixas.jpg')">Seixas</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Penha.jpg')">Penha</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')">Jacarapé, Arraial e Sol</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')">Pintimbú, Maceió e Guarita</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
-                    <button onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')" onclick="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')">Gameleira e Fagundes</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Costinha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Costinha.jpg')">Costinha</button>   
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')" onclick="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')">Manaíra e Tambaú</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Seixas.jpg')" onclick="openPopup('./imagens/informacoes/banho/Seixas.jpg')">Seixas</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Penha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Penha.jpg')">Penha</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')" onclick="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')">Jacarapé, Arraial e Sol</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')">Pintimbú, Maceió e Guarita</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')" onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
                 </div>
                 <div class="aguas1">
                     <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relório na íntegra</a></h2>               
