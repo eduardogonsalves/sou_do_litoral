@@ -28,7 +28,7 @@
 
     <!-- Barra de Menu -->
     <header class="header">
-        <img class="logo" src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+        <img class="logo" src="./imagens/home/logo.png" alt="Logo Marca"></a>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="./quemsomos.php">Quem somos</a>
@@ -109,8 +109,8 @@
     </div>
 
     <!-- Campo de busca (Digite Cabo Branco, para testar)-->
-    <div class="smart">
-        <div class="buscador">
+
+        <div class="smart" class="buscador">
             <!-- Cabeçalho do campo de busca -->
             <h1 class="btn-busca">Destinos</h1>        
             <!-- Campo de busca -->
@@ -118,7 +118,6 @@
             <ul id="listaSuspensa"></ul>
 
         </div>
-    </div>
 
 
 
@@ -144,7 +143,7 @@
     <!-- Carrossel de imagens -->
     <section class="carousel">
         <div class="title">
-            <h1 id="top">Praia de Cabo Branco</h1>
+            <h1 id="top"></h1>
         </div>
 
         <div class="carousel-container">

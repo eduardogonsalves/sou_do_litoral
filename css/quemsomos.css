@@ -44,21 +44,29 @@ margin-right: 40px;
 /* Texto Descritivo */
 
 .descricao {
-    max-width: 1000px;
+    max-width: 96%;
+    text-align: center;
+    margin: auto;
     padding: 100px 200x;
     font-family: "Dosis", sans-serif;
     font-size: 35px;
     color: rgb(255, 255, 255);
-    margin: auto;
 }
 p{
     text-align: justify;
     line-height: 43px;
 }
 
-.logo{
+.logoPC{
+    height: 300px;
+    width: 300px;
     text-align: center;
-    
+    margin-top: 80px;
+}
+
+.logoMenu{
+    height: 40px;
+    width: 40px;
 }
 
 .btn-home {
@@ -78,6 +86,77 @@ p{
     background-color: rgb(3, 21, 76);
     color: white;
 }
+
+@media (min-width: 481px) {
+   .logoSmartPhone{
+    display: none;
+   }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .logoPC{
+        display: none;
+    }
+
+    .logoMenu{
+        height: 5.5em;
+        width: 5.5em;
+        display: block;
+        margin: auto;
+        margin-bottom: 0.8em;
+
+    }
+
+    .header{
+        width: 100%;
+        position: absolute;
+        display: block;
+        float: none;
+        margin-bottom: 400em;
+    }
+
+    .navbar a {
+        display: block;
+        float: none;
+        text-align: center;
+        margin-bottom: 0.5em;
+        backdrop-filter: blur(20px);
+        border-radius: 0.8em;
+        padding: 0.5em;        
+    }
+
+    .logoSmartPhone{
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        margin-top: 10px;
+       }
+
+    .descricao {
+        width: 96%;
+        justify-content: center;
+        margin-top: 150em;
+        margin: auto;
+        padding-top: 10em;
+        font-size: 2em;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 .card{
     

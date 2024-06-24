@@ -14,7 +14,7 @@
 <body>
     <!-- Barra de Menu -->
     <header class="header">
-    <img src="./imagens/home/logo.png" alt="Logo Marca" style="height: 40px; width: 40px;"></a>
+    <img class="logoMenu" src="./imagens/home/logo.png" alt="Logo Marca"></a>
         <nav class="navbar">
             <a href="./index.php">Home</a>
             <a href="#">Quem somos</a>
@@ -24,7 +24,7 @@
         </nav>   
     </header>
     
-    <div style="margin-top: 80px;" class="logo">
+    <div class="logoPC">
       <img src="./imagens/quemSomos/logosemfundo.png">
     </div>
     <!-- Descrição -->
@@ -54,6 +54,9 @@
                 Estamos aqui para ajudá-lo a transformar sua viagem dos sonhos em realidade. Explore nosso site, entre em contato conosco e deixe-nos guiá-lo em uma jornada inesquecível pelo belo litoral da Paraíba!
             </p><br><br>
         </div>
+    </div>
+    <div style="margin-top: 80px;" class="logoPc logoSmartPhone">
+      <img src="./imagens/quemSomos/logosemfundo.png">
     </div>
         
 </body>
