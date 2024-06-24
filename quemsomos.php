@@ -29,7 +29,7 @@
     </div>
     <!-- Descrição -->
     <div class="descricao">
-            <h1 style="text-align: center;">Quem Somos</h1>
+            <h1>Quem Somos</h1>
             <p>
                 Bem-vindo à Sou do Litoral, sua fonte confiável para explorar o encantador litoral paraibano! Nós nos dedicamos a fornecer as melhores e mais úteis informações para aqueles que desejam descobrir os tesouros da Paraíba.
             </p>        
@@ -55,8 +55,8 @@
             </p><br><br>
         </div>
     </div>
-    <div style="margin-top: 80px;" class="logoPc logoSmartPhone">
-      <img src="./imagens/quemSomos/logosemfundo.png">
+    <div class="logoPc logoSmartPhone">
+      <img src="./imagens/quemSomos/logosemfundo.png" alt="Logomarca do Site">
     </div>
         
 </body>

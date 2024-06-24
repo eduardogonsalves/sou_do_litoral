@@ -27,18 +27,29 @@ body {
     text-align: center;
     z-index: 100;
     font-family: "Poppins", sans-serif;
-
-
 }
 
+.logoMenu{
+    height: 40px;
+    width: 40px;
+}
 
 .navbar a {
-font-size: 1.35rem;
-color: #fff;
-text-decoration: none;
-font-weight: 700;
-margin-left: 1.2rem;
-margin-right: 40px;
+    font-size: clamp(1em, 2vw + 0.8em, 1.35em);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1.2rem;
+    margin-right: 2.5em;
+    text-shadow: 0.115em 0.115em 0.288em rgba(0, 0, 0, 0.9);
+}
+
+.logoPC{
+    height: 70em;
+    width: 70em;
+    margin: auto;
+    margin-top: 5em;
+    text-align: center;
 }
 
 /* Texto Descritivo */
@@ -47,56 +58,31 @@ margin-right: 40px;
     max-width: 96%;
     text-align: center;
     margin: auto;
-    padding: 100px 200x;
+    padding: 1em 10em;
     font-family: "Dosis", sans-serif;
     font-size: 35px;
     color: rgb(255, 255, 255);
 }
-p{
+.descricao h1{
+    text-align: center;
+    margin-top: 1em;
+}
+
+p {
     text-align: justify;
     line-height: 43px;
 }
 
-.logoPC{
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    margin-top: 80px;
-}
 
-.logoMenu{
-    height: 40px;
-    width: 40px;
-}
+/* Configuração para responsividade*/
 
-.btn-home {
-    text-decoration: none;
-    width: 120px;
-    padding: 10px;
-    text-align: center;
-    backdrop-filter: blur(20px);
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    border: 2px solid rgb(17, 69, 224);
-    border-radius: 20px;
-}
-
-.btn-home:hover {
-    background-color: rgb(3, 21, 76);
-    color: white;
-}
-
-@media (min-width: 481px) {
+@media (min-width: 481px) { /* Elementos que são visíveis apenas em telas de PCs*/
    .logoSmartPhone{
     display: none;
    }
 }
 
-
-
-
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* Elementos que são visíveis apenas em telas de Smartphones*/
     .logoPC{
         display: none;
     }
@@ -129,10 +115,10 @@ p{
     }
 
     .logoSmartPhone{
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        margin-top: 10px;
+        height: 50em;
+        width: 50em;
+        justify-content: center;
+        margin-top: 1em;
        }
 
     .descricao {
@@ -142,24 +128,10 @@ p{
         margin: auto;
         padding-top: 10em;
         font-size: 2em;
+    }
 
+    .descricao h1{
+        margin-top: 4em;
+        text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.card{
-    
-    
-}
-*/
