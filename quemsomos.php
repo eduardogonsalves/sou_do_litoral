@@ -38,7 +38,8 @@
             </p><br>
         <div class="card">
             <h2 style="text-align: center;">O Que Fazemos</h2>         
-            <p>
+            <p style="backdrop-filter: blur(0.2em);
+">
                 Em um cenário onde a informação é fundamental para uma experiência de viagem memorável, nós nos destacamos por fornecer um guia completo e confiável para explorar os pontos turísticos do litoral paraibano. Com uma equipe apaixonada e experiente, compilamos recursos abrangentes para ajudá-lo a planejar sua viagem de forma eficiente e aproveitar ao máximo cada momento.
             </p><br>
         </div>

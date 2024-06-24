@@ -42,10 +42,16 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+.logoMenu{
+    height: 40px;
+    width: 40px;
+}
+
 /* Conteúdo da página */
 
 .container{
-
+    justify-content: center;
+    max-width: 96%;
     margin-top: 100px;
 
 }
@@ -72,21 +78,15 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
-/*
-.telefones-h2{
-    text-align:right;
-    justify-content: center;
-    text-align:center;
-}
-    */
+
 
 .tel{
     margin-top: 260px;
-    margin-left: 25%;
-    width: 800px;
+    margin: auto;
+    width: 70%;
     background-color: transparent;
     border: 0.4px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -112,7 +112,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
     
 }
@@ -146,7 +146,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -179,7 +179,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -212,7 +212,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -245,7 +245,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -278,7 +278,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -346,7 +346,7 @@ body{
     height: 1600px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -379,7 +379,7 @@ body{
     height: 3000px;
     background-size: cover;
     background-position: center;
-    max-width: 98%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -461,4 +461,35 @@ body{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+@media (max-width: 480px) { /* Elementos que são visíveis apenas em telas de Smartphones*/
+
+    .logoMenu{
+        height: 5.5em;
+        width: 5.5em;
+        display: block;
+        margin: auto;
+        margin-bottom: 0.8em;
+
+    }
+
+    .header{
+        width: 100%;
+        position: absolute;
+        display: block;
+        float: none;
+        margin-bottom: 400em;
+    }
+
+    .navbar a {
+        display: block;
+        float: none;
+        text-align: center;
+        margin-bottom: 0.5em;
+        backdrop-filter: blur(20px);
+        border-radius: 0.8em;
+        padding: 0.5em;        
+    }
 }

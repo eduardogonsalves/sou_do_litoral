@@ -44,12 +44,15 @@ body {
     text-shadow: 0.115em 0.115em 0.288em rgba(0, 0, 0, 0.9);
 }
 
+/* Logomarca do na página */
+
 .logoPC{
-    height: 70em;
-    width: 70em;
-    margin: auto;
-    margin-top: 5em;
+    display: flex;
+    height: 40em;
+    width: 40em;
+    margin-top: 7em;
     text-align: center;
+    margin: auto;
 }
 
 /* Texto Descritivo */
@@ -58,7 +61,8 @@ body {
     max-width: 96%;
     text-align: center;
     margin: auto;
-    padding: 1em 10em;
+    padding-right: 10em;
+    padding-left: 10em;
     font-family: "Dosis", sans-serif;
     font-size: 35px;
     color: rgb(255, 255, 255);
@@ -123,9 +127,8 @@ p {
 
     .descricao {
         width: 96%;
-        justify-content: center;
-        margin-top: 150em;
-        margin: auto;
+        text-align: center;
+        margin-top: 5em;
         padding-top: 10em;
         font-size: 2em;
     }
