@@ -32,14 +32,17 @@ form {
 
 /*Corpo que envolve todos os campos do formulário*/
 .corpo{
-    width: 400px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    justify-content: center;
+    position: absolute;
+    width: 22%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 20px;
-    padding-top: 50px;    
+    padding-top: 50px;
+    padding-bottom: 4em;    
     }
 
 
@@ -97,10 +100,12 @@ input:required:valid {
     }
 
 button.botao {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-bottom: 30px;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px;
     justify-content:center;
     background-color: #4CAF50;
@@ -120,3 +125,12 @@ button.botao:hover {
     color: #dd1b1b;
     font-size: 1em;
     }
+
+    
+@media (max-width: 480px) { /* Elementos que são visíveis apenas em telas de Smartphones*/
+
+    .corpo{
+        width: 90%;
+    }
+
+}
