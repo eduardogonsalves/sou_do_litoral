@@ -208,10 +208,10 @@
             </div>
             <div class="aguas_praias">
                 <div class="aguas">
-                    <h2>Praias com trechos impróprios para banho</h2>
+                    <h2>Praias com trechos impróprios para banho</h2><br>
                     <p>
-                        Semanalmente a SUDEMA(Superintendencia Estadual de Administração do Meio Ambiente) 
-                        emite relatório com trechos de praias que foram classificados como
+                        Relatório da SUDEMA<br>(Superintendencia Estadual de Administração do Meio Ambiente) 
+                        aponta trechos de praias que foram classificados como
                         impróprios para banho.<br><br>
                     </p>
                     <p>

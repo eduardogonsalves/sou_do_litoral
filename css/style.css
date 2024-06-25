@@ -174,8 +174,6 @@ body{
 
 
 #Chamada{
-    text-align: center;
-    margin-top: 180px;
     font-family: "Pacifico", sans-serif;
     color: #c7e1f3;
     font-size: 80px;
@@ -492,20 +490,21 @@ p {
         margin-top: 90px;
     }
 
+    /*Grupo nome Sou do Litoral*/
     .headline{
-        text-align: center;
-        max-width: 40em;
-        margin: auto;
-        color: #fff;
-    }
+            float: none;
+            width: 90%;
+            color: #fff;
+            margin-top: 25em;
+        }
 
     .card {
+        
         display: block;  
         width: 80%;
         font-size: 2em;
         text-align: center;
-        backdrop-filter: blur(10px);
-        
+        backdrop-filter: blur(10px);        
 
     }
 
