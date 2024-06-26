@@ -29,7 +29,7 @@
                     </div>
                 <div class="slides" style="--img: url('../imagens/monumentos/m2.jpg')">
                     <div class="content">
-                        <h2>Farol do Cabo Branco</h2>
+                        <a href="destino.php?nome_destino=Farol do Cabo Branco" style="text-decoration: none; color: white"><h2>Farol do Cabo Branco</h2></a>
                         <p>
                             Localizado no extremo oriental das Américas, o Farol do Cabo Branco é um marco icônico da cidade, oferecendo uma vista panorâmica do oceano Atlântico e da costa de João Pessoa.
                         </p>

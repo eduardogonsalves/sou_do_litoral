@@ -73,7 +73,6 @@ list(
     $destino['lat_policia3'], $destino['long_policia3'], $destino['nome_policia3']
 );
 
-// Armazenar o resultado da consulta em uma variável de sessão, se necessário
 session_start();
 $_SESSION['destino'] = $destino;
 ?>
@@ -180,13 +179,13 @@ $_SESSION['destino'] = $destino;
         </div>
 
         <div class="carousel-container">
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel1']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel2']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel3']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel4']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel5']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel6']); ?>" alt="Cabo Branco"></div>
-            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel7']); ?>" alt="Cabo Branco"></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel1']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel2']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel3']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel4']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel5']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel6']); ?>" ></div>
+            <div class="slide"><img src="/<?php echo htmlspecialchars($destino['carrossel7']); ?>" ></div>
         </div>
     </section>
 
@@ -662,7 +661,7 @@ $_SESSION['destino'] = $destino;
         </div>
     </section>
 
-    <div style="display: none;">
+    <div style="display: none;"> <!-- Os valores contidos nestes H2s serão atribuídos à variáveis no Js-->
         <h2 id="1"><?php echo $lat_rest1; ?></h2>
         <h2 id="2"><?php echo $long_rest1; ?></h2>
         <h2 id="3"><?php echo $nome_rest1; ?></h2>
