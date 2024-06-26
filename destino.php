@@ -23,6 +23,55 @@ if (!$destino) {
 
 // Separar a latitude e longitude
 list($lat, $lng) = explode(', ', $destino['mapa_cidade']);
+list(
+    $lat_rest1, $long_rest1, $nome_rest1,
+    $lat_rest2, $long_rest2, $nome_rest2,
+    $lat_rest3, $long_rest3, $nome_rest3,
+    $lat_rest4, $long_rest4, $nome_rest4,
+    $lat_rest5, $long_rest5, $nome_rest5,
+    $lat_rest6, $long_rest6, $nome_rest6,
+    $lat_rest7, $long_rest7, $nome_rest7,
+    $lat_rest8, $long_rest8, $nome_rest8,
+    $lat_rest9, $long_rest9, $nome_rest9,
+    $lat_rest10, $long_rest10, $nome_rest10,
+    $lat_rest11, $long_rest11, $nome_rest11,
+    $lat_rest12, $long_rest12, $nome_rest12,
+    $lat_rest13, $long_rest13, $nome_rest13,
+    $lat_rest14, $long_rest14, $nome_rest14,
+    $lat_rest15, $long_rest15, $nome_rest15,
+    $lat_saude1, $long_saude1, $nome_saude1,
+    $lat_saude2, $long_saude2, $nome_saude2,
+    $lat_saude3, $long_saude3, $nome_saude3,
+    $lat_saude4, $long_saude4, $nome_saude4,
+    $lat_saude5, $long_saude5, $nome_saude5,
+    $lat_policia1, $long_policia1, $nome_policia1,
+    $lat_policia2, $long_policia2, $nome_policia2,
+    $lat_policia3, $long_policia3, $nome_policia3
+) = array(
+    $destino['lat_rest1'], $destino['long_rest1'], $destino['nome_rest1'],
+    $destino['lat_rest2'], $destino['long_rest2'], $destino['nome_rest2'],
+    $destino['lat_rest3'], $destino['long_rest3'], $destino['nome_rest3'],
+    $destino['lat_rest4'], $destino['long_rest4'], $destino['nome_rest4'],
+    $destino['lat_rest5'], $destino['long_rest5'], $destino['nome_rest5'],
+    $destino['lat_rest6'], $destino['long_rest6'], $destino['nome_rest6'],
+    $destino['lat_rest7'], $destino['long_rest7'], $destino['nome_rest7'],
+    $destino['lat_rest8'], $destino['long_rest8'], $destino['nome_rest8'],
+    $destino['lat_rest9'], $destino['long_rest9'], $destino['nome_rest9'],
+    $destino['lat_rest10'], $destino['long_rest10'], $destino['nome_rest10'],
+    $destino['lat_rest11'], $destino['long_rest11'], $destino['nome_rest11'],
+    $destino['lat_rest12'], $destino['long_rest12'], $destino['nome_rest12'],
+    $destino['lat_rest13'], $destino['long_rest13'], $destino['nome_rest13'],
+    $destino['lat_rest14'], $destino['long_rest14'], $destino['nome_rest14'],
+    $destino['lat_rest15'], $destino['long_rest15'], $destino['nome_rest15'],
+    $destino['lat_saude1'], $destino['long_saude1'], $destino['nome_saude1'],
+    $destino['lat_saude2'], $destino['long_saude2'], $destino['nome_saude2'],
+    $destino['lat_saude3'], $destino['long_saude3'], $destino['nome_saude3'],
+    $destino['lat_saude4'], $destino['long_saude4'], $destino['nome_saude4'],
+    $destino['lat_saude5'], $destino['long_saude5'], $destino['nome_saude5'],
+    $destino['lat_policia1'], $destino['long_policia1'], $destino['nome_policia1'],
+    $destino['lat_policia2'], $destino['long_policia2'], $destino['nome_policia2'],
+    $destino['lat_policia3'], $destino['long_policia3'], $destino['nome_policia3']
+);
 
 // Armazenar o resultado da consulta em uma variável de sessão, se necessário
 session_start();
@@ -105,10 +154,8 @@ $_SESSION['destino'] = $destino;
             fetchWeatherData();               
 
             var lat = <?php echo $lat; ?>;
-            var lng = <?php echo $lng; ?>;
+            var lng = <?php echo $lng; ?>;    
 
-
-            
     </script>
 
 </head>
@@ -615,6 +662,102 @@ $_SESSION['destino'] = $destino;
         </div>
     </section>
 
+    <div style="display: none;">
+        <h2 id="1"><?php echo $lat_rest1; ?></h2>
+        <h2 id="2"><?php echo $long_rest1; ?></h2>
+        <h2 id="3"><?php echo $nome_rest1; ?></h2>
+
+        <h2 id="4"><?php echo $lat_rest2; ?></h2>
+        <h2 id="5"><?php echo $long_rest2; ?></h2>
+        <h2 id="6"><?php echo $nome_rest2; ?></h2>
+
+        <h2 id="7"><?php echo $lat_rest3; ?></h2>
+        <h2 id="8"><?php echo $long_rest3; ?></h2>
+        <h2 id="9"><?php echo $nome_rest3; ?></h2>
+
+        <h2 id="10"><?php echo $lat_rest4; ?></h2>
+        <h2 id="11"><?php echo $long_rest4; ?></h2>
+        <h2 id="12"><?php echo $nome_rest4; ?></h2>
+
+        <h2 id="13"><?php echo $lat_rest5; ?></h2>
+        <h2 id="14"><?php echo $long_rest5; ?></h2>
+        <h2 id="15"><?php echo $nome_rest5; ?></h2>
+
+        <h2 id="16"><?php echo $lat_rest6; ?></h2>
+        <h2 id="17"><?php echo $long_rest6; ?></h2>
+        <h2 id="18"><?php echo $nome_rest6; ?></h2>
+
+        <h2 id="19"><?php echo $lat_rest7; ?></h2>
+        <h2 id="20"><?php echo $long_rest7; ?></h2>
+        <h2 id="21"><?php echo $nome_rest7; ?></h2>
+
+        <h2 id="22"><?php echo $lat_rest8; ?></h2>
+        <h2 id="23"><?php echo $long_rest8; ?></h2>
+        <h2 id="24"><?php echo $nome_rest8; ?></h2>
+
+        <h2 id="25"><?php echo $lat_rest9; ?></h2>
+        <h2 id="26"><?php echo $long_rest9; ?></h2>
+        <h2 id="27"><?php echo $nome_rest9; ?></h2>
+
+        <h2 id="28"><?php echo $lat_rest10; ?></h2>
+        <h2 id="29"><?php echo $long_rest10; ?></h2>
+        <h2 id="30"><?php echo $nome_rest10; ?></h2>
+
+        <h2 id="31"><?php echo $lat_rest11; ?></h2>
+        <h2 id="32"><?php echo $long_rest11; ?></h2>
+        <h2 id="33"><?php echo $nome_rest11; ?></h2>
+
+        <h2 id="34"><?php echo $lat_rest12; ?></h2>
+        <h2 id="35"><?php echo $long_rest12; ?></h2>
+        <h2 id="36"><?php echo $nome_rest12; ?></h2>
+
+        <h2 id="37"><?php echo $lat_rest13; ?></h2>
+        <h2 id="38"><?php echo $long_rest13; ?></h2>
+        <h2 id="39"><?php echo $nome_rest13; ?></h2>
+
+        <h2 id="40"><?php echo $lat_rest14; ?></h2>
+        <h2 id="41"><?php echo $long_rest14; ?></h2>
+        <h2 id="42"><?php echo $nome_rest14; ?></h2>
+
+        <h2 id="43"><?php echo $lat_rest15; ?></h2>
+        <h2 id="44"><?php echo $long_rest15; ?></h2>
+        <h2 id="45"><?php echo $nome_rest15; ?></h2>
+        
+        <h2 id="46"><?php echo $lat_saude1; ?></h2>
+        <h2 id="47"><?php echo $long_saude1; ?></h2>
+        <h2 id="48"><?php echo $nome_saude1; ?></h2>
+
+        <h2 id="49"><?php echo $lat_saude2; ?></h2>
+        <h2 id="50"><?php echo $long_saude2; ?></h2>
+        <h2 id="51"><?php echo $nome_saude2; ?></h2>
+
+        <h2 id="52"><?php echo $lat_saude3; ?></h2>
+        <h2 id="53"><?php echo $long_saude3; ?></h2>
+        <h2 id="54"><?php echo $nome_saude3; ?></h2>
+
+        <h2 id="55"><?php echo $lat_saude4; ?></h2>
+        <h2 id="56"><?php echo $long_saude4; ?></h2>
+        <h2 id="57"><?php echo $nome_saude4; ?></h2>
+
+        <h2 id="58"><?php echo $lat_saude5; ?></h2>
+        <h2 id="59"><?php echo $long_saude5; ?></h2>
+        <h2 id="60"><?php echo $nome_saude5; ?></h2>
+
+        <h2 id="61"><?php echo $lat_policia1; ?></h2>
+        <h2 id="62"><?php echo $long_policia1; ?></h2>
+        <h2 id="63"><?php echo $nome_policia1; ?></h2>
+
+        <h2 id="64"><?php echo $lat_policia2; ?></h2>
+        <h2 id="65"><?php echo $long_policia2; ?></h2>
+        <h2 id="66"><?php echo $nome_policia2; ?></h2>
+
+        <h2 id="67"><?php echo $lat_policia3; ?></h2>
+        <h2 id="68"><?php echo $long_policia3; ?></h2>
+        <h2 id="69"><?php echo $nome_policia3; ?></h2>
+
+    </div>
+
+
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">
@@ -670,8 +813,8 @@ $_SESSION['destino'] = $destino;
                     }
                 });
             });
-</script>
-
+    </script>
+   
     <script src="./js/destino.js"></script>
 </body>
 </html>

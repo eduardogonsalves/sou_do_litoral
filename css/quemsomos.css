@@ -50,7 +50,6 @@ body {
     display: flex;
     height: 40em;
     width: 40em;
-    margin-top: 7em;
     text-align: center;
     margin: auto;
 }
@@ -67,8 +66,11 @@ body {
     font-size: 35px;
     color: rgb(255, 255, 255);
 }
-.descricao h1{
+.descricao h1, h2{
     text-align: center;
+
+}
+.descricao h1{
     margin-top: 1em;
 }
 
@@ -119,17 +121,18 @@ p {
     }
 
     .logoSmartPhone{
-        height: 50em;
-        width: 50em;
-        justify-content: center;
-        margin-top: 1em;
+        width: 5em;
+        height: 5em;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
        }
 
     .descricao {
+        margin: auto;
         width: 96%;
-        text-align: center;
         margin-top: 5em;
-        padding-top: 10em;
+        padding-top: 2em;
         font-size: 2em;
     }
 

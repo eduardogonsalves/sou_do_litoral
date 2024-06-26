@@ -37,28 +37,30 @@
                 Fundada e sediada em João Pessoa-PB, nossa empresa tem o compromisso de facilitar a sua jornada por praias deslumbrantes, museus fascinantes, zoológicos cativantes, turismo religioso inspirador, artesanatos locais autênticos e a deliciosa gastronomia nordestina.
             </p><br>
         <div class="card">
-            <h2 style="text-align: center;">O Que Fazemos</h2>         
-            <p style="backdrop-filter: blur(0.2em);
-">
+            <h2>O Que Fazemos</h2>         
+            <p style="backdrop-filter: blur(0.2em);">
                 Em um cenário onde a informação é fundamental para uma experiência de viagem memorável, nós nos destacamos por fornecer um guia completo e confiável para explorar os pontos turísticos do litoral paraibano. Com uma equipe apaixonada e experiente, compilamos recursos abrangentes para ajudá-lo a planejar sua viagem de forma eficiente e aproveitar ao máximo cada momento.
             </p><br>
         </div>
         <div class="card">
-            <h2 style="text-align: center;">Nossa Missão</h2>
+            <h2>Nossa Missão</h2>
             <p>
                 Nossa missão é tornar sua experiência de viagem inesquecível, fornecendo informações precisas, atualizadas e relevantes sobre os destinos mais encantadores da Paraíba. Estamos empenhados em facilitar sua descoberta, oferecendo orientações úteis, dicas insider e insights valiosos para garantir que você desfrute ao máximo de sua estadia.
             </p><br>
         </div>        
         <div class="card">
-            <h2 style="text-align: center;">Conecte-se Conosco</h2>
+            <h2>Conecte-se Conosco</h2>
             <p>
                 Estamos aqui para ajudá-lo a transformar sua viagem dos sonhos em realidade. Explore nosso site, entre em contato conosco e deixe-nos guiá-lo em uma jornada inesquecível pelo belo litoral da Paraíba!
             </p><br><br>
         </div>
+
+        <div class="logoPc logoSmartPhone">
+        <img src="./imagens/quemSomos/logosemfundo.png" alt="Logomarca do Site">
+        </div>
+
     </div>
-    <div class="logoPc logoSmartPhone">
-      <img src="./imagens/quemSomos/logosemfundo.png" alt="Logomarca do Site">
-    </div>
+
         
 </body>
 </html>

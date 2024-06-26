@@ -18,75 +18,188 @@
     }
 
 
-
-
-    // Configuração do Mapa        
+// Configuração do Mapa        
         
-    // Inicializar o mapa Leaflet
-    var map = L.map('map').setView([lat, lng], 13);
+            // Inicializar o mapa Leaflet
+            var map = L.map('map').setView([lat, lng], 13);
 
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
 
-        // Marcadores para Restaurantes
+            // Variáveis para restaurantes
 
-        var data = {
-        restaurantes: [
+            var a1 = document.getElementById('1').textContent;
+            var a2 = document.getElementById('2').textContent;
+            var a3 = document.getElementById('3').textContent;
 
-            //{lat: <?php echo $destino['lat_rest1']; ?>, lng: <?php echo $destino['long_rest1']; ?>, name:'<?php echo $destino['nome_rest1']; ?>'},
-        
-        ],
+            var b1 = document.getElementById('4').textContent;
+            var b2 = document.getElementById('5').textContent;
+            var b3 = document.getElementById('6').textContent;
 
-        // Marcadores para Postos de Saúde
+            var c1 = document.getElementById('7').textContent;
+            var c2 = document.getElementById('8').textContent;
+            var c3 = document.getElementById('9').textContent;
 
-        saude: [
-            {lat: -7.143929, lng: -34.817023, name: 'USF Cidade Recreio'},
-            {lat: -7.136031, lng: -34.827701, name: 'USF - Altiplano I E II'},
-            {lat: -7.109241, lng: -34.837266, name: 'Posto De Saúde - Manaíra'},
-            {lat: -7.112383, lng: -34.824532, name: 'Unidade Básica de Saúde das Praias'},
-            {lat: -7.097512, lng: -34.839729, name: 'UPA Oceania'},
-            
-        ],
+            var d1 = document.getElementById('10').textContent;
+            var d2 = document.getElementById('11').textContent;
+            var d3 = document.getElementById('12').textContent;
 
-        // Marcadores para Postos Policiais
+            var e1 = document.getElementById('13').textContent;
+            var e2 = document.getElementById('14').textContent;
+            var e3 = document.getElementById('15').textContent;
 
-        policia: [
-            {lat: -7.133229, lng: -34.830254, name: 'PM - CEATur'},
-            {lat: -7.113698, lng: -34.829431, name: 'Delegacia Distrital de Tambaú'},
-            {lat: -7.104421, lng: -34.837147, name: 'DISP - Distrito Integrado de Segurança Pública'},
-        
-        ],
- 
-        
+            var f1 = document.getElementById('16').textContent;
+            var f2 = document.getElementById('17').textContent;
+            var f3 = document.getElementById('18').textContent;
+
+            var g1 = document.getElementById('19').textContent;
+            var g2 = document.getElementById('20').textContent;
+            var g3 = document.getElementById('21').textContent;
+
+            var h1 = document.getElementById('22').textContent;
+            var h2 = document.getElementById('23').textContent;
+            var h3 = document.getElementById('24').textContent;
+
+            var i1 = document.getElementById('25').textContent;
+            var i2 = document.getElementById('26').textContent;
+            var i3 = document.getElementById('27').textContent;
+
+            var j1 = document.getElementById('28').textContent;
+            var j2 = document.getElementById('29').textContent;
+            var j3 = document.getElementById('30').textContent;
+
+            var k1 = document.getElementById('31').textContent;
+            var k2 = document.getElementById('32').textContent;
+            var k3 = document.getElementById('33').textContent;
+
+            var l1 = document.getElementById('34').textContent;
+            var l2 = document.getElementById('35').textContent;
+            var l3 = document.getElementById('36').textContent;
+
+            var m1 = document.getElementById('37').textContent;
+            var m2 = document.getElementById('38').textContent;
+            var m3 = document.getElementById('39').textContent;
+
+            var n1 = document.getElementById('40').textContent;
+            var n2 = document.getElementById('41').textContent;
+            var n3 = document.getElementById('42').textContent;
+
+            var o1 = document.getElementById('43').textContent;
+            var o2 = document.getElementById('44').textContent;
+            var o3 = document.getElementById('45').textContent;
+
+            // Variáveis para postos de saúde
+
+            var p1 = document.getElementById('46').textContent;
+            var p2 = document.getElementById('47').textContent;
+            var p3 = document.getElementById('48').textContent;
+
+            var q1 = document.getElementById('49').textContent;
+            var q2 = document.getElementById('50').textContent;
+            var q3 = document.getElementById('51').textContent;
+
+            var r1 = document.getElementById('52').textContent;
+            var r2 = document.getElementById('53').textContent;
+            var r3 = document.getElementById('54').textContent;
+
+            var s1 = document.getElementById('55').textContent;
+            var s2 = document.getElementById('56').textContent;
+            var s3 = document.getElementById('57').textContent;
+
+            var t1 = document.getElementById('58').textContent;
+            var t2 = document.getElementById('59').textContent;
+            var t3 = document.getElementById('60').textContent;
+
+            // Variáveis para postos policiais
+
+            var u1 = document.getElementById('61').textContent;
+            var u2 = document.getElementById('62').textContent;
+            var u3 = document.getElementById('63').textContent;
+
+            var v1 = document.getElementById('64').textContent;
+            var v2 = document.getElementById('65').textContent;
+            var v3 = document.getElementById('66').textContent;
+
+            var x1 = document.getElementById('67').textContent;
+            var x2 = document.getElementById('68').textContent;
+            var x3 = document.getElementById('69').textContent;
+
+            // Marcadores para Restaurantes
+
+            var data = {
+                restaurantes: [
+
+                    {lat: a1, lng: a2, name: a3},
+                    {lat: b1, lng: b2, name: b3},
+                    {lat: c1, lng: c2, name: c3},
+                    {lat: d1, lng: d2, name: d3},
+                    {lat: e1, lng: e2, name: e3},
+                    {lat: f1, lng: f2, name: f3},
+                    {lat: g1, lng: g2, name: g3},
+                    {lat: h1, lng: h2, name: h3},
+                    {lat: i1, lng: i2, name: i3},
+                    {lat: j1, lng: j2, name: j3},
+                    {lat: k1, lng: k2, name: k3},
+                    {lat: l1, lng: l2, name: l3},
+                    {lat: m1, lng: m2, name: m3},
+                    {lat: n1, lng: n2, name: n3},
+                    {lat: o1, lng: o2, name: o3},
+
+                ],
+
+                // Marcadores para Postos de Saúde
+
+                saude: [
+                    
+                    {lat: p1, lng: p2, name: p3},
+                    {lat: q1, lng: q2, name: q3},
+                    {lat: r1, lng: r2, name: r3},
+                    {lat: s1, lng: s2, name: s3},
+                    {lat: t1, lng: t2, name: t3},
+
+                    
+                ],
+
+                // Marcadores para Postos Policiais
+
+                policia: [
+                    
+                    {lat: u1, lng: u2, name: u3},
+                    {lat: v1, lng: v2, name: v3},
+                    {lat: x1, lng: x2, name: x3},
+
+                ],
 
 
-        };
+            };
 
-        var markers = [];
+            var markers = [];
 
-        // Função para mostrar marcadores de uma categoria específica
+                // Função para mostrar marcadores de uma categoria específica
 
-        function showMarkers(category) {
-        // Remover todos os marcadores existentes
-        markers.forEach(function(marker) {
-            map.removeLayer(marker);
-        });
-        markers = [];
+                function showMarkers(category) {
+                // Remover todos os marcadores existentes
+                markers.forEach(function(marker) {
+                    map.removeLayer(marker);
+                });
+                markers = [];
 
-        // Adicionar novos marcadores da categoria selecionada
-        data[category].forEach(function(item) {
-            var marker = L.marker([item.lat, item.lng])
-                .bindPopup(item.name)
-                .addTo(map);
-            markers.push(marker);
-        });
-        }
+                // Adicionar novos marcadores da categoria selecionada
+                data[category].forEach(function(item) {
+                    var marker = L.marker([item.lat, item.lng])
+                        .bindPopup(item.name)
+                        .addTo(map);
+                    markers.push(marker);
+                });
+            }
 
-        // Exibir marcadores da primeira categoria por padrão
-        showMarkers('restaurantes');
+            // Exibir marcadores da primeira categoria por padrão
+            showMarkers('restaurantes');
+
+   
   
 
 
