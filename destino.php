@@ -817,3 +817,204 @@ $_SESSION['destino'] = $destino;
     <script src="./js/destino.js"></script>
 </body>
 </html>
+
+
+<!-- Abaixo um gabarito para inserir destinos (Nos campos que não forem possível completar com informações colocar NULL-para números e deixar as strings vazias-"")
+
+
+
+INSERT INTO destino (
+    titulo_guia_pagina, nome_destino, carrossel1, carrossel2, carrossel3, carrossel4, carrossel5, carrossel6, carrossel7,
+    titulo_descricao, localizacao_acesso, descricao_roteiro, video1, video2, video3, video4, cidade, mapa_cidade, long_cidade,
+    lat_rest1, long_rest1, nome_rest1, lat_rest2, long_rest2, nome_rest2, lat_rest3, long_rest3, nome_rest3, lat_rest4, long_rest4,
+    nome_rest4, lat_rest5, long_rest5, nome_rest5, lat_rest6, long_rest6, nome_rest6, lat_rest7, long_rest7, nome_rest7, lat_rest8,
+    long_rest8, nome_rest8, lat_rest9, long_rest9, nome_rest9, lat_rest10, long_rest10, nome_rest10, lat_rest11, long_rest11, nome_rest11,
+    lat_rest12, long_rest12, nome_rest12, lat_rest13, long_rest13, nome_rest13, lat_rest14, long_rest14, nome_rest14, lat_rest15, long_rest15,
+    nome_rest15, lat_saude1, long_saude1, nome_saude1, lat_saude2, long_saude2, nome_saude2, lat_saude3, long_saude3, nome_saude3, lat_saude4,
+    long_saude4, nome_saude4, lat_saude5, long_saude5, nome_saude5, lat_policia1, long_policia1, nome_policia1, lat_policia2, long_policia2,
+    nome_policia2, lat_policia3, long_policia3, nome_policia3
+) VALUES (
+    'Farol do Cabo Branco', 
+    'Farol do Cabo Branco', 
+    'soudolitoral/imagens/farol_cb/fcb1.jpg', 
+    'soudolitoral/imagens/farol_cb/fcb2.jpg', 
+    'soudolitoral/imagens/farol_cb/fcb3.jpg', 
+    'soudolitoral/imagens/farol_cb/fcb4.jpg', 
+    'soudolitoral/imagens/farol_cb/fcb5.webp', 
+    'soudolitoral/imagens/farol_cb/fcb6.webp', 
+    'soudolitoral/imagens/farol_cb/fcb7.jpg', 
+    'Um Farol de História e Beleza',
+    '[{"paragrafo": "O Farol do Cabo Branco é um marco emblemático localizado na ponta mais oriental das Américas, em João Pessoa, Paraíba, Brasil. Projetado por Oscar Niemeyer, está estrategicamente posicionado para oferecer vistas panorâmicas do oceano Atlântico, sendo facilmente acessível a partir do centro da cidade."}]',
+    '[{"paragrafo": "O Farol do Cabo Branco não só orienta os navegantes com sua luz característica, mas também encanta visitantes com sua arquitetura modernista que se integra harmoniosamente às falésias e ao mar azul-turquesa da região."}, 
+    {"paragrafo": "Do topo do farol, os visitantes podem testemunhar um dos mais belos pores do sol da Paraíba. As cores quentes do crepúsculo se fundem com o brilho sereno do mar, criando um espetáculo natural de tirar o fôlego."}, 
+    {"paragrafo": "Além de seu apelo estético, o Farol do Cabo Branco serve como um centro cultural, hospedando eventos e exposições que celebram a arte e a história local, proporcionando uma experiência enriquecedora aos visitantes."}, 
+    {"paragrafo": "A área ao redor do farol também é conhecida por sua oferta gastronômica diversificada. Restaurantes próximos oferecem desde pratos típicos da culinária paraibana até opções internacionais, garantindo uma experiência culinária única."}, 
+    {"paragrafo": "À noite, o Farol do Cabo Branco se transforma em um ponto de encontro animado, onde moradores e turistas se reúnem para desfrutar de música ao vivo e uma atmosfera descontraída à beira-mar."}, 
+    {"paragrafo": "O Farol do Cabo Branco é mais do que um simples ponto turístico; é um símbolo da ligação entre a cidade de João Pessoa e o oceano, oferecendo uma experiência memorável que combina história, beleza natural e hospitalidade paraibana."}]',
+    'https://www.youtube.com/embed/MgmSytwjI2c?si=VybVObcaB8pyN09-', 
+    'https://www.youtube.com/embed/fE9XYai51VY?si=WtwfXORn4BLB4ZRI', 
+    'https://www.youtube.com/embed/nXrgVax3YI8?si=2cTerVq9IdbMT8wf', 
+    'https://www.youtube.com/embed/LzWMwLftUcM?si=JaGxW0nw6r1z-lNV', 
+    'João Pessoa', 
+    '-7.1266, -34.8254', 
+    -34.8254, 
+    -7.145781, -34.804317, 'Gulliver Mar Restaurante', 
+    -7.145632, -34.806807, 'Corais Bar e Restaurante', 
+    -7.145774, -34.809616, 'Restaurante e espaço Marcozero', 
+    -7.145682, -34.809704, 'RESTAURANTE ATLÂNTICO ORIENTAL', 
+    -7.148051, -34.805022, 'Boteco da Villa, Restaurante', 
+    -7.152047, -34.795179, 'Barra Beach Bar e Restaurante', 
+    -7.152401, -34.795143, 'Peixada do Cabral', 
+    -7.152556, -34.795026, 'Mahalo Beach Lounge', 
+    -7.159140, -34.796516, 'Restaurante Peixada do Amor', 
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    -7.143929, -34.817023, 'USF Cidade Recreio', 
+    -7.136031, -34.827701, 'USF - Altiplano I E II', 
+    -7.165388, -34.798922, 'USF da Penha', 
+    -7.112383, -34.824532, 'Unidade Básica de Saúde das Praias', 
+    -7.097512, -34.839729, 'UPA Oceania', 
+    -7.133229, -34.830254, 'PM - CEATur', 
+    -7.113698, -34.829431, 'Delegacia Distrital de Tambaú', 
+    -7.104421, -34.837147, 'DISP - Distrito Integrado de Segurança Pública'
+
+);
+
+
+Updade de fotos
+
+UPDATE destino
+SET 
+    carrossel1 = 'soudolitoral/imagens/farol_cb/fcb1.jpg',
+    carrossel2 = 'soudolitoral/imagens/farol_cb/fcb2.jpg',
+    carrossel3 = 'soudolitoral/imagens/farol_cb/fcb3.jpg', 
+    carrossel4 = 'soudolitoral/imagens/farol_cb/fcb4.jpg',
+    carrossel5 = 'soudolitoral/imagens/farol_cb/fcb5.webp', 
+    carrossel6 = 'soudolitoral/imagens/farol_cb/fcb6.webp',
+    carrossel7 = 'soudolitoral/imagens/farol_cb/fcb7.jpg'
+WHERE nome_destino = 'Farol do Cabo Branco';
+
+
+Referência pra criação da tabela(Sofreu ajustes, após o código abaixo)
+
+CREATE TABLE destino (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo_guia_pagina VARCHAR(40) NOT NULL,
+    nome_destino VARCHAR(40) NOT NULL,
+    carrossel1 VARCHAR(255),
+    carrossel2 VARCHAR(255),
+    carrossel3 VARCHAR(255),
+    carrossel4 VARCHAR(255),
+    carrossel5 VARCHAR(255),
+    carrossel6 VARCHAR(255),
+    carrossel7 VARCHAR(255),
+    titulo_descricao VARCHAR(30) NOT NULL,
+    localizacao_acesso JSON NOT NULL,
+    descricao_roteiro JSON NOT NULL,
+    video1 VARCHAR(100) NOT NULL,
+    video2 VARCHAR(100) NOT NULL,
+    video3 VARCHAR(100) NOT NULL,
+    video4 VARCHAR(100), (até aqui são dados que irão alimentar a página destino.php)
+    cidade VARCHAR(50) NOT NULL, (a partir daqui são dados que irão alimentar destino.js)
+    mapa_cidade VARCHAR(50) NOT NULL,
+    long_cidade DECIMAL(10, 7) NOT NULL,
+    
+    lat_rest1 DECIMAL(10, 7) NOT NULL,
+    long_rest1 DECIMAL(10, 7) NOT NULL,
+    nome_rest1 VARCHAR(70) NOT NULL,
+    
+    lat_rest2 DECIMAL(10, 7) NOT NULL,
+    long_rest2 DECIMAL(10, 7) NOT NULL,
+    nome_rest2 VARCHAR(70) NOT NULL,
+
+    lat_rest3 DECIMAL(10, 7) NOT NULL,
+    long_rest3 DECIMAL(10, 7) NOT NULL,
+    nome_rest3 VARCHAR(70) NOT NULL,
+
+    lat_rest4 DECIMAL(10, 7) NOT NULL,
+    long_rest4 DECIMAL(10, 7) NOT NULL,
+    nome_rest4 VARCHAR(70) NOT NULL,
+
+    lat_rest5 DECIMAL(10, 7) NOT NULL,
+    long_rest5 DECIMAL(10, 7) NOT NULL,
+    nome_rest5 VARCHAR(70) NOT NULL,
+
+    lat_rest6 DECIMAL(10, 7),
+    long_rest6 DECIMAL(10, 7),
+    nome_rest6 VARCHAR(70),
+
+    lat_rest7 DECIMAL(10, 7),
+    long_rest7 DECIMAL(10, 7),
+    nome_rest7 VARCHAR(70),
+
+    lat_rest8 DECIMAL(10, 7),
+    long_rest8 DECIMAL(10, 7),
+    nome_rest8 VARCHAR(70),
+
+    lat_rest9 DECIMAL(10, 7),
+    long_rest9 DECIMAL(10, 7),
+    nome_rest9 VARCHAR(70),
+
+    lat_rest10 DECIMAL(10, 7),
+    long_rest10 DECIMAL(10, 7),
+    nome_rest10 VARCHAR(70),
+
+    lat_rest11 DECIMAL(10, 7),
+    long_rest11 DECIMAL(10, 7),
+    nome_rest11 VARCHAR(70),
+
+    lat_rest12 DECIMAL(10, 7),
+    long_rest12 DECIMAL(10, 7),
+    nome_rest12 VARCHAR(70),
+
+    lat_rest13 DECIMAL(10, 7),
+    long_rest13 DECIMAL(10, 7),
+    nome_rest13 VARCHAR(70),
+
+    lat_rest14 DECIMAL(10, 7),
+    long_rest14 DECIMAL(10, 7),
+    nome_rest14 VARCHAR(70),
+
+    lat_rest15 DECIMAL(10, 7),
+    long_rest15 DECIMAL(10, 7),
+    nome_rest15 VARCHAR(70),
+
+    lat_saude1 DECIMAL(10, 7) NOT NULL,
+    long_saude1 DECIMAL(10, 7) NOT NULL,
+    nome_saude1 VARCHAR(70) NOT NULL,
+
+    lat_saude2 DECIMAL(10, 7) NOT NULL,
+    long_saude2 DECIMAL(10, 7) NOT NULL,
+    nome_saude2 VARCHAR(70) NOT NULL,
+
+    lat_saude3 DECIMAL(10, 7) NOT NULL,
+    long_saude3 DECIMAL(10, 7) NOT NULL,
+    nome_saude3 VARCHAR(70) NOT NULL,
+
+    lat_saude4 DECIMAL(10, 7),
+    long_saude4 DECIMAL(10, 7),
+    nome_saude4 VARCHAR(70),
+
+    lat_saude5 DECIMAL(10, 7),
+    long_saude5 DECIMAL(10, 7),
+    nome_saude5 VARCHAR(70),
+
+    lat_policia1 DECIMAL(10, 7) NOT NULL,
+    long_policia1 DECIMAL(10, 7) NOT NULL,
+    nome_policia1 VARCHAR(70)NOT NULL,
+
+    lat_policia2 DECIMAL(10, 7),
+    long_policia2 DECIMAL(10, 7),
+    nome_policia2 VARCHAR(70),
+
+    lat_policia3 DECIMAL(10, 7),
+    long_policia3 DECIMAL(10, 7),
+    nome_policia3 VARCHAR(70),
+);
+
+
+-->
