@@ -374,10 +374,16 @@ body{
 
 .titulo_news{
     margin-top: 100px;
-    color: rgb(44, 44, 121);
+    color: rgb(108, 108, 229);
     font-family: 'Dosis', sans-serif;
     font-size: 40px;
     text-align: center;
+    backdrop-filter: blur(40px);
+    width: 7em;
+    border-radius: 0.5em;
+    text-shadow: 2px 2px 4px #323131;
+    justify-content: center;
+    margin: auto;
 
 }
 
@@ -398,16 +404,20 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #323131;
 }
 
-.news h2 {
-    color: rgb(44, 44, 121);
+.news:hover{
+    backdrop-filter: blur(40px);
+    color: rgba(108, 108, 229, 0.367);
 }
 
-.news p {
-    color: rgb(44, 44, 121);
+.news h2, p {
+    color: rgb(108, 108, 229);
 }
-
+.news h2{
+    text-shadow: 0.1px 0.1px 0.5px #323131;
+}
 
 
 /* Rodapé */

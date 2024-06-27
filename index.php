@@ -222,6 +222,7 @@
         </div>
         <div class="column">
             <h3>Contatos</h3>
+            <p>contato@soudolitoral.com</p>
             <p>3548-9886</p>
         </div>
     </div>
