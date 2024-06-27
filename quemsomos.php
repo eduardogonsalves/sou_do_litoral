@@ -27,13 +27,12 @@
     <!-- Logomarca -->
     <div class="logoPC">
         <div class="logoquemsomos">
-            <img src="./imagens/quemSomos/logosemfundo.png">
+            <img src="./imagens/home/logo.png">
         </div>
     </div>
 
     <!-- Descrição -->
     <div class="descricao">
-        <div class="texto">
             <h1>Quem Somos</h1>
             <p>
                 Bem-vindo à Sou do Litoral, sua fonte confiável para explorar o encantador litoral paraibano! Nós nos dedicamos a fornecer as melhores e mais úteis informações para aqueles que desejam descobrir os tesouros da Paraíba.
@@ -52,7 +51,6 @@
             <p>
                 Estamos aqui para ajudá-lo a transformar sua viagem dos sonhos em realidade. Explore nosso site, entre em contato conosco e deixe-nos guiá-lo em uma jornada inesquecível pelo belo litoral da Paraíba!
             </p>
-        </div>        
     </div>
         
 </body>
