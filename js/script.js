@@ -3,8 +3,8 @@
 
 var destinos = [
     "Cabo Branco",
-    "Tambau",
-    "Londres",
+    "Farol do Cabo Branco",
+    "Igreja de São Francisco",
     "Tóquio",
     "Roma",
     "Barcelona",
@@ -33,7 +33,7 @@ var li = document.createElement("li");
     li.textContent = destino;
     li.addEventListener("click", function() {
 var destinoFormatado = destino.toLowerCase().replace(" ", "-");
-    window.location.href = "./cabobranco.php?destino=" + destinoFormatado;
+    window.location.href = "../destino.php?nome_destino=${destinoFormatado}";
     });
     listaSuspensa.appendChild(li);
     });

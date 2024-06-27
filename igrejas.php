@@ -21,7 +21,7 @@
             <div class="slider">
                     <div class="slides" style="--img: url('../imagens/igrejas/i1.jpg')">                        
                         <div class="content">
-                            <h2>Igreja de São Francisco</h2>
+                        <a href="destino.php?nome_destino=Igreja de São Francisco" style="text-decoration: none; color: white"><h2>Igreja de São Francisco</h2></a>
                                 <p>
                                     Uma das mais emblemáticas da cidade, a Igreja de São Francisco é um exemplo notável da arquitetura barroca brasileira. Construída no século XVI, apresenta detalhes ornamentais elaborados e é considerada um dos tesouros arquitetônicos da região.
                                 </p>

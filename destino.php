@@ -219,7 +219,8 @@ $_SESSION['destino'] = $destino;
     
     <div class="grupoMapa">
         <section class="content">
-            <div class="left-column">
+            <div class="left-column"> <!-- Esta div guarda das datas da previsão das tábuas de maré -->
+
                 <!-- Informações das tábuas de maré aqui -->
                 <div class="tabuas" id="tabuasMare">
                     <h2>Tábua de Maré</h2><hr>
@@ -613,8 +614,6 @@ $_SESSION['destino'] = $destino;
                 </div>
             </div>
 
-
-
             <!-- Mapa do Destino -->
             <div class="center-column">
                 <div id="map"></div>
@@ -661,7 +660,7 @@ $_SESSION['destino'] = $destino;
         </div>
     </section>
 
-    <div style="display: none;"> <!-- Os valores contidos nestes H2s serão atribuídos à variáveis no Js-->
+    <div style="display: none;"> <!-- Os valores contidos nesta Div serão atribuídos à variáveis no Js-->
         <h2 id="1"><?php echo $lat_rest1; ?></h2>
         <h2 id="2"><?php echo $long_rest1; ?></h2>
         <h2 id="3"><?php echo $nome_rest1; ?></h2>
@@ -761,7 +760,7 @@ $_SESSION['destino'] = $destino;
     <footer>
         <div class="footer-content">
             <div class="btn-topo">
-                <a href="./cabobranco.php#top">Topo</a>
+                <a href="#top">Topo</a>
             </div>
             <div id="nossosContatos" class="footer-columns">
                 <div class="column">
@@ -826,62 +825,60 @@ $_SESSION['destino'] = $destino;
 INSERT INTO destino (
     titulo_guia_pagina, nome_destino, carrossel1, carrossel2, carrossel3, carrossel4, carrossel5, carrossel6, carrossel7,
     titulo_descricao, localizacao_acesso, descricao_roteiro, video1, video2, video3, video4, cidade, mapa_cidade, long_cidade,
-    lat_rest1, long_rest1, nome_rest1, lat_rest2, long_rest2, nome_rest2, lat_rest3, long_rest3, nome_rest3, lat_rest4, long_rest4,
-    nome_rest4, lat_rest5, long_rest5, nome_rest5, lat_rest6, long_rest6, nome_rest6, lat_rest7, long_rest7, nome_rest7, lat_rest8,
-    long_rest8, nome_rest8, lat_rest9, long_rest9, nome_rest9, lat_rest10, long_rest10, nome_rest10, lat_rest11, long_rest11, nome_rest11,
-    lat_rest12, long_rest12, nome_rest12, lat_rest13, long_rest13, nome_rest13, lat_rest14, long_rest14, nome_rest14, lat_rest15, long_rest15,
-    nome_rest15, lat_saude1, long_saude1, nome_saude1, lat_saude2, long_saude2, nome_saude2, lat_saude3, long_saude3, nome_saude3, lat_saude4,
-    long_saude4, nome_saude4, lat_saude5, long_saude5, nome_saude5, lat_policia1, long_policia1, nome_policia1, lat_policia2, long_policia2,
-    nome_policia2, lat_policia3, long_policia3, nome_policia3
+    lat_rest1, long_rest1, nome_rest1, lat_rest2, long_rest2, nome_rest2, lat_rest3, long_rest3, nome_rest3, lat_rest4, long_rest4, nome_rest4, 
+    lat_rest5, long_rest5, nome_rest5, lat_rest6, long_rest6, nome_rest6, lat_rest7, long_rest7, nome_rest7, lat_rest8, long_rest8, nome_rest8, 
+    lat_rest9, long_rest9, nome_rest9, lat_rest10, long_rest10, nome_rest10, lat_rest11, long_rest11, nome_rest11, lat_rest12, long_rest12, nome_rest12, 
+    lat_rest13, long_rest13, nome_rest13, lat_rest14, long_rest14, nome_rest14, lat_rest15, long_rest15, nome_rest15, 
+    lat_saude1, long_saude1, nome_saude1, lat_saude2, long_saude2, nome_saude2, lat_saude3, long_saude3, nome_saude3, lat_saude4, long_saude4, nome_saude4, 
+    lat_saude5, long_saude5, nome_saude5, lat_policia1, long_policia1, nome_policia1, lat_policia2, long_policia2, nome_policia2, lat_policia3, long_policia3, nome_policia3
 ) VALUES (
-    'Farol do Cabo Branco', 
-    'Farol do Cabo Branco', 
-    'soudolitoral/imagens/farol_cb/fcb1.jpg', 
-    'soudolitoral/imagens/farol_cb/fcb2.jpg', 
-    'soudolitoral/imagens/farol_cb/fcb3.jpg', 
-    'soudolitoral/imagens/farol_cb/fcb4.jpg', 
-    'soudolitoral/imagens/farol_cb/fcb5.webp', 
-    'soudolitoral/imagens/farol_cb/fcb6.webp', 
-    'soudolitoral/imagens/farol_cb/fcb7.jpg', 
-    'Um Farol de História e Beleza',
-    '[{"paragrafo": "O Farol do Cabo Branco é um marco emblemático localizado na ponta mais oriental das Américas, em João Pessoa, Paraíba, Brasil. Projetado por Oscar Niemeyer, está estrategicamente posicionado para oferecer vistas panorâmicas do oceano Atlântico, sendo facilmente acessível a partir do centro da cidade."}]',
-    '[{"paragrafo": "O Farol do Cabo Branco não só orienta os navegantes com sua luz característica, mas também encanta visitantes com sua arquitetura modernista que se integra harmoniosamente às falésias e ao mar azul-turquesa da região."}, 
-    {"paragrafo": "Do topo do farol, os visitantes podem testemunhar um dos mais belos pores do sol da Paraíba. As cores quentes do crepúsculo se fundem com o brilho sereno do mar, criando um espetáculo natural de tirar o fôlego."}, 
-    {"paragrafo": "Além de seu apelo estético, o Farol do Cabo Branco serve como um centro cultural, hospedando eventos e exposições que celebram a arte e a história local, proporcionando uma experiência enriquecedora aos visitantes."}, 
-    {"paragrafo": "A área ao redor do farol também é conhecida por sua oferta gastronômica diversificada. Restaurantes próximos oferecem desde pratos típicos da culinária paraibana até opções internacionais, garantindo uma experiência culinária única."}, 
-    {"paragrafo": "À noite, o Farol do Cabo Branco se transforma em um ponto de encontro animado, onde moradores e turistas se reúnem para desfrutar de música ao vivo e uma atmosfera descontraída à beira-mar."}, 
-    {"paragrafo": "O Farol do Cabo Branco é mais do que um simples ponto turístico; é um símbolo da ligação entre a cidade de João Pessoa e o oceano, oferecendo uma experiência memorável que combina história, beleza natural e hospitalidade paraibana."}]',
-    'https://www.youtube.com/embed/MgmSytwjI2c?si=VybVObcaB8pyN09-', 
-    'https://www.youtube.com/embed/fE9XYai51VY?si=WtwfXORn4BLB4ZRI', 
-    'https://www.youtube.com/embed/nXrgVax3YI8?si=2cTerVq9IdbMT8wf', 
-    'https://www.youtube.com/embed/LzWMwLftUcM?si=JaGxW0nw6r1z-lNV', 
+    'Igreja de São Francisco', 
+    'Igreja de São Francisco', 
+    'soudolitoral/imagens/igreja_s_francisco/isf10.jpg', 
+    'soudolitoral/imagens/igreja_s_francisco/isf11.jpg', 
+    'soudolitoral/imagens/igreja_s_francisco/isf12.jpg', 
+    'soudolitoral/imagens/igreja_s_francisco/isf9.jpg', 
+    'soudolitoral/imagens/igreja_s_francisco/isf8.jpg', 
+    'soudolitoral/imagens/igreja_s_francisco/isf3.webp', 
+    'soudolitoral/imagens/igreja_s_francisco/isf1.jpg', 
+    'A Joia do Barroco no Coração de João Pessoa',
+    '[{"paragrafo": "A Igreja de São Francisco está situada no Centro Histórico de João Pessoa, capital do estado da Paraíba, no nordeste do Brasil. Este magnífico complexo arquitetônico é acessível por diversas vias principais da cidade."}]',
+    '[{"paragrafo": "A Igreja de São Francisco é famosa por sua riqueza histórica e beleza arquitetônica. O complexo inclui o Convento de Santo Antônio, a Capela da Ordem Terceira de São Francisco, a Capela de São Benedito e a Casa de Oração dos Terceiros, conhecida como Capela Dourada."}, 
+    {"paragrafo": "O convento e a igreja são exemplos primorosos do estilo barroco, com ornamentos detalhados e obras de arte sacra. A fachada esculpida e os altares decorados com ouro impressionam visitantes e estudiosos."}, 
+    {"paragrafo": "A fonte de Santo Antônio, construída em 1717, é outro destaque. Localizada ao lado do convento, a água jorra da boca de um golfinho de pedra. A inscrição em latim remete ao sacrifício e devoção dos frades que a construíram."}, 
+    {"paragrafo": "A área ao redor da igreja é um tesouro cultural, oferecendo uma visão abrangente da influência das culturas indígenas, africanas e europeias na região. Os visitantes podem explorar o claustro e o grande adro com um cruzeiro."}, 
+    {"paragrafo": "À noite, a iluminação da igreja realça sua beleza e cria um ambiente sereno e contemplativo. O local também é um centro de atividades culturais, com eventos e exposições regulares."}, 
+    {"paragrafo": "A Igreja de São Francisco encanta com sua grandiosidade histórica, riqueza cultural e acolhimento. Seja para admirar a arquitetura, participar de eventos culturais ou simplesmente contemplar a história, é uma experiência inesquecível."}]',
+    'https://www.youtube.com/embed/Y-jD9SlyXnA?si=Jc6zEfmeCkhvI_Dx', 
+    'https://www.youtube.com/embed/nCno48etG5Q?si=bIDy5KNWekvBh-WC', 
+    'https://www.youtube.com/embed/jxKrnEK9ZD0?si=47aQdaFetALjdLbr', 
+    'https://www.youtube.com/embed/K2l3cRQck00?si=dOJX0MsK8r0Vgyyj', 
     'João Pessoa', 
     '-7.1266, -34.8254', 
     -34.8254, 
-    -7.145781, -34.804317, 'Gulliver Mar Restaurante', 
-    -7.145632, -34.806807, 'Corais Bar e Restaurante', 
-    -7.145774, -34.809616, 'Restaurante e espaço Marcozero', 
-    -7.145682, -34.809704, 'RESTAURANTE ATLÂNTICO ORIENTAL', 
-    -7.148051, -34.805022, 'Boteco da Villa, Restaurante', 
-    -7.152047, -34.795179, 'Barra Beach Bar e Restaurante', 
-    -7.152401, -34.795143, 'Peixada do Cabral', 
-    -7.152556, -34.795026, 'Mahalo Beach Lounge', 
-    -7.159140, -34.796516, 'Restaurante Peixada do Amor', 
+    -7.124075, -34.878478, 'Ed Restaurante Self Service', 
+    -7.120763, -34.881641, 'Restaurante e Lanchonete A Garagem', 
+    -7.117269, -34.882093, 'La Em Casa Restaurante', 
+    -7.117640, -34.879101, 'Status restaurante e lanchonete', 
+    -7.115109, -34.879848, 'Restaurante Sertanejo', 
+    -7.121833, -34.883410, 'Aspargos Restaurante e Cafeteria', 
     NULL, NULL, '', 
     NULL, NULL, '', 
     NULL, NULL, '', 
     NULL, NULL, '', 
     NULL, NULL, '', 
+	NULL, NULL, '', 
     NULL, NULL, '', 
-    -7.143929, -34.817023, 'USF Cidade Recreio', 
-    -7.136031, -34.827701, 'USF - Altiplano I E II', 
-    -7.165388, -34.798922, 'USF da Penha', 
-    -7.112383, -34.824532, 'Unidade Básica de Saúde das Praias', 
-    -7.097512, -34.839729, 'UPA Oceania', 
-    -7.133229, -34.830254, 'PM - CEATur', 
-    -7.113698, -34.829431, 'Delegacia Distrital de Tambaú', 
-    -7.104421, -34.837147, 'DISP - Distrito Integrado de Segurança Pública'
-
+    NULL, NULL, '', 
+    NULL, NULL, '', 
+    -7.117909, -34.869462, 'Hospital Geral Santa Isabel', 
+    -7.116201, -34.885178, 'USF Varadouro I e II', 
+    -7.124796, -34.888114, 'USF Cordão Encarnado I', 
+    -7.114937, -34.871747, 'USF Tambiá', 
+    -7.115668, -34.877369, 'Hospital Prontovida', 
+    -7.120064, -34.878947, 'Posto Policial', 
+    -7.118740, -34.874624, '2ª Delegacia Distrital de Polícia Civíl', 
+    -7.124679, -34.872811, 'Delegacia Especializada de Atendimento à Mulher - NORTE'
 );
 
 
