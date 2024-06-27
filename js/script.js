@@ -33,7 +33,7 @@ var li = document.createElement("li");
     li.textContent = destino;
     li.addEventListener("click", function() {
 var destinoFormatado = destino.toLowerCase().replace(" ", "-");
-    window.location.href = "../destino.php?nome_destino=${destinoFormatado}";
+    window.location.href = "../destino.php?nome_destino=${destinoFormatado}"; //Falta ajustar esse script para associar a busca ao destino escolhido
     });
     listaSuspensa.appendChild(li);
     });

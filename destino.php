@@ -223,7 +223,7 @@ $_SESSION['destino'] = $destino;
 
                 <!-- Informações das tábuas de maré aqui -->
                 <div class="tabuas" id="tabuasMare">
-                    <h2>Tábua de Maré</h2><hr>
+                    <h2>Tábuas de Maré</h2><hr>
                     <div class="previsao">
                         <h4>Terça 18/06/24</h4>
                         <p> 
@@ -338,32 +338,14 @@ $_SESSION['destino'] = $destino;
                             11:28h - 2.1m<br>
                             17:51h - 0.6m<hr>
                         </p>
-                    </div>
-                    <div class="previsao">
-                        <h4>Sexta 28/06/24</h4>
-                        <p> 
-                            02:56h - 0.6m<br>
-                            09:15h - 2.2m<br>
-                            15:39h - 0.5m<br>
-                            22:00h - 2.0m<hr>
-                        </p><hr>
-                    </div>
-                    <div class="previsao">
-                        <h4>Sábado 29/06/24</h4>
-                        <p>
-                            04:02h - 0.7m<br>
-                            10:21h - 2.1m<br>
-                            16:43h - 0.6m<br>
-                            23:04h - 2.0m<hr>
-                        </p><hr>
-                    </div>
+                    </div>                    
                     <div class="previsao">
                         <h4>Domingo 30/06/24</h4>
                         <p>
                             05:09h - 0.7m<br>
                             11:28h - 2.1m<br>
                             17:51h - 0.6m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Segunda 01/07/24</h4>
@@ -372,7 +354,7 @@ $_SESSION['destino'] = $destino;
                             06:23h - 0.6m<br>
                             12:39h - 2.1m<br>
                             18:53h - 0.6m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Terça 02/07/24</h4>
@@ -381,7 +363,7 @@ $_SESSION['destino'] = $destino;
                             07:32h - 0.5m<br>
                             13:45h - 2.1m<br>
                             19:54h - 0.6m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Quarta 03/07/24</h4>
@@ -389,8 +371,8 @@ $_SESSION['destino'] = $destino;
                             02:13h - 2.2m<br>
                             08:28h - 0.4m<br>
                             14:43h - 2.1m<br>
-                            20:47h - 0.6m<hr>
-                        </p><hr>
+                            20:47h - 0.6m<hr> 
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Quinta 04/07/24</h4>
@@ -399,7 +381,7 @@ $_SESSION['destino'] = $destino;
                             09:17h - 0.4m<br>
                             15:38h - 2.2m<br>
                             21:32h - 0.5m<hr>
-                        </p><hr>
+                        </p> 
                     </div>
                     <div class="previsao">
                         <h4>Sexta 05/07/24</h4>
@@ -408,7 +390,7 @@ $_SESSION['destino'] = $destino;
                             10:04h - 0.3m<br>
                             16:23h - 2.2m<br>
                             22:15h - 0.5m<hr>
-                        </p><hr>
+                        </p> 
                     </div>
                     <div class="previsao">
                         <h4>Sábado 06/07/24</h4>
@@ -417,7 +399,7 @@ $_SESSION['destino'] = $destino;
                             10:47h - 0.3m<br>
                             17:02h - 2.2m<br>
                             22:54h - 0.5m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Domingo 07/07/24</h4>
@@ -426,7 +408,7 @@ $_SESSION['destino'] = $destino;
                             11:26h - 0.3m<br>
                             17:41h - 2.1m<br>
                             23:30h - 0.5m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Segunda 08/07/24</h4>
@@ -434,7 +416,7 @@ $_SESSION['destino'] = $destino;
                             05:47h - 2.3m<br>
                             12:02h - 0.4m<br>
                             18:15h - 2.1m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Terça 09/07/24</h4>
@@ -443,7 +425,7 @@ $_SESSION['destino'] = $destino;
                             06:21h - 2.3m<br>
                             12:38h - 0.4m<br>
                             18:51h - 2.1m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Quarta 10/07/24</h4>
@@ -452,7 +434,7 @@ $_SESSION['destino'] = $destino;
                             06:56h - 2.2m<br>
                             13:09h - 0.5m<br>
                             19:26h - 2.0m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Quinta 11/07/24</h4>
@@ -461,7 +443,7 @@ $_SESSION['destino'] = $destino;
                             07:36h - 2.1m<br>
                             13:49h - 0.6m<br>
                             20:06h - 1.9m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Sexta 12/07/24</h4>
@@ -470,7 +452,7 @@ $_SESSION['destino'] = $destino;
                             08:19h - 2.0m<br>
                             14:32h - 0.7m<br>
                             20:53h - 1.9m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Sábado 13/07/24</h4>
@@ -479,7 +461,7 @@ $_SESSION['destino'] = $destino;
                             09:06h - 1.9m<br>
                             15:21h - 0.8m<br>
                             21:45h - 1.8m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Domingo 14/07/24</h4>
@@ -488,7 +470,7 @@ $_SESSION['destino'] = $destino;
                             10:04h - 1.8m<br>
                             16:21h - 0.9m<br>
                             22:43h - 1.8m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Segunda 15/07/24</h4>
@@ -497,7 +479,7 @@ $_SESSION['destino'] = $destino;
                             11:08h - 1.8m<br>
                             17:23h - 0.9m<br>
                             23:49h - 1.8m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Terça 16/07/24</h4>
@@ -505,7 +487,7 @@ $_SESSION['destino'] = $destino;
                             05:58h - 0.9m<br>
                             12:15h - 1.8m<br>
                             18:23h - 0.8m<hr>
-                        </p><hr>
+                        </p>
                         </div>
                     <div class="previsao">
                         <h4>Quarta 17/07/24</h4>
@@ -514,7 +496,7 @@ $_SESSION['destino'] = $destino;
                             07:06h - 0.8m<br>
                             13:17h - 1.9m<br>
                             19:24h - 0.8m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Quinta 18/07/24</h4>
@@ -523,7 +505,7 @@ $_SESSION['destino'] = $destino;
                             08:02h - 0.6m<br>
                             14:11h - 2.0m<br>
                             20:17h - 0.6m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Sexta 19/07/24</h4>
@@ -532,7 +514,7 @@ $_SESSION['destino'] = $destino;
                             08:53h - 0.5m<br>
                             15:06h - 2.1m<br>
                             21:06h - 0.5m<hr>
-                        </p><hr>
+                        </p>
                     </div>
                     <div class="previsao">
                         <h4>Sábado 20/07/24</h4>

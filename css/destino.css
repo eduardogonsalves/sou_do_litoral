@@ -272,8 +272,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 0;
-}
+    line-height: 0.5px;
+ }
 
 .left-column, .right-column {
     width: 15em;
