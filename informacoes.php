@@ -233,15 +233,12 @@
                     </p>                
                 </div>
                 <div class="praiasImp">                   
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')" onclick="openPopup('./imagens/informacoes/banho/Gameleira_Fagundes.jpg')">Gameleira e Fagundes</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Costinha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Costinha.jpg')">Costinha</button>   
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')" onclick="openPopup('./imagens/informacoes/banho/Manaira_Tambau.jpg')">Manaíra e Tambaú</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Seixas.jpg')" onclick="openPopup('./imagens/informacoes/banho/Seixas.jpg')">Seixas</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Penha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Penha.jpg')">Penha</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')" onclick="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')">Jacarapé, Arraial e Sol</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pintimbu_Maceio_Guarita.jpg')">Pintimbú, Maceió e Guarita</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')" onclick="openPopup('./imagens/informacoes/banho/Azul_SantaRita_Coqueiros.jpg')">Azul/Santa Rita e Coqueiros</button>
-                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho')" onclick="openPopup('./imagens/informacoes/banho/Manaira_e_Tambau.jpg')">Manaíra e Tambaú</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho')" onclick="openPopup('./imagens/informacoes/banho/Seixas.jpg')">Seixas</button>   
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho')" onclick="openPopup('./imagens/informacoes/banho/Penha.jpg')">Penha</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Seixas.jpg')" onclick="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')">Jacarapé, Arraial e Sol</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Penha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pitimbu_Maceio_Guarita.jpg')">Pitimbu, Maceió e Guarita</button>
+                    <button ontouchstart="openPopup('./imagens/informacoes/banho/Jacarape_Arraial_Sol.jpg')" onclick="openPopup('./imagens/informacoes/banho/Ponta_dos_Coqueiros_Acau_Pontinha.jpg')">Ponta dos Coqueiros, Acaú e Pontinha</button>           
                 </div>
                 <div class="aguas1">
                     <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relatório na íntegra</a></h2>               
