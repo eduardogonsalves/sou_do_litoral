@@ -348,6 +348,7 @@ body{
     margin: auto;
     height: 46.21em;
 
+
 }
 
 .slide {
@@ -366,14 +367,10 @@ body{
 }
 
 
-
-
-
-
 /* Notícias */
 
 .titulo_news{
-    margin-top: 100px;
+    margin-top: 10em;
     color: rgb(108, 108, 229);
     font-family: 'Dosis', sans-serif;
     font-size: 40px;
@@ -409,7 +406,9 @@ body{
 
 .news:hover{
     backdrop-filter: blur(40px);
-    color: rgba(108, 108, 229, 0.367);
+    background-color: rgba(108, 108, 229, 0.177);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
 }
 
 .news h2, p {

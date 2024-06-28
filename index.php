@@ -124,19 +124,19 @@
     <!-- Galeria Interativa -->
     <div class="wrapper">
         <div class="items">
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/1.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/2.png);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/3.webp);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/4.jpeg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/5.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/6.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/7.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/8.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/9.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/10.webp);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/11.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/12.jpg);"></div>
-            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/13.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp1.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp2.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp3.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp4.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp5.jpeg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp6.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp7.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp8.jpeg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp9.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp10.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp11.jpg);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp12.webp);"></div>
+            <div class="item" tabindex="0" style="background-image: url(./imagens/galeria/jp13.webp);"></div>
         </div>
     </div>
 
@@ -161,32 +161,34 @@
 
     <!-- Cards com notícias -->
     <div class="titulo_news"> 
-        <h2>Notícias</h2>
+        <h2 style="margin-top: 1.7em;">Notícias</h2>
     </div>
 
     <div class="new-container">
 
         <div class="news">
-            <a style="text-decoration: none;" href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
+            <a style="text-decoration: none;" href="https://paraiba.pb.gov.br/noticias/joao-pessoa-escolhida-como-um-dos-melhores-destinos-do-pais-para-conhecer#:~:text=Desta%20vez%20a%20capital%20paraibana,bolso%20de%20todos%20os%20viajantes." target="_blank">
                 
-                <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
+                <h2>João Pessoa escolhida como um dos melhores destinos do país para conhecer</h2>
                 <p>
-                    As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
-                    continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
-                    viagens nacionais em seu site e app. De acordo com o estudo, dos oito primeiros destinos mais buscados, 
-                    sete estão no Nordeste - o Rio de Janeiro é a exceção - e João Pessoa é o oitavo mais procurado para o período.           
+                    De acordo com o site Melhores Destinos, mais de 26 mil votos foram contabilizados 
+                    este ano para eleger os 10 melhores destinos nacionais no Prêmio Melhores Destinos 
+                    2023/2024. Esta premiação é a maior do Brasil em termos de participação. A pesquisa 
+                    mencionou 89 destinos, e a disputa pelo título de Melhor Destino do Brasil em 
+                    2023/2024 foi bastante intensa.         
                 </p>
             </a>  
         </div>
         <div class="news">
-            <a style="text-decoration: none;" href="https://www.joaopessoa.pb.gov.br/noticias/espacos-publicos-mantidos-pela-prefeitura-sao-opcoes-de-lazer-em-joao-pessoa/" target="_blank">
+            <a style="text-decoration: none;" href="https://www.clickpb.com.br/paraiba/joao-pessoa-e-uma-das-dez-cidades-da-america-do-sul-e-unica-do-brasil-para-melhor-se-viver-revela-ranking-318361.html" target="_blank">
                 
-                <h2>Espaços públicos mantidos pela Prefeitura são opções de lazer em João Pessoa</h2>
+                <h2>João Pessoa é uma das dez cidades da América do Sul e única do Brasil para melhor se viver, revela ranking</h2>
                 <p>
-                    As férias de julho estão chegando e, mais uma vez, a intenção de viajar dos brasileiros para o Nordeste 
-                    continua em alta. A Decolar - empresa de viagens líder na América Latina - analisou as preferências de 
-                    viagens nacionais em seu site e app. De acordo com o estudo, dos oito primeiros destinos mais buscados, 
-                    sete estão no Nordeste - o Rio de Janeiro é a exceção - e João Pessoa é o oitavo mais procurado para o período.           
+                Ainda aponta como motivo, o índice de segurança considerado o mais alto do Brasil, 
+                a qualidade do ar e a infraestrutura moderna, além disso, as belezas naturais. O custo 
+                de vida médio foi dito como pouco mais de R$ 3 mil, podendo chegar a mais do que este valor. 
+                Trouxe como desvantagem a não oferta de voos internacionais, tendo em vista ser necessário 
+                se deslocar para outras localidades como Recife e Rio de Janeiro.            
                 </p>
             </a>  
         </div>
