@@ -38,38 +38,25 @@
                             discar 00 + 55 + 83 + número de telefone desejado.
                         </p><br><br>
 
-<!-- Telefones úteis -->
-                            <title>Telefones Úteis</title>
-                            <style>
-                                body { font-family: sans-serif; }
-                                .phone-list { list-style: none; padding: 0; }
-                                .phone-item { margin-bottom: 10px; }
-                                .phone-link { display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; }
-                            </style>
-                        </head>
-                        <body>
-                        
-                            <h2>Telefones Úteis</h2>
-                        
-                            <ul class="phone-list">
-                                <li class="phone-item"><a href="tel:193" class="phone-link">Bombeiros: 193</a></li>
-                                <li class="phone-item"><a href="tel:+558332246688" class="phone-link">Ceatox: (83) 3224-6688</a></li>
-                                <li class="phone-item"><a href="tel:199" class="phone-link">Defesa Civil: 199</a></li>
-                                <li class="phone-item"><a href="tel:08002827969" class="phone-link">Disque Denúncia: 0800 282 7969</a></li>
-                                <li class="phone-item"><a href="tel:100" class="phone-link">Disque Denúncia: 100</a></li>
-                                <li class="phone-item"><a href="tel:+5583988559796" class="phone-link">Sindicato dos Guias de Turismo: (83) 98855-9796</a></li>
-                                <li class="phone-item"><a href="tel:+5583999467675" class="phone-link">Sindicato dos Guias de Turismo: (83) 99946-7675</a></li>
-                                <li class="phone-item"><a href="tel:+558332147956" class="phone-link">Vigilância Sanitária: (83) 3214-7956</a></li>
-                                <li class="phone-item"><a href="tel:197" class="phone-link">Polícia Civil: 197</a></li>
-                                <li class="phone-item"><a href="tel:194" class="phone-link">Polícia Federal: 194</a></li>
-                                <li class="phone-item"><a href="tel:190" class="phone-link">Polícia Militar: 190</a></li>
-                                <li class="phone-item"><a href="tel:191" class="phone-link">Polícia Rodoviária Federal: 191</a></li>
-                                <li class="phone-item"><a href="tel:0800832015" class="phone-link">Procon-JP: 0800 83 2015</a></li>
-                                <li class="phone-item"><a href="tel:192" class="phone-link">Samu: 192</a></li>
-                                <li class="phone-item"><a href="tel:118" class="phone-link">Semob: 118</a></li>
-                            </ul>
-                        
-
+                            <!-- Telefones úteis -->                        
+                            <h2>Telefones Úteis</h2>                        
+                            <p>
+                                Bombeiros: 193<br>
+                                Ceatox: (83) 3224-6688<br>
+                                Defesa Civil: 199<br>
+                                Disque Denúncia: 0800 282 7969<br>
+                                Disque Denúncia: 100<br>
+                                Sindicato dos Guias de Turismo: (83) 98855-9796<br>
+                                Sindicato dos Guias de Turismo: (83) 99946-7675<br>
+                                Vigilância Sanitária: (83) 3214-7956<br>
+                                Polícia Civil: 197<br>
+                                Polícia Federal: 194<br>
+                                Polícia Militar: 190<br>
+                                Polícia Rodoviária Federal: 191<br>
+                                Procon-JP: 0800 83 2015<br>
+                                Samu: 192<br>
+                                Semob: 118<br>
+                            </p>
                         </div>
                     </p>
                 </div>
