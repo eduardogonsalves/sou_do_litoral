@@ -33,10 +33,10 @@
             <div class="telefones">
                 <div class="tel">
                     <h2>Telefonia - Comunicação</h2>
-                        <p>
-                            Para ligações internacionais feitas para João Pessoa, <br>
-                            discar 00 + 55 + 83 + número de telefone desejado.
-                        </p><br><br>
+                            <p>
+                                Para ligações internacionais feitas para João Pessoa, <br>
+                                discar 00 + 55 + 83 + número de telefone desejado.
+                            </p><br><br>
 
                             <!-- Telefones úteis -->                        
                             <h2>Telefones Úteis</h2>                        
@@ -55,18 +55,16 @@
                                 Polícia Rodoviária Federal: 191<br>
                                 Procon-JP: 0800 83 2015<br>
                                 Samu: 192<br>
-                                Semob: 118<br>
+                                Semob: 118 <br>
                             </p>
-                        </div>
-                    </p>
                 </div>
             </div>
             <div class="tensao">
                 <div class="tens">
-                <h2>Tensão Elétrica</h2>
-                <p>
-                    A tensão utilizada em João Pessoa é de <i style="color: red">220V</i>, com tomadas de três pinos.
-                </p>
+                    <h2>Tensão Elétrica</h2>
+                    <p>
+                        A tensão utilizada em João Pessoa é de <i style="color: red">220V</i>, com tomadas de três pinos.
+                    </p>
                 </div>
             </div>
             <div class="informacoes">
