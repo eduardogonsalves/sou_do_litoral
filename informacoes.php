@@ -244,7 +244,7 @@
                     <button ontouchstart="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')" onclick="openPopup('./imagens/informacoes/banho/Pontas_dos_Coqueiros_Acau_Pontinha.jpg')">Pontas dos Coqueiros, Acaú e Pontinha</button>            
                 </div>
                 <div class="aguas1">
-                    <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relório na íntegra</a></h2>               
+                    <h2><a style="text-decoration: none; color: blue;" href="https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares" target="_blank">Clique aqui para acessar o relatório na íntegra</a></h2>               
                 </div>
                 <div id="popup" class="popup">
                     <div class="popup-content">

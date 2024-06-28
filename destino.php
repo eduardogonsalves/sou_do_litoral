@@ -340,14 +340,6 @@ $_SESSION['destino'] = $destino;
                         </p>
                     </div>                    
                     <div class="previsao">
-                        <h4>Domingo 30/06/24</h4>
-                        <p>
-                            05:09h - 0.7m<br>
-                            11:28h - 2.1m<br>
-                            17:51h - 0.6m<hr>
-                        </p>
-                    </div>
-                    <div class="previsao">
                         <h4>Segunda 01/07/24</h4>
                         <p>
                             00:09h - 2.0m<br>
@@ -755,6 +747,7 @@ $_SESSION['destino'] = $destino;
                 </div>
                 <div class="column">
                     <h3>Contatos</h3>
+                    <p>contato@soudolitoral.com</p>
                     <p>3548-9886</p>
                 </div>
             </div>

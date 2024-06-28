@@ -2,13 +2,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!--
-    Trabalho a realizar nesta página:
-        - ajustar a disposição dos cards(inclusive colocar em percentual da página(CSS));
-        - Acrescenta ícones de redes sociais ao rodapé(footer);
-        - acrescentar notícias relevantes: Praias impróprias para banhos e outras.
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -239,5 +232,10 @@
     Busca de imagens em:
     https://unsplash.com/pt-br/s/fotografias/praia
 
+    Relatório da SUDEMA
     https://sudema.pb.gov.br/qualidade-do-ambiente/qualidade-dos-mares
+
+    Tratamento de imagens
+    https://tinyjpg.com/
+
 -->
