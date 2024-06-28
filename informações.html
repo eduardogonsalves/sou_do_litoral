@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/informacoes.css"><!--Referência do CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>Informações Úteis</title>
+    <style>
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+        .marquee {
+            display: block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .phone-list { list-style: none; padding: 0; }
+        .phone-item { margin-bottom: 10px; }
+        .phone-link { display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <!-- Letreiro Circulante -->
+    <div class="marquee-container">
+        <div class="marquee">
+            Bombeiros: 193 - Ceatox: (83) 3224-6688 - Defesa Civil: 199 - Disque Denúncia: 0800 282 7969 - Disque Denúncia - Sindicato dos Guias de Turismo: (83) 98855-9796 e (83) 99946-7675 - Vigilância Sanitária: (83) 3214-7956 - Polícia Civil: 197 - Polícia Federal: 194 - Polícia Militar: 190 - Polícia Rodoviária Federal: 191 - Procon-JP: 0800 83 2015 - Samu: 192 - Semob: 118
+        </div>
+    </div>
+
+    <!-- Barra de Menu -->
+    <header class="header">
+        <img class="logoMenu" src="./imagens/home/logo.png" alt="Logo Marca">
+        <nav class="navbar">
+            <a href="./index.php">Home</a>
+            <a href="./quemsomos.php">Quem somos</a>
+            <a href="./index.php#nossosContatos">Contatos</a>
+            <a href="./login.php">Login / Cadastro</a>
+            <a href="#">Informações</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <h1>Informações Úteis</h1>
+        </div>
+        
+        <div class="telefones">
+            <div class="tel">
+                <h2>Telefonia - Comunicação</h2>
+                <p>
+                    Para ligações internacionais feitas para João Pessoa, <br>
+                    discar 00 + 55 + 83 + número de telefone desejado.
+                </p>
+                <br><br>
+
+                <h2>Telefones Úteis</h2>
+                <ul class="phone-list">
+                    <li class="phone-item"><a href="tel:193" class="phone-link">Bombeiros: 193</a></li>
+                    <li class="phone-item"><a href="tel:+558332246688" class="phone-link">Ceatox: (83) 3224-6688</a></li>
+                    <li class="phone-item"><a href="tel:199" class="phone-link">Defesa Civil: 199</a></li>
+                    <li class="phone-item"><a href="tel:08002827969" class="phone-link">Disque Denúncia: 0800 282 7969</a></li>
+                    <li class="phone-item"><a href="tel:100" class="phone-link">Disque Denúncia: 100</a></li>
+                    <li class="phone-item"><a href="tel:+5583988559796" class="phone-link">Sindicato dos Guias de Turismo: (83) 98855-9796</a></li>
+                    <li class="phone-item"><a href="tel:+5583999467675" class="phone-link">Sindicato dos Guias de Turismo: (83) 99946-7675</a></li>
+                    <li class="phone-item"><a href="tel:+558332147956" class="phone-link">Vigilância Sanitária: (83) 3214-7956</a></li>
+                    <li class="phone-item"><a href="tel:197" class="phone-link">Polícia Civil: 197</a></li>
+                    <li class="phone-item"><a href="tel:194" class="phone-link">Polícia Federal: 194</a></li>
+                    <li class="phone-item"><a href="tel:190" class="phone-link">Polícia Militar: 190</a></li>
+                    <li class="phone-item"><a href="tel:191" class="phone-link">Polícia Rodoviária Federal: 191</a></li>
+                    <li class="phone-item"><a href="tel:0800832015" class="phone-link">Procon-JP: 0800 83 2015</a></li>
+                    <li class="phone-item"><a href="tel:192" class="phone-link">Samu: 192</a></li>
+                    <li class="phone-item"><a href="tel:118" class="phone-link">Semob: 118</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tensao">
+            <div class="tens">
+                <h2>Tensão Elétrica</h2>
+                <p>
+                    A tensão utilizada em João Pessoa é de <i style="color: red">220V</i>, com tomadas de três pinos.
+                </p>
+            </div>
+        </div>
+
+        <div class="informacoes">
+            <div class="info">
+                <h2>Pontos de Informação Turística</h2>
+                <br>
+                <a style="text-decoration: none; color:white" href="https://www.joaopessoa.pb.gov.br/secretaria/setur/" target="_blank">
+                    <p> 
+                        <strong>Prefeitura Municipal de João Pessoa</strong> <br>
+                        Secretaria de Turismo<br>
+                        Endereço: Rua Diogo Velho, 150, Centro, CEP: 58013-110 <br>
+                        Telefone: +55 83 98161-3545 <br><br>
+                    </p>
+                </a>
+                <p>
+                    <strong>Centro de Atendimento ao Turista</strong> <br>
+                    Localização: Av. Almirante Tamandaré, 100 - Tambaú, CEP: 58.023-500 <br>
+                    Telefone: +55 83 98654-7890 <br>
+                    Horário de Funcionamento: <br>
+                    Segunda a sexta: 9h às 21h <br>
+                    Finais de semana e feriados: 9h às 19h <br><br>
+                    <strong>Centro de Apoio ao Turista Bosque dos Sonhos</strong><br>
+                    Localização: Cabo Branco (Ao lado do Farol) <br>
+                    Horário de Funcionamento: Das 8h às 17h <br><br>
+                </p>
+                <p>
+                    <strong>SINGTUR/PB - Sindicato dos Guias de Turismo da Paraíba</strong> <br>
+                    Endereço: A. Rui Carneiro, 241 - MAP, loja 113 -  Tambaú <br>
+                    Telefone: (83) 99600-1177 <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="seguranca">
+            <div class="seg">
+                <h2>Segurança e Assistência</h2>
+                <p>
+                    <strong>Delegacia de Atendimento ao Turista</strong> <br>
+                    Endereço: Centro Turístico de Tambaú - Av. Alm. Tamandaré, 100 - Tambaú <br>
+                    Telefones: (83) 3214 8022 / 3247 8405 <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="transportes">
+            <div class="trnsp">
+                <h2>Transportes</h2>
+                <br>
+                <p>
+                    <strong>Aeroporto Castro Pinto</strong> <br>
+                    Aeroporto, S/N, Bayeux-PB <br>
+                    Telefone: +55 (83) 98675-6789 <br><br>
+                </p>
+                <p>
+                    <strong>Rodoviária de João Pessoa</strong> <br>
+                    Endereço: Av. Marechal Floriano Peixoto, 900 - Varadouro <br>
+                    Telefone: +55 (83) 3241-4000 <br><br>
+                </p>
+                <p>
+                    <strong>Transporte Público</strong> <br>
+                    A cidade conta com linhas de ônibus que cobrem as principais regiões turísticas. <br>
+                    Consulte horários e rotas no site da Semob: 
+                    <a href="https://www.joaopessoa.pb.gov.br/secretarias/semob/" target="_blank"> Semob </a> <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
