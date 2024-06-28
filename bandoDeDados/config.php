@@ -3,9 +3,9 @@
 <?php
 
     $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $banco = "sou_do_litoral";
+    $usuario = "prepress_gruposoudolitoral";
+    $senha = "@SouDoLitoral#!";
+    $banco = "prepress_sou_do_litoral";
 
 
     try{
