@@ -29,7 +29,7 @@
             <div class="title">
                 <h1>Informações Úteis</h1>
             </div>
-            
+
             <div class="telefones">
                 <div class="tel">
                     <h2>Telefonia - Comunicação</h2>
@@ -38,7 +38,7 @@
                                 discar 00 + 55 + 83 + número de telefone desejado.
                             </p><br><br>
 
-                            <!-- Telefones úteis -->                        
+                             Telefones úteis                        
                             <h2>Telefones Úteis</h2>                        
                             <p>
                                 Bombeiros: 193<br>
@@ -59,6 +59,38 @@
                             </p>
                 </div>
             </div>
+
+                <!--Lista corrente de  Telefones -->
+
+                <div class="marquee-container">
+                    <div class="marquee">
+                        <ul class="phone-list">
+                            <?php
+                                $phones = [
+                                    ["Bombeiros", "193"],
+                                    ["Ceatox", "+55 (83) 3224-6688"],
+                                    ["Defesa Civil", "199"],
+                                    ["Disque Denúncia", "08002827969"],
+                                    ["Disque Denúncia", "100"],
+                                    ["Sindicato dos Guias de Turismo", "+55 (83) 98855-9796 ou +55(83) 99946-7675"],
+                                    ["Vigilância Sanitária", "+55(83)3214-7956"],
+                                    ["Polícia Civil", "197"],
+                                    ["Polícia Federal", "194"],
+                                    ["Polícia Militar", "190"],
+                                    ["Polícia Rodoviária Federal", "191"],
+                                    ["Procon-JP", "0800832015"],
+                                    ["Samu", "192"],
+                                    ["Semob", "118"]
+                                ];
+
+                                foreach ($phones as $phone) {
+                                    echo '<li class="phone-item"><a href="tel:' . $phone[1] . '" class="phone-link">' . $phone[0] . ': ' . $phone[1] . '</a></li>';
+                                }
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+
             <div class="tensao">
                 <div class="tens">
                     <h2>Tensão Elétrica</h2>

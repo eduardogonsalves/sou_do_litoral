@@ -71,6 +71,46 @@ body{
 
 }
 
+/* Teste*/
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 80s linear infinite;
+}
+.phone-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.phone-item {
+    margin-right: 20px;
+}
+.phone-link {
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(108, 108, 229);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+/* Final teste*/
+
+
+
+
 
 .telefones{
     position: relative;
@@ -120,7 +160,8 @@ body{
     background-position: center;
     width: 100%;
     border-radius: 15px;
-    margin-bottom: 2em;    
+    margin-bottom: 2em;
+    margin-top: 1em;    
 }
 
 .tens{
